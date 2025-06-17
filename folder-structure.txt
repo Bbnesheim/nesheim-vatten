@@ -1,0 +1,31 @@
+.
+├── admin
+│   ├── financials
+│   ├── invoices
+│   └── legal
+├── clients
+│   ├── client-01
+│   │   ├── contracts
+│   │   ├── deliverables
+│   │   ├── design
+│   │   ├── meetings
+│   │   ├── strategy
+│   │   └── website
+│   └── vbm-elektro
+│       ├── contracts
+│       ├── deliverables
+│       ├── design
+│       ├── meetings
+│       ├── strategy
+│       └── website
+├── docs
+│   ├── brand-assets
+│   │   ├── colors
+│   │   ├── logo
+│   │   └── templates
+│   ├── case-studies
+│   ├── marketing-materials
+│   └── service-descriptions
+└── templates
+
+29 directories
