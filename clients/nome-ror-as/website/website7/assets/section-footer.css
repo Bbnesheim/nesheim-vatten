@@ -54,11 +54,11 @@
   width: 100%;
 }
 
-/* Group holding logo and business info */
-.footer__company-info-group {
+/* Logo and business info wrapper */
+.footer__branding {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
 
@@ -549,11 +549,12 @@
 @media (max-width: 768px) {
   .footer__business-info {
     margin-left: 0;
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     padding-top: 1.5rem;
+    padding-right: 0;
   }
-  .footer__company-info-group {
+  .footer__branding {
     flex-direction: column;
   }
 }
