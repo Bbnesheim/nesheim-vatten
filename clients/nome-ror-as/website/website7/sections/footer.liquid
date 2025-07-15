@@ -296,20 +296,22 @@
         {%- endif -%}
       </div>
     </div>
-   <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__block footer__logo-wrapper">
-        <img src="{{ 'Hvit.svg' | asset_url }}" alt="Nome Rør AS" class="footer-logo">
+    <div class="footer__content-bottom-wrapper page-width">
+      <div class="footer__company-info-group">
+        <div class="footer__block footer__logo-wrapper">
+          <img src="{{ 'Hvit.svg' | asset_url }}" alt="Nome Rør AS" class="footer-logo">
+        </div>
+        <div class="footer__block footer__business-info">
+          <ul>
+            <li><strong>Nome Rør AS</strong></li>
+            <li>Org nr: 935595916</li>
+            <li>Telefon: <a href="tel:+4790940810">909 40 810</a></li>
+            <li>Adresse: Nordskogvegen 46, 3825 Lunde</li>
+            <li>Åpningstider: 0800-1600</li>
+          </ul>
+        </div>
       </div>
-     <div class="footer__block footer__business-info">
-     <ul>
-       <li><strong>Nome Rør AS</strong></li>
-       <li>Org nr: 935595916</li>
-       <li>Telefon: <a href="tel:+4790940810">909 40 810</a></li>
-       <li>Adresse: Nordskogvegen 46, 3825 Lunde</li>
-       <li>Åpningstider: 0800-1600</li>
-     </ul>
-     </div>
-   </div>
+    </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
