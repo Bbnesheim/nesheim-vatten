@@ -53,4 +53,4 @@ Our approach merges research-driven insights with compelling design to accelerat
 - After review, merge it into `main`.
 
 Let me know if you’d like help drafting a `CHANGELOG.md`, deploy instructions, or anything else!
-::contentReference[oaicite:0]{index=0}
+
