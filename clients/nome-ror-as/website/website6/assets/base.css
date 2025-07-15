@@ -3653,11 +3653,12 @@ a.button--primary:focus-visible {
   opacity: 0 !important;
 }
 .footer__business-info {
-  text-align: right;
-  font-size: 1.25rem !important; /* Økt skriftstørrelse */
+  text-align: left;
+  font-size: 1.5rem !important;
   line-height: 2;
   color: #d6d6d6;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 0;
   margin-right: 0;
   max-width: 320px;
   font-weight: 400;
@@ -3678,6 +3679,11 @@ a.button--primary:focus-visible {
 .footer__business-info a {
   color: inherit;
   text-decoration: underline;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
 }
 
 
