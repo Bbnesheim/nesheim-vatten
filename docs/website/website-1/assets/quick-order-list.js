@@ -417,8 +417,13 @@ if (!customElements.get('quick-order-list')) {
           variantItemErrorDesktop.querySelector('.variant-item__error-text').innerHTML = message;
           variantItemErrorDesktop.closest('tr').classList.remove('hidden');
         }
-        if (variantItemErrorMobile)
+
+        const variantItemErrorMobile = document.getElementById(
+          `Quick-order-list-item-error-mobile-${id}`
+        );
+        if (variantItemErrorMobile) {
           variantItemErrorMobile.querySelector('.variant-item__error-text').innerHTML = message;
+        }
 
         this.querySelector('#shopping-cart-variant-item-status').setAttribute('aria-hidden', true);
 
