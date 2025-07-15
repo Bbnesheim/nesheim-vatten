@@ -38,7 +38,7 @@ Our focus is to blend **technical skill** with **creative insight** to elevate c
 ## 🚀 Workflow & Project Management
 
 ### Git Practices
-- **Always branch** for new client work: `feature/<client-name>-<task>`.
+- **Always branch** for new client work with `git checkout -b feature/<client-name>-<task>`.
 - PRs should be reviewed, approved, and linked to your PR template.
 - Code should be clean, tested, and documented.
 

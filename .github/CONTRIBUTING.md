@@ -5,7 +5,7 @@ Welcome! We appreciate your interest in contributing to this project.
 ## How to Contribute
 
 - Fork the repository and clone it locally.
-- Create a new branch for your feature or fix (`git checkout -b feature/your-feature`).
+- Create a new branch for your feature or fix (`git checkout -b feature/<client-name>-<task>`).
 - Commit your changes with clear, descriptive messages.
 - Push your branch to your fork.
 - Create a Pull Request (PR) and describe your changes clearly.
