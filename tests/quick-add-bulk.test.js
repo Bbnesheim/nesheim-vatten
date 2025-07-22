@@ -29,7 +29,7 @@ describe('QuickAddBulk.renderSections', () => {
       listenForActiveInput() {}
       listenForKeydown() {}
     };
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-1/assets/quick-add-bulk.js');
+    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/quick-add-bulk.js');
     const scriptContent = fs.readFileSync(scriptPath, 'utf8');
     window.Function(scriptContent).call(window);
     QuickAddBulk = window.customElements.get('quick-add-bulk');
