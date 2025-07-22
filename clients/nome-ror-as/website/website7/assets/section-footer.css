@@ -54,6 +54,14 @@
   width: 100%;
 }
 
+/* Group holding logo and business info */
+.footer__company-info-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 749px) {
   .footer__content-bottom {
     flex-wrap: wrap;
@@ -507,7 +515,7 @@
   }
 }
 .footer__business-info {
-  margin-left: auto;
+  margin-left: 0;
   padding-right: 2rem;
   max-width: 320px;
   text-align: right;
@@ -533,11 +541,19 @@
   text-decoration: underline !important;
   font-size: inherit !important;
 }
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+}
 @media (max-width: 768px) {
   .footer__business-info {
     margin-left: 0;
     text-align: left;
     font-size: 2rem;
     padding-top: 1.5rem;
+  }
+  .footer__company-info-group {
+    flex-direction: column;
   }
 }
