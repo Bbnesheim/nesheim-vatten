@@ -41,6 +41,11 @@ Our approach merges research-driven insights with compelling design to accelerat
 ---
 
 ## 🗂 Repository Structure
+- `clients/` client projects (contracts, meetings, strategy, design, website, deliverables)
+- `docs/` brand assets, case studies, marketing materials, service descriptions, and website themes
+- `templates/` reusable templates
+- `scripts/` automation and helper scripts
+- `tests/` automated tests
 
 
 ---
