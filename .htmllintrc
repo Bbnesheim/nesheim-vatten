@@ -1,3 +1,4 @@
 {
-  "attr-name-style": "dash"
+  "attr-name-style": "dash",
+  "indent-width": 2
 }
