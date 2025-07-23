@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
-    "lint": "stylelint \"**/*.css\" && htmlhint ."
+    "lint": "npm run lint:css && npm run lint:html",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:html": "htmllint **/*.html **/*.liquid"
   },
   "devDependencies": {
     "jest": "^29.0.0",
