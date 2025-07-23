@@ -1,15 +1,17 @@
 # Contribution Guide
 
-Thank you for taking the time to contribute to **Nesheim & Vatten Consulting**. This document outlines our workflow and expectations so that collaborating is smooth for everyone.
+Thank you for contributing to **Nesheim & Vatten Consulting**. This guide outlines the workflow we follow for new code and documentation changes.
 
 ## Branch Naming
 
-- Work from the latest `main` branch.
-- Name branches based on the purpose:
-  - `feature/<client-name>-<task>` for new features.
-  - `fix/<client-name>-<bug-description>` for bug fixes.
-  - `docs/<topic>` for documentation updates.
-- Keep names short and descriptive. Example:
+- Start from the latest `main` branch.
+- Prefix your branch with the type of work:
+  - `feature/<client>-<short-task>` for new features.
+  - `fix/<client>-<bug>` for bug fixes.
+  - `docs/<topic>` for documentation improvements.
+- Keep names short and use dashes to separate words.
+
+Example:
 
 ```bash
 git checkout -b feature/nome-ror-add-payment-flow
@@ -17,26 +19,26 @@ git checkout -b feature/nome-ror-add-payment-flow
 
 ## Pull Request Flow
 
-1. Ensure your branch builds and tests run successfully.
-2. Push your branch to your fork or the main repository.
-3. Open a Pull Request using `.github/PULL_REQUEST_TEMPLATE.md`.
-4. Provide a clear summary and reference any related issues.
-5. Request review from the appropriate team members.
-6. Address feedback promptly and keep communication on the PR thread.
-7. Squash or rebase as needed to maintain a clean history before merging.
+1. Ensure `npm install` has run and tests pass with `npm test`.
+2. Check code style by running `npm run lint`.
+3. Push your branch to the repository.
+4. Open a Pull Request using `.github/PULL_REQUEST_TEMPLATE.md`.
+5. Summarise your changes clearly and reference any relevant issues.
+6. Request reviews from the team and respond to feedback directly in the PR.
+7. Once approved, a maintainer will merge your changes.
 
 ## Code Formatting
 
-- Use the existing style in the repository as a guide (2-space indentation for JavaScript).
-- Run Prettier or your editor's formatter before committing.
-- Keep commits focused and include useful commit messages.
-- Ensure `npm test` passes; add tests for new functionality when possible.
+- Use the existing style as a reference. JavaScript uses 2 spaces and CSS follows the Stylelint config.
+- Run your editor's formatter or Prettier before committing.
+- Keep commits focused, with descriptive messages in English.
+- Test and lint before pushing.
 
 ## Communication Style
 
-- Be concise, courteous, and welcoming.
-- Discussions should remain professional and constructive.
-- Use GitHub issues and PR comments for questions or clarifications.
-- Refer to our [Code of Conduct](.github/CODE_OF_CONDUCT.md) for community behavior standards.
+- Keep all discussion in English on the PR or issue threads.
+- Be concise, helpful, and respectful.
+- If you are unsure about something, ask questions in the PR comments.
+- See our [Code of Conduct](.github/CODE_OF_CONDUCT.md) for behaviour guidelines.
 
-We appreciate your contributions!
+We appreciate your contributions and look forward to collaborating!
