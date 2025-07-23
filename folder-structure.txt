@@ -1,10 +1,20 @@
 .
-├── admin
-│   ├── financials
-│   ├── invoices
-│   └── legal
 ├── clients
-│   ├── client-01
+│   ├── baattilsyn
+│   │   ├── contracts
+│   │   ├── deliverables
+│   │   ├── design
+│   │   ├── meetings
+│   │   ├── strategy
+│   │   └── website
+│   ├── nome-ror-as
+│   │   ├── contracts
+│   │   ├── deliverables
+│   │   ├── design
+│   │   ├── meetings
+│   │   ├── strategy
+│   │   └── website
+│   ├── to-ellis
 │   │   ├── contracts
 │   │   ├── deliverables
 │   │   ├── design
@@ -21,11 +31,23 @@
 ├── docs
 │   ├── brand-assets
 │   │   ├── colors
-│   │   ├── logo
-│   │   └── templates
+│   │   └── logo
 │   ├── case-studies
 │   ├── marketing-materials
-│   └── service-descriptions
-└── templates
+│   ├── service-descriptions
+│   └── website
+│       ├── assets
+│       ├── config
+│       ├── layout
+│       ├── locales
+│       ├── sections
+│       ├── snippets
+│       ├── templates
+│       ├── website-v1
+│       ├── website-v2
+│       └── website-v3
+├── scripts
+├── templates
+└── tests
 
-29 directories
+51 directories
