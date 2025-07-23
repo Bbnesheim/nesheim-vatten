@@ -2,10 +2,13 @@
   "name": "nesheim-vatten",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "stylelint \"**/*.css\" && htmlhint ."
   },
   "devDependencies": {
     "jest": "^29.0.0",
-    "jsdom": "^22.0.0"
+    "jsdom": "^22.0.0",
+    "stylelint": "^16.22.0",
+    "htmlhint": "^1.6.3"
   }
 }
