@@ -1,0 +1,20 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install linters
+        run: npm install --no-save htmlhint stylelint stylelint-config-standard
+      - name: Run HTMLHint
+        run: npx htmlhint "**/*.html" "**/*.liquid"
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css"
