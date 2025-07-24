@@ -7,6 +7,8 @@
 │   │   ├── meetings
 │   │   ├── strategy
 │   │   └── website
+│   │       └── baattilsyn.no
+│   │           └── assets
 │   ├── nome-ror-as
 │   │   ├── contracts
 │   │   ├── deliverables
@@ -14,6 +16,42 @@
 │   │   ├── meetings
 │   │   ├── strategy
 │   │   └── website
+│   │       ├── nome-ror-as-website-v1
+│   │       │   ├── assets
+│   │       │   ├── config
+│   │       │   ├── layout
+│   │       │   ├── locales
+│   │       │   ├── sections
+│   │       │   ├── snippets
+│   │       │   └── templates
+│   │       │       └── customers
+│   │       ├── nome-ror-as-website-v2
+│   │       │   ├── assets
+│   │       │   ├── config
+│   │       │   ├── layout
+│   │       │   ├── locales
+│   │       │   ├── sections
+│   │       │   ├── snippets
+│   │       │   └── templates
+│   │       │       └── customers
+│   │       ├── nome-ror-as-website-v3
+│   │       │   ├── assets
+│   │       │   ├── config
+│   │       │   ├── layout
+│   │       │   ├── locales
+│   │       │   ├── sections
+│   │       │   ├── snippets
+│   │       │   └── templates
+│   │       │       └── customers
+│   │       └── nome-theme-code_FINAL
+│   │           ├── assets
+│   │           ├── config
+│   │           ├── layout
+│   │           ├── locales
+│   │           ├── sections
+│   │           ├── snippets
+│   │           └── templates
+│   │               └── customers
 │   ├── to-ellis
 │   │   ├── contracts
 │   │   ├── deliverables
@@ -29,6 +67,7 @@
 │       ├── strategy
 │       └── website
 ├── docs
+│   ├── assets
 │   ├── brand-assets
 │   │   ├── colors
 │   │   └── logo
@@ -43,11 +82,29 @@
 │       ├── sections
 │       ├── snippets
 │       ├── templates
+│       │   └── customers
 │       ├── website-v1
+│       │   ├── assets
+│       │   ├── config
+│       │   ├── layout
+│       │   ├── locales
+│       │   ├── sections
+│       │   ├── snippets
+│       │   └── templates
+│       │       └── customers
 │       ├── website-v2
+│       │   ├── assets
+│       │   ├── config
+│       │   ├── layout
+│       │   ├── locales
+│       │   ├── sections
+│       │   ├── snippets
+│       │   └── templates
+│       │       └── customers
 │       └── website-v3
+│           └── assets
 ├── scripts
 ├── templates
 └── tests
 
-51 directories
+108 directories

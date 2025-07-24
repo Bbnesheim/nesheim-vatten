@@ -41,21 +41,10 @@ Our approach merges research-driven insights with compelling design to accelerat
 ---
 
 ## 🗂 Repository Structure
-- `clients/` client projects (contracts, meetings, strategy, design, website, deliverables)
-- `docs/` brand assets, case studies, marketing materials, service descriptions, and website themes
-- `templates/` reusable templates
-- `scripts/` automation and helper scripts
-- `tests/` automated tests
-
-
----
-
-### ✅ Next Steps
-
-- Copy the content into `README.md` in your `main` branch.
-- Update it with your real email, website URLs, and any other brand touchpoints.
-- Commit and push on a **new branch**, then open a PR using your PR template.
-- After review, merge it into `main`.
-
-Let me know if you’d like help drafting a `CHANGELOG.md`, deploy instructions, or anything else!
+- `clients/` — each client has folders for `contracts`, `deliverables`, `design`, `meetings`, `strategy` and `website`
+- `docs/` — brand assets, case studies, service descriptions, marketing materials and website themes
+- `scripts/` — automation and helper scripts
+- `templates/` — reusable templates
+- `tests/` — automated tests
+- `folder-structure.txt` — generated directory tree
 
