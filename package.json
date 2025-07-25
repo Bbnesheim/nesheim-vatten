@@ -1,26 +1,13 @@
 {
   "name": "nesheim-vatten",
   "version": "1.0.0",
-  "description": "*Crafting brand, sales, design and online store solutions with clarity and impact.*",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
   "scripts": {
-    "dev": "npx --yes serve clients/baattilsyn/website/baattilsyn.no",
-    "// dev": "Serve static pages from baattilsyn.no",
-    "build": "echo \"no build step\"",
     "test": "jest",
-    "lint:css": "stylelint \"**/*.css\"",
-    "lint:html": "htmllint 'clients/**/*.html'",
     "lint": "npm run lint:css && npm run lint:html",
-    "format": "prettier --write ."
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "htmllint \"clients/baattilsyn/pages/*.html\"",
+    "dev": "npx serve clients/baattilsyn/pages"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "htmllint-cli": "^0.0.7",
     "htmllint": "^0.7.3",
