@@ -13,7 +13,7 @@ Replace `<REPO-URL>` with the Git address of your fork or the upstream repositor
 
 ## 2. Install Node dependencies
 
-Install Node.js (v16 or later is recommended) and run:
+Install Node.js (v18 or later is recommended) and run:
 
 ```bash
 npm install
