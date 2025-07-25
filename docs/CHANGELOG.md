@@ -9,6 +9,11 @@ published.
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-07-26
+### Added
+- New `website_v4` theme under `clients/baattilsyn/website`.
+- Updated test themes structure.
+
 ## [0.1.0] - 2025-07-25
 ### Added
 - Initial repository structure and documentation cleanup.

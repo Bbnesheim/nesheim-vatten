@@ -54,7 +54,7 @@ mise settings add idiomatic_version_file_enable_tools node
 ```
 
 ## Contributing
-
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines on how to propose changes and run local checks.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
