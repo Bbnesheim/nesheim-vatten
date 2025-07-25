@@ -1,31 +1,27 @@
-# Contributing to Nesheim/Vatten
+# Contributing to Nesheim & Vatten Consulting
 
-Welcome! We appreciate your interest in contributing to this project.
+We welcome contributions! This guide explains our workflow.
 
-## How to Contribute
+## Branch strategy
+- Base all work on `main`.
+- Create feature branches using `feature/<short-description>` or bug fixes using `fix/<short-description>`.
+- Keep each branch focused on a single change.
 
-- Fork the repository and clone it locally.
-- Create a new branch for your feature or fix (`git checkout -b feature/<client-name>-<task>`).
-- Commit your changes with clear, descriptive messages.
-- Push your branch to your fork.
-- Create a Pull Request (PR) and describe your changes clearly.
+## Pull Request process
+1. Rebase your branch on the latest `main` before opening the PR.
+2. Use clear, imperative commit messages.
+3. Push your branch and open a PR.
+4. Request review from a project maintainer.
+5. At least one approval is required before merging.
+6. Prefer squash merging through GitHub.
 
-## Pull Request Process
+## Local checks
+Install dependencies and run linters and tests before opening a PR:
 
-- Ensure your PR addresses a single purpose or issue.
-- Tag relevant reviewers or mention issues it closes.
-- Wait for review and feedback.
-- Only merge after approval.
+```bash
+npm install
+npm run lint
+npm test
+```
 
-## Code Style
-
-- Use clear naming and keep things consistent.
-- Document your code where helpful.
-
-## Reporting Issues
-
-If you find a bug or have a feature request, open an issue and include:
-- Steps to reproduce (if applicable)
-- Screenshots or relevant files
-
-Thanks for helping us improve!
+Thank you for contributing!
