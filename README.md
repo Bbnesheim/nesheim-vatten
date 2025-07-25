@@ -17,8 +17,6 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 - `tests/` – automated tests
 - `archive/` – outdated or archived resources
 
-## Documentation
-Full project documentation is available in [docs/INDEX.md](docs/INDEX.md).
 
 ## Installation
 ```bash
@@ -30,6 +28,10 @@ Run linters and tests with:
 ```bash
 npm run lint
 npm test
+```
+To preview the website locally, run:
+```bash
+npm run dev
 ```
 
 ## Verktøy og versjonshåndtering
