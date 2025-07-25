@@ -18,7 +18,8 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 - `archive/` – outdated or archived resources
 
 ## Documentation
-Full project documentation is available in [docs/INDEX.md](docs/INDEX.md).
+All project documentation has been consolidated under the [`docs/`](docs/README.md) folder.
+See [docs/README.md](docs/README.md) for an overview of available files.
 
 ## Installation
 ```bash
