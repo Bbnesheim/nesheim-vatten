@@ -32,6 +32,18 @@ npm run lint
 npm test
 ```
 
+## Verktøy og versjonshåndtering
+
+### Node-versjonshåndtering
+
+Dette prosjektet bruker `.nvmrc` til å spesifisere Node-versjon.
+
+For utviklere som bruker [`mise`](https://github.com/jdx/mise), anbefales det å kjøre følgende én gang for å unngå advarsler:
+
+```bash
+mise settings add idiomatic_version_file_enable_tools node
+```
+
 ## Contributing
 See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
