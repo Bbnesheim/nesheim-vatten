@@ -12,10 +12,6 @@
     "build": "echo \"no build step\"",
     "start": "npm run dev",
     "lint:css": "stylelint \"**/*.css\"",
-    "lint:html": "htmllint 'clients/**/*.html'",
-    "lint": "npm run lint:css && npm run lint:html",
-    "format": "echo \"no format step\"",
-    "test": "jest"
   },
   "keywords": [],
   "author": "",
