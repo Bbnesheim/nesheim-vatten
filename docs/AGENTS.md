@@ -4,19 +4,21 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 
 ## Overview
 
-| Agent | Type | Description |
-|-------|------|-------------|
-| `create-structure.sh` | Bash script | Generates the base folder structure with templates |
-| Jest | Node.js CLI | Runs JavaScript test suite under `tests/` |
-| Stylelint | Node.js CLI | Lints CSS files using `.stylelintrc.json` |
-| htmllint | Node.js CLI | Lints HTML using `.htmllintrc` and `.htmllintignore` |
-| GitHub Actions | CI workflow | Executes tests automatically on `main` branch pushes and PRs |
-| Shopify CLI | External CLI | Serves and previews Shopify themes locally |
-| http-server | Node.js CLI | Serves static website files for local previews |
+| Agent                 | Type         | Description                                                  |
+| --------------------- | ------------ | ------------------------------------------------------------ |
+| `create-structure.sh` | Bash script  | Generates the base folder structure with templates           |
+| Jest                  | Node.js CLI  | Runs JavaScript test suite under `tests/`                    |
+| Stylelint             | Node.js CLI  | Lints CSS files using `.stylelintrc.json`                    |
+| htmllint              | Node.js CLI  | Lints HTML using `.htmllintrc` and `.htmllintignore`         |
+| Prettier              | Node.js CLI  | Formats code consistently across files                       |
+| GitHub Actions        | CI workflow  | Executes tests automatically on `main` branch pushes and PRs |
+| Shopify CLI           | External CLI | Serves and previews Shopify themes locally                   |
+| http-server           | Node.js CLI  | Serves static website files for local previews               |
 
 ## Agents
 
 ### `create-structure.sh`
+
 - **Purpose:** Create directories and placeholder files for new projects.
 - **Usage:**
   ```bash
@@ -27,6 +29,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Configuration:** No config file is required.
 
 ### Jest
+
 - **Purpose:** Execute automated unit tests found in the `tests/` directory.
 - **Usage:**
   ```bash
@@ -37,6 +40,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Configuration:** Follows `package.json` settings; no extra config file.
 
 ### Stylelint
+
 - **Purpose:** Enforce CSS code style and catch errors.
 - **Usage:** Typically run via `npx stylelint "**/*.css"` or part of the `npm run lint` script.
 - **Input:** `.css` files.
@@ -44,13 +48,26 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Configuration:** `.stylelintrc.json` and `.stylelintignore`.
 
 ### htmllint
+
 - **Purpose:** Validate HTML markup.
 - **Usage:** Usually invoked as `npx htmllint` or through a script like `npm run lint`.
 - **Input:** HTML files.
 - **Output:** Lint errors/warnings.
 - **Configuration:** `.htmllintrc` and `.htmllintignore`.
 
+### Prettier
+
+- **Purpose:** Automatically format HTML, CSS, JavaScript and Markdown files.
+- **Usage:**
+  ```bash
+  npm run format
+  ```
+- **Input:** Code files in the repository.
+- **Output:** Files rewritten with consistent style.
+- **Configuration:** `.prettierrc.json` and `.prettierignore` (optional).
+
 ### GitHub Actions
+
 - **Purpose:** Continuous integration for automated tests.
 - **Usage:** Defined in `.github/workflows/tests.yml`; runs on pushes or pull requests to `main`.
 - **Input:** Repository code and test suite.
@@ -58,6 +75,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Configuration:** Workflow YAML files in `.github/workflows/`.
 
 ### Shopify CLI
+
 - **Purpose:** Preview Shopify themes during development.
 - **Usage:**
   ```bash
@@ -69,6 +87,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Configuration:** Requires Shopify CLI authentication with a store.
 
 ### http-server
+
 - **Purpose:** Serve static website files without Shopify CLI.
 - **Usage:**
   ```bash
@@ -85,6 +104,7 @@ Common development tasks are grouped under npm scripts:
 ```bash
 npm install       # install dependencies for linting and testing
 npm run lint      # run Stylelint and htmllint
+npm run format    # apply Prettier formatting
 npm test          # execute Jest tests
 ```
 
