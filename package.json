@@ -8,13 +8,10 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "http-server docs/website/website-v1",
     "build": "echo \"no build step\"",
     "test": "jest",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmllint 'clients/**/*.html'",
-    "lint": "npm run lint:css && npm run lint:html",
-    "format": "prettier -w \"**/*.{js,css,html,md}\""
   },
   "keywords": [],
   "author": "",
@@ -25,8 +22,5 @@
     "htmllint": "^0.7.3",
     "jest": "^29.0.0",
     "jsdom": "^22.0.0",
-    "stylelint": "^16.22.0",
-    "prettier": "^3.6.2",
-    "http-server": "^14.1.1"
   }
 }
