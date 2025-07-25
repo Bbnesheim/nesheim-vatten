@@ -47,7 +47,7 @@ mise settings add idiomatic_version_file_enable_tools node
 ```
 
 ## Contributing
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines and review our [Code of Conduct](docs/CODE_OF_CONDUCT.md).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
