@@ -20,7 +20,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Purpose:** Create directories and placeholder files for new projects.
 - **Usage:**
   ```bash
-  ./scripts/create-structure.sh
+  ./tools/create-structure.sh
   ```
 - **Input:** None (creates folders under `nesheim-vatten/`).
 - **Output:** Directories and template files as defined inside the script.
