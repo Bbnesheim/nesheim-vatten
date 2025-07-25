@@ -29,6 +29,10 @@ Run linters and tests with:
 npm run lint
 npm test
 ```
+To preview the website locally, run:
+```bash
+npm run dev
+```
 
 ## Verktøy og versjonshåndtering
 

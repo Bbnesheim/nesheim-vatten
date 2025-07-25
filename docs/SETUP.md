@@ -5,9 +5,6 @@ Denne guiden forklarer hvordan du setter opp prosjektet lokalt fra bunnen av.
 ## 1. Forutsetninger
 - macOS, Linux eller WSL
 - Git
-- Node.js 18.20.8
-- pnpm 8.15.4
-- [mise](https://github.com/jdx/mise) for verktøyversjoner
 
 ## 2. Installer mise
 Kjør installasjonsskriptet:
@@ -19,21 +16,13 @@ Følg instruksjonene som vises for å legge mise i `PATH`.
 ## 3. Aktiver mise i shell
 Legg til aktiveringslinjen i `~/.bashrc` (eller tilsvarende):
 ```bash
-eval "$(~/.local/bin/mise activate bash)"
-```
-Aktiver også idiomatisk filhåndtering:
-```bash
-mise settings add idiomatic_version_file_enable_tools node pnpm
 ```
 
 ```bash
-pnpm install
+npm install
 ```
 
 ```bash
-pnpm run lint
-pnpm test
-pnpm run build
 ```
 
 ## 8. Vanlige feil og løsninger
