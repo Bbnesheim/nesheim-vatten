@@ -3,7 +3,10 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": { "padding_top": 28, "padding_bottom": 28 }
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     },
     "image_banner_kqWGX6": {
       "type": "image-banner",
@@ -11,14 +14,14 @@
         "heading_xYQp7E": {
           "type": "heading",
           "settings": {
-            "heading": "Din lokale spesialist på båttilsyn og sikkerhet til sjøs",
+            "heading": "Om Båttilsyn",
             "heading_size": "h1"
           }
         },
         "text_L8JaLJ": {
           "type": "text",
           "settings": {
-            "text": "Vi tilbyr profesjonelt båttilsyn og inspeksjonstjenester i hele Telemark. Våre erfarne inspektører sørger for at båten din er trygg, regelmessig vedlikeholdt og klar for sikker bruk på vannet.",
+            "text": "Din partner for trygghet og vedlikehold på sjøen",
             "text_style": "body"
           }
         },
@@ -26,7 +29,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Kontakt oss nå",
-            "button_link_1": "shopify:\/\/pages\/kontakt",
+            "button_link_1": "shopify://pages/kontakt",
             "button_style_secondary_1": false,
             "button_label_2": "Bestill en befaring",
             "button_link_2": "mailto:post@battilsyn.no",
@@ -34,7 +37,11 @@
           }
         }
       },
-      "block_order": ["heading_xYQp7E", "text_L8JaLJ", "buttons_FywKft"],
+      "block_order": [
+        "heading_xYQp7E",
+        "text_L8JaLJ",
+        "buttons_FywKft"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
@@ -54,28 +61,35 @@
       "blocks": {
         "heading_FMdjrq": {
           "type": "heading",
-          "settings": { "heading": "Image banner", "heading_size": "h1" }
+          "settings": {
+            "heading": "Tjenester som gir deg ro til sjøs",
+            "heading_size": "h1"
+          }
         },
         "text_kdVeeN": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Vi tilpasser inspeksjon og vedlikehold etter dine behov.",
             "text_style": "body"
           }
         },
         "buttons_tPWr37": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Se våre tjenester",
+            "button_link_1": "shopify://pages/tjenester",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "Få tilbud",
+            "button_link_2": "mailto:post@battilsyn.no",
             "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["heading_FMdjrq", "text_kdVeeN", "buttons_tPWr37"],
+      "block_order": [
+        "heading_FMdjrq",
+        "text_kdVeeN",
+        "buttons_tPWr37"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
@@ -95,25 +109,32 @@
       "blocks": {
         "heading_tBcbyC": {
           "type": "heading",
-          "settings": { "heading": "Image with text", "heading_size": "h1" }
+          "settings": {
+            "heading": "Hvorfor velge oss?",
+            "heading_size": "h1"
+          }
         },
         "text_3cpXgV": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Vi kombinerer maritim erfaring med moderne teknologi for å gi deg presise tilstandsrapporter.</p>",
             "text_style": "body"
           }
         },
         "button_iFqLQA": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Les mer om tjenestene",
+            "button_link": "shopify://pages/tjenester",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_tBcbyC", "text_3cpXgV", "button_iFqLQA"],
+      "block_order": [
+        "heading_tBcbyC",
+        "text_3cpXgV",
+        "button_iFqLQA"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "height": "adapt",
@@ -136,35 +157,39 @@
         "row_yCmjNw": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "caption": "",
+            "heading": "Erfaring",
+            "text": "<p>Våre inspektører har over ti års erfaring fra maritim bransje.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_w6XpCa": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "caption": "",
+            "heading": "Personlig oppfølging",
+            "text": "<p>Du får en fast kontaktperson som kjenner din båt.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_gTmCQn": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
+            "caption": "",
+            "heading": "Sikkerhet",
+            "text": "<p>Vi følger nøye opp alle punkter slik at du kan føle deg trygg på sjøen.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
       },
-      "block_order": ["row_yCmjNw", "row_w6XpCa", "row_gTmCQn"],
+      "block_order": [
+        "row_yCmjNw",
+        "row_w6XpCa",
+        "row_gTmCQn"
+      ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
@@ -188,8 +213,8 @@
         "column_6UfKLq": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Enkel bestilling",
+            "text": "<p>Kontakt oss på nett eller telefon for å avtale tilsyn.</p>",
             "link_label": "",
             "link": ""
           }
@@ -197,8 +222,8 @@
         "column_ryTtkF": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Faste rapporter",
+            "text": "<p>Du mottar tydelige rapporter etter hver inspeksjon.</p>",
             "link_label": "",
             "link": ""
           }
@@ -206,21 +231,25 @@
         "column_7jVNct": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Tilpassede avtaler",
+            "text": "<p>Vi skreddersyr tjenestene etter dine behov.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["column_6UfKLq", "column_ryTtkF", "column_7jVNct"],
+      "block_order": [
+        "column_6UfKLq",
+        "column_ryTtkF",
+        "column_7jVNct"
+      ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
@@ -237,25 +266,32 @@
       "blocks": {
         "heading_XTRpie": {
           "type": "heading",
-          "settings": { "heading": "Image with text", "heading_size": "h1" }
+          "settings": {
+            "heading": "Alltid klar for neste tur",
+            "heading_size": "h1"
+          }
         },
         "text_c8qqmW": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Med regelmessig oppfølging holder vi båten din i topp stand gjennom hele sesongen.</p>",
             "text_style": "body"
           }
         },
         "button_nCrETc": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Kontakt oss",
+            "button_link": "shopify://pages/kontakt",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_XTRpie", "text_c8qqmW", "button_nCrETc"],
+      "block_order": [
+        "heading_XTRpie",
+        "text_c8qqmW",
+        "button_nCrETc"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "height": "adapt",
@@ -286,7 +322,7 @@
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Contact form",
+        "heading": "Kontakt oss",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
