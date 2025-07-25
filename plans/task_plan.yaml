@@ -1,0 +1,36 @@
+- id: T001
+  title: "Fix package.json and restore npm scripts"
+  rationale: "package.json er ugyldig og mangler scripts som CI forventer"
+  actions:
+    - Kopier innhold fra package.backup.json til package.json
+    - Legg til scriptet "format" som kjører prettier
+    - Kjør "npm install" for å regenerere package-lock.json
+  acceptance_criteria:
+    - npm install kjører uten feil
+    - npm run lint og npm test fungerer
+  affected_paths:
+    - package.json
+    - package-lock.json
+  pr_title: "fix: restore package.json with lint and format scripts"
+  labels: ["codex", "build"]
+  depends_on: []
+  estimate: "S"
+  risk: "M"
+  chunking_strategy: "Single small PR"
+
+- id: T002
+  title: "Rydd opp i docs/SETUP.md"
+  rationale: "Filen inneholder rester av merge som kan forvirre bidragsytere"
+  actions:
+    - Fjern linjen "codex/add-.nvmrc-and-update-setup-documentation"
+    - Fjern linjen med "======="
+  acceptance_criteria:
+    - docs/SETUP.md er lesbar uten overflødige linjer
+  affected_paths:
+    - docs/SETUP.md
+  pr_title: "docs: cleanup SETUP instructions"
+  labels: ["codex", "docs"]
+  depends_on: [T001]
+  estimate: "S"
+  risk: "L"
+  chunking_strategy: "Single small PR"

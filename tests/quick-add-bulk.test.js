@@ -6,7 +6,10 @@ describe('QuickAddBulk.renderSections', () => {
   let window, document, QuickAddBulk, instance;
 
   beforeEach(() => {
-    const dom = new JSDOM(`<!DOCTYPE html><cart-drawer><div id="CartDrawer" class="drawer__inner"></div></cart-drawer><div id="cart-icon-bubble"></div>`, { url: 'https://example.com' });
+    const dom = new JSDOM(
+      `<!DOCTYPE html><cart-drawer><div id="CartDrawer" class="drawer__inner"></div></cart-drawer><div id="cart-icon-bubble"></div>`,
+      { url: 'https://example.com' }
+    );
     window = dom.window;
     document = dom.window.document;
     global.window = window;
@@ -24,12 +27,17 @@ describe('QuickAddBulk.renderSections', () => {
         this.lastActiveInputId = null;
       }
       getSectionInnerHTML(html, selector) {
-        return new window.DOMParser().parseFromString(html, 'text/html').querySelector(selector).innerHTML;
+        return new window.DOMParser()
+          .parseFromString(html, 'text/html')
+          .querySelector(selector).innerHTML;
       }
       listenForActiveInput() {}
       listenForKeydown() {}
     };
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/quick-add-bulk.js');
+    const scriptPath = path.resolve(
+      __dirname,
+      '../docs/website/website-v1/assets/quick-add-bulk.js'
+    );
     const scriptContent = fs.readFileSync(scriptPath, 'utf8');
     window.Function(scriptContent).call(window);
     QuickAddBulk = window.customElements.get('quick-add-bulk');
@@ -50,11 +58,11 @@ describe('QuickAddBulk.renderSections', () => {
     const cartDrawer = document.querySelector('cart-drawer');
     cartDrawer.classList.remove('is-empty');
     instance.getSectionsToRender = () => [
-      { id: 'CartDrawer', section: 'cart-drawer', selector: '.drawer__inner' }
+      { id: 'CartDrawer', section: 'cart-drawer', selector: '.drawer__inner' },
     ];
     const parsedState = {
       items: [],
-      sections: { 'cart-drawer': '<div class="drawer__inner"></div>' }
+      sections: { 'cart-drawer': '<div class="drawer__inner"></div>' },
     };
     instance.renderSections(parsedState, []);
     expect(cartDrawer.classList.contains('is-empty')).toBe(true);

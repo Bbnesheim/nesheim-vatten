@@ -45,3 +45,12 @@ Our focus is to blend **technical skill** with **creative insight** to elevate c
 ### Client Folder Structure
 Each client gets their own structured folder under `clients/`, with these subfolders:
 
+- `contracts/`
+- `deliverables/`
+- `design/`
+- `meetings/`
+- `strategy/`
+- `website/`
+
+Refer to `folder-structure.txt` for the complete directory tree.
+

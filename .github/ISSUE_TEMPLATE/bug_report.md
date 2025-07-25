@@ -1,22 +1,20 @@
 ---
 name: Bug report
-about: Report a bug to help us improve
+about: Rapporter en feil som må fikses
 title: "[BUG]"
 labels: bug
 assignees: ''
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Beskrivelse**
+Kort beskrivelse av feilen.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**Steg for å gjenskape**
+1. ...
+2. ...
 
-**Expected behavior**
-What did you expect to happen?
+**Forventet oppførsel**
+Hva forventet du skulle skje?
 
-**Screenshots**
-If applicable, add screenshots.
-
-**Additional context**
-Add any other context about the problem here.
+**Tilleggsinformasjon**
+Eventuell ekstra kontekst eller skjermbilder.

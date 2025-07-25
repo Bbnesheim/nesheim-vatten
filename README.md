@@ -1,61 +1,63 @@
 # Nesheim & Vatten Consulting
 
-*Crafting brand, sales, design, and online store solutions with clarity and impact.*
+_Crafting brand, sales, design and online store solutions with clarity and impact._
 
----
+## About
 
-## 🌟 About Us
+Nesheim & Vatten delivers strategic consulting and creative services covering:
 
-**Nesheim & Vatten** delivers strategic consulting and creative services in:
 - **Brand strategy & visual identity**
 - **Sales enablement & funnels**
 - **Graphic design & digital assets**
-- **Website building & e-commerce setup**
+- **Website building & e‑commerce setup**
 
-Our approach merges research-driven insights with compelling design to accelerate your growth.
+## Repository Structure
 
----
-
-## 📡 Services
-
-### 1. Brand & Identity
-- Brand strategy audits
-- Logo & color palette development
-- Tone of voice & persona development
-
-### 2. Sales Strategy
-- Sales funnel structuring
-- CRM integration & workflows
-- Proposal & pitch coaching
-
-### 3. Design & Content
-- Social media, print, and web graphics
-- Marketing materials (brochures, presentations)
-- Brand asset libraries
-
-### 4. Web & E‑Commerce
-- Wireframing & prototyping
-- Shopify, WooCommerce, custom build setup
-- SEO, analytics & performance tuning
-
----
-
-## 🗂 Repository Structure
-- `clients/` client projects (contracts, meetings, strategy, design, website, deliverables)
-- `docs/` brand assets, case studies, marketing materials, service descriptions, and website themes
-- `templates/` reusable templates
-- `scripts/` automation and helper scripts
-- `tests/` automated tests
+- `clients/` – project files per client
+- `docs/` – brand assets, case studies and marketing material
+- `tools/` – automation scripts
+- `templates/` – reusable templates
+- `tests/` – automated tests
+- `archive/` – outdated or archived resources
 
 
----
+## Installation
 
-### ✅ Next Steps
+```bash
+npm install
+```
 
-- Copy the content into `README.md` in your `main` branch.
-- Update it with your real email, website URLs, and any other brand touchpoints.
-- Commit and push on a **new branch**, then open a PR using your PR template.
-- After review, merge it into `main`.
+## Development
 
-Let me know if you’d like help drafting a `CHANGELOG.md`, deploy instructions, or anything else!
+Run linters and tests with:
 
+```bash
+npm run lint
+npm run format
+npm test
+```
+To preview the website locally, run:
+```bash
+npm run dev
+```
+
+## Verktøy og versjonshåndtering
+
+### Node-versjonshåndtering
+
+Dette prosjektet bruker `.nvmrc` til å spesifisere Node-versjon (18.20.8).
+
+For utviklere som bruker [`mise`](https://github.com/jdx/mise), anbefales det å kjøre følgende én gang for å unngå advarsler:
+
+```bash
+mise settings add idiomatic_version_file_enable_tools node
+```
+
+## Contributing
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Additional information about automation tools is available in [docs/AGENTS.md](docs/AGENTS.md).
+Release notes can be found in [docs/CHANGELOG.md](docs/CHANGELOG.md).
