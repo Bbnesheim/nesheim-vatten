@@ -1,5 +1,7 @@
 # Pull Request
 
+Refer to [docs/CONTRIBUTING.md](../docs/CONTRIBUTING.md) for full guidelines.
+
 ## Description
 
 Please provide a summary of the changes and your motivation.
