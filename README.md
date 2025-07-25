@@ -45,7 +45,7 @@ npm run dev
 
 ### Node-versjonshåndtering
 
-Dette prosjektet bruker `.nvmrc` til å spesifisere Node-versjon.
+Dette prosjektet bruker `.nvmrc` til å spesifisere Node-versjon (18.20.8).
 
 For utviklere som bruker [`mise`](https://github.com/jdx/mise), anbefales det å kjøre følgende én gang for å unngå advarsler:
 

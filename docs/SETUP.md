@@ -3,8 +3,14 @@
 Kjør installasjonsskriptet:
 ```bash
 curl https://mise.run | sh
-``
 ```
+
+Installer prosjektets avhengigheter:
 ```bash
-pnpm dev
+npm install
+```
+
+Start utviklingsserveren:
+```bash
+npm run dev
 ```
