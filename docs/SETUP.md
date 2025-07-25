@@ -1,43 +1,42 @@
 # Prosjektoppsett
 
-Denne guiden viser hvordan du klargjør utviklingsmiljøet lokalt.
+Denne guiden forklarer hvordan du setter opp prosjektet lokalt fra bunnen av.
 
-## 1. ✅ Forutsetninger
-- macOS, Linux eller WSL anbefales
+## 1. Forutsetninger
+- macOS, Linux eller WSL
 - Git
 - Node.js 18.20.8
 - pnpm 8.15.4
-- [mise](https://github.com/jdx/mise) som verktøyhåndtering
+- [mise](https://github.com/jdx/mise) for verktøyversjoner
 
-## 2. 📦 Installer mise
+## 2. Installer mise
 Kjør installasjonsskriptet:
 ```bash
 curl https://mise.run | sh
 ```
+Følg instruksjonene som vises for å legge mise i `PATH`.
 
-Følg beskjedene for å legge mise i `PATH`.
-
-## 3. 💾 Hent repoet
+## 3. Aktiver mise i shell
+Legg til aktiveringslinjen i `~/.bashrc` (eller tilsvarende):
 ```bash
-git clone <REPO-URL>
-cd nesheim-vatten
+eval "$(~/.local/bin/mise activate bash)"
 ```
-## 4. 🛠 Installer verktøyversjoner
-Kjør `mise install` for å hente Node.js og pnpm definert i `.tool-versions`:
+Aktiver også idiomatisk filhåndtering:
 ```bash
-mise install
+mise settings add idiomatic_version_file_enable_tools node pnpm
 ```
 
-
-
-## 5. 📥 Installer avhengigheter
 ```bash
 pnpm install
 ```
 
-## 6. ✅ Valider oppsettet
-Kjør linters og tester for å bekrefte at alt fungerer:
 ```bash
 pnpm run lint
 pnpm test
+pnpm run build
 ```
+
+## 8. Vanlige feil og løsninger
+- **pnpm: command not found** – kjør `mise install` på nytt for å sikre at pnpm ligger i `PATH`.
+- **Feil Node-versjon** – kontroller at `mise` er aktivert og kjør `mise install`.
+- **Tester som feiler** – prøv `pnpm install` for å sikre at alle pakker er installert.
