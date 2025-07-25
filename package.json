@@ -7,7 +7,7 @@
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmllint \"clients/baattilsyn/pages/*.html\"",
     "dev": "npx serve clients/baattilsyn/pages",
-    "format": "prettier -w clients/baattilsyn/website/website_v3"
+    "format": "prettier -w clients/baattilsyn/website/website-tests/website_test1"
   },
   "devDependencies": {
     "htmllint": "^0.7.3",

@@ -1,0 +1,225 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Trygghet og kontroll for båten – året rundt</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_EDwdRM": {
+          "type": "text",
+          "settings": {
+            "text": "Båttilsyn.no er din pålitelige partner for profesjonelt båttilsyn og vedlikehold. Vi tilbyr skreddersydde løsninger som sikrer at båten din er i trygge hender – enten den ligger i havn, på opplag eller brukes aktivt. Med fokus på kvalitet, tilgjengelighet og erfaring sørger vi for at du kan nyte båtlivet uten bekymringer.",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "> Hasteoppdrag",
+            "button_link_1": "tel:+4790940810",
+            "button_style_secondary_1": false,
+            "button_label_2": "> Bestill gratis befaring",
+            "button_link_2": "mailto:post@baattilsyn.no",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text_EDwdRM", "button"],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "ambient",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": true,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_NEFKzi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8q9Q9U": {
+          "type": "heading",
+          "settings": {
+            "heading": "Båttilsyn.no er din pålitelige partner for profesjonelt båttilsyn og vedlikehold. Vi tilbyr skreddersydde løsninger som sikrer at båten din er i trygge hender – enten den ligger i havn, på opplag eller brukes aktivt. Med fokus på kvalitet, tilgjengelighet og erfaring sørger vi for at du kan nyte båtlivet uten bekymringer.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": ["heading_8q9Q9U"],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "multicolumn_iiRicN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8TdKwp": {
+          "type": "column",
+          "settings": {
+            "title": "Grundig Inspeksjon",
+            "text": "<p>Vi utfører detaljerte tilsyn og inspeksjoner av din båt for å sikre at alt er i forskriftsmessig og trygg stand. Vårt fokus er grundighet og trygghet til sjøs.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PxBd3F": {
+          "type": "column",
+          "settings": {
+            "title": "Kvalifisert Personell",
+            "text": "<p>Våre sertifiserte og erfarne inspektører følger oppdaterte maritime standarder og regelverk. Din sikkerhet er vår høyeste prioritet.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rTVNDf": {
+          "type": "column",
+          "settings": {
+            "title": "Forebyggende Vedlikehold",
+            "text": "<p>Vi tilbyr forebyggende kontroller og rådgivning som forlenger levetiden til båten og reduserer risikoen for uventede problemer og kostnader.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_8TdKwp", "column_PxBd3F", "column_rTVNDf"],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "Se alle våre tjenester",
+        "button_link": "shopify://pages/om-oss",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "image_with_text_UjTPfG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WGtLyc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Åpningstider",
+            "heading_size": "h1"
+          }
+        },
+        "text_zCXWaa": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Mandag - Fredag: 08 - 16<br/>Tilgjengelig utenom åpningstider ved akutte behov.</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Fbe8K4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakt oss gjerne – vi svarer raskt!",
+            "button_link": "shopify://pages/kontakt",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_WGtLyc", "text_zCXWaa", "button_Fbe8K4"],
+      "name": "Åpningstider",
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "zoom-in",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact_form_bWRnmY": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Har du spørsmål om tilsyn av din båt?",
+        "heading_size": "h2",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_LN9HEL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AzYJhb": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_9zbRnf": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_iPzwg9": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_AzYJhb", "text_9zbRnf", "buttons_iPzwg9"],
+      "name": "Footer",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_NEFKzi",
+    "multicolumn_iiRicN",
+    "image_with_text_UjTPfG",
+    "contact_form_bWRnmY",
+    "image_banner_LN9HEL"
+  ]
+}
