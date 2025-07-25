@@ -6,13 +6,15 @@
     "lint": "npm run lint:css && npm run lint:html",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmllint \"clients/baattilsyn/pages/*.html\"",
-    "dev": "npx serve clients/baattilsyn/pages"
+    "dev": "npx serve clients/baattilsyn/pages",
+    "format": "prettier -w clients/baattilsyn/website/website_v3"
   },
   "devDependencies": {
-    "htmllint-cli": "^0.0.7",
     "htmllint": "^0.7.3",
+    "htmllint-cli": "^0.0.7",
     "jest": "^29.0.0",
     "jsdom": "^22.0.0",
+    "prettier": "^3.6.2",
     "stylelint": "^16.22.0"
   }
 }
