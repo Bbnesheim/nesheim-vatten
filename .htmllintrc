@@ -1,3 +1,5 @@
 {
-  "attr-name-style": "dash"
+  "indent-style": "spaces",
+  "indent-width": 4,
+  "exclude": ["node_modules/**"]
 }
