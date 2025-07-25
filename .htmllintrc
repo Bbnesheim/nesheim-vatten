@@ -1,4 +1,4 @@
 {
-  "indent-style": "spaces",
-  "indent-width": 4
+  "attr-name-style": "dash",
+  "indent-width": 2
 }
