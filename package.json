@@ -8,7 +8,8 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "node src/index.js",
+    "dev": "npx --yes serve clients/baattilsyn/website/baattilsyn.no",
+    "// dev": "Serve static pages from baattilsyn.no",
     "build": "echo \"no build step\"",
     "test": "jest",
     "lint:css": "stylelint \"**/*.css\"",
