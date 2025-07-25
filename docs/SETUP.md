@@ -11,7 +11,6 @@ Installer med:
 curl https://mise.run | sh
 ```
 
-codex/add-.nvmrc-and-update-setup-documentation
 Installer prosjektets avhengigheter:
 ```bash
 npm install
@@ -20,7 +19,6 @@ npm install
 Start utviklingsserveren:
 ```bash
 npm run dev
-=======
 Start et nytt terminalvindu eller følg installerens instruksjoner for å laste inn `mise`.
 
 ## 2. Installer definerte verktøy
