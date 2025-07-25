@@ -5,7 +5,7 @@ Denne guiden forklarer hvordan du setter opp prosjektet lokalt fra bunnen av.
 ## 1. Forutsetninger
 - macOS, Linux eller WSL
 - Git
-- Node.js 20.10.0
+- Node.js 18.20.8
 - pnpm 8.15.4
 - [mise](https://github.com/jdx/mise) for verktøyversjoner
 
@@ -26,25 +26,10 @@ Aktiver også idiomatisk filhåndtering:
 mise settings add idiomatic_version_file_enable_tools node pnpm
 ```
 
-## 4. Klon repoet og installer verktøy
-```bash
-git clone <REPO-URL>
-cd nesheim-vatten
-mise install
-```
-Dette leser `.tool-versions` og installerer riktige Node- og pnpm-versjoner.
-
-## 5. Installer Node-avhengigheter
 ```bash
 pnpm install
 ```
 
-## 6. Start utviklingsserver
-```bash
-pnpm dev
-```
-
-## 7. Kør lint, test og build
 ```bash
 pnpm run lint
 pnpm test
