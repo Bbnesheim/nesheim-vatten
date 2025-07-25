@@ -8,22 +8,32 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "npx --yes http-server docs/website/website-v1",
+    "dev": "node src/index.js",
     "build": "echo \"no build step\"",
-    "start": "npm run dev",
+    "test": "jest",
     "lint:css": "stylelint \"**/*.css\"",
+codex/add-prettier-formatting-to-ci-workflow
     "format": "prettier --write .",
     "format:check": "prettier --check ."
+=======
+    "lint:html": "htmllint 'clients/**/*.html'",
+    "lint": "npm run lint:css && npm run lint:html",
+    "format": "prettier --write '**/*.{js,css,md,html}'"
+main
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "htmllint": "^0.7.3",
     "htmllint-cli": "^0.0.7",
+    "htmllint": "^0.7.3",
     "jest": "^29.0.0",
     "jsdom": "^22.0.0",
+ codex/add-prettier-formatting-to-ci-workflow
     "prettier": "^3.6.2"
+=======
+    "stylelint": "^16.22.0"
+  main
   }
 }
