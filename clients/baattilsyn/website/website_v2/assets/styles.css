@@ -1,0 +1,74 @@
+/* Header overlay and menu styles extracted from Nome Rør theme */
+.header--overlay {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.menu-drawer-container {
+  display: flex;
+}
+
+.list-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-menu--inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+summary.list-menu__item {
+  padding-right: 2.7rem;
+}
+
+.list-menu__item {
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+}
+
+.list-menu__item--link {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 750px) {
+  .list-menu__item--link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.header {
+  padding: 10px 3rem;
+}
+
+.section-header {
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('assets/Hvit.svg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.announcement-bar {
+  background: #002B45;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
