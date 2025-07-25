@@ -12,7 +12,7 @@
     "build": "echo \"no build step\"",
     "test": "jest",
     "lint:css": "stylelint \"**/*.css\"",
-    "lint:html": "htmllint 'clients/**/*.html'",
+    "lint:html": "node tools/run-htmllint.js",
     "lint": "npm run lint:css && npm run lint:html"
   },
   "keywords": [],
