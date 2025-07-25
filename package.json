@@ -1,6 +1,12 @@
 {
   "name": "nesheim-vatten",
   "version": "1.0.0",
+  "description": "*Crafting brand, sales, design and online store solutions with clarity and impact.*",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
   "scripts": {
     "dev": "node src/index.js",
     "build": "echo \"no build step\"",
@@ -9,6 +15,10 @@
     "lint:html": "htmllint \"**/*.html\"",
     "lint": "npm run lint:css && npm run lint:html"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
     "htmllint-cli": "^0.0.7",
     "htmllint": "^0.7.3",
