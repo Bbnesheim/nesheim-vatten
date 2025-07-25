@@ -51,3 +51,4 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 This project is licensed under the [MIT License](LICENSE).
 
 Additional information about automation tools is available in [docs/AGENTS.md](docs/AGENTS.md).
+Release notes can be found in [docs/CHANGELOG.md](docs/CHANGELOG.md).
