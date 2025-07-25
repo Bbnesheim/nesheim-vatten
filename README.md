@@ -20,9 +20,6 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 - `tests/` – automated tests
 - `archive/` – outdated or archived resources
 
-## Documentation
-
-Full project documentation is available in [docs/INDEX.md](docs/INDEX.md).
 
 ## Installation
 
@@ -39,6 +36,10 @@ npm run lint
 npm run format
 npm test
 ```
+To preview the website locally, run:
+```bash
+npm run dev
+```
 
 ## Verktøy og versjonshåndtering
 
@@ -54,10 +55,9 @@ mise settings add idiomatic_version_file_enable_tools node
 
 ## Contributing
 
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 Additional information about automation tools is available in [docs/AGENTS.md](docs/AGENTS.md).
+Release notes can be found in [docs/CHANGELOG.md](docs/CHANGELOG.md).
