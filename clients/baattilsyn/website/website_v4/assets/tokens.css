@@ -5,4 +5,10 @@
   --color-background: #f9fafb;
   --color-accent: #c8102e;
   --font-primary: 'Montserrat', Arial, sans-serif;
+  /* Brand colors */
+  --color-main: #0B1F3A;
+  --color-secondary-light: #F9F9F6;
+  --color-sandish: #EEE6D8;
+  --color-lightblue: #B0D7F4;
+  --color-maritime-yellow: #FFD447;
 }
