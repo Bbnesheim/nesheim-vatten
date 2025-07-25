@@ -1,0 +1,308 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": { "padding_top": 28, "padding_bottom": 28 }
+    },
+    "image_banner_kqWGX6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xYQp7E": {
+          "type": "heading",
+          "settings": {
+            "heading": "Din lokale spesialist på båttilsyn og sikkerhet til sjøs",
+            "heading_size": "h1"
+          }
+        },
+        "text_L8JaLJ": {
+          "type": "text",
+          "settings": {
+            "text": "Vi tilbyr profesjonelt båttilsyn og inspeksjonstjenester i hele Telemark. Våre erfarne inspektører sørger for at båten din er trygg, regelmessig vedlikeholdt og klar for sikker bruk på vannet.",
+            "text_style": "body"
+          }
+        },
+        "buttons_FywKft": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Kontakt oss nå",
+            "button_link_1": "shopify:\/\/pages\/kontakt",
+            "button_style_secondary_1": false,
+            "button_label_2": "Bestill en befaring",
+            "button_link_2": "mailto:post@battilsyn.no",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_xYQp7E", "text_L8JaLJ", "buttons_FywKft"],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_banner_3TT83y": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_FMdjrq": {
+          "type": "heading",
+          "settings": { "heading": "Image banner", "heading_size": "h1" }
+        },
+        "text_kdVeeN": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_tPWr37": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_FMdjrq", "text_kdVeeN", "buttons_tPWr37"],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_with_text_nqtX64": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tBcbyC": {
+          "type": "heading",
+          "settings": { "heading": "Image with text", "heading_size": "h1" }
+        },
+        "text_3cpXgV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_iFqLQA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_tBcbyC", "text_3cpXgV", "button_iFqLQA"],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_JbxPTV": {
+      "type": "multirow",
+      "blocks": {
+        "row_yCmjNw": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_w6XpCa": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_gTmCQn": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": ["row_yCmjNw", "row_w6XpCa", "row_gTmCQn"],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_48Dmmz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6UfKLq": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ryTtkF": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7jVNct": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_6UfKLq", "column_ryTtkF", "column_7jVNct"],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_t6V7FK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XTRpie": {
+          "type": "heading",
+          "settings": { "heading": "Image with text", "heading_size": "h1" }
+        },
+        "text_c8qqmW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_nCrETc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_XTRpie", "text_c8qqmW", "button_nCrETc"],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_qwQ8AW": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "GOOGLE MAPS LOCATION",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_BQzHYH": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_kqWGX6",
+    "image_banner_3TT83y",
+    "image_with_text_nqtX64",
+    "multirow_JbxPTV",
+    "multicolumn_48Dmmz",
+    "image_with_text_t6V7FK",
+    "custom_liquid_qwQ8AW",
+    "contact_form_BQzHYH"
+  ]
+}
