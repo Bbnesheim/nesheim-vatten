@@ -17,9 +17,7 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 - `tests/` – automated tests
 - `archive/` – outdated or archived resources
 
-## Documentation
-Full project documentation is available in [docs/INDEX.md](docs/INDEX.md).
-For a step-by-step local setup guide, see [docs/SETUP.md](docs/SETUP.md).
+
 
 ## Installation
 ```bash
