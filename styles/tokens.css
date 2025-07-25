@@ -1,3 +1,8 @@
+/*
+  Design token values are documented in docs/BRAND_GUIDE.md
+  under the "Design Tokens" section. Keep these variables
+  synchronized with that documentation.
+*/
 :root {
   --color-primary: #2346b6;
   --color-secondary: #323230;
