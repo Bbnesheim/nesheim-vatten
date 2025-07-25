@@ -3658,7 +3658,7 @@ a.button--primary:focus-visible {
   text-align: right;
   font-size: 1.25rem !important; /* Økt skriftstørrelse */
   line-height: 2;
-  color: #d6d6d6;
+  color: var(--color-gray);
   padding-right: 3rem;
   margin-right: 0;
   max-width: 320px;
