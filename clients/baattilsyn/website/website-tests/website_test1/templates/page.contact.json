@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "image_banner_8bWemp": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_tk4J6x": {
+          "type": "heading",
+          "settings": { "heading": "", "heading_size": "h1" }
+        },
+        "text_JFWwBg": {
+          "type": "text",
+          "settings": { "text": "", "text_style": "body" }
+        },
+        "buttons_YpDdQP": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_tk4J6x", "text_JFWwBg", "buttons_YpDdQP"],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": { "padding_top": 36, "padding_bottom": 36 }
+    },
+    "17518207028022da4e": {
+      "type": "apps",
+      "settings": { "include_margins": true }
+    },
+    "image_with_text_pcDHmw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kLFT7n": {
+          "type": "heading",
+          "settings": { "heading": "Åpningstider", "heading_size": "h1" }
+        },
+        "text_r46xgB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Mandag - Fredag: 08 - 16<br\/>Tilgjengelig utenom åpningstider ved akutte behov.<\/strong><\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_KMtEr8": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "shopify:\/\/pages\/kontakt",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_kLFT7n", "text_r46xgB", "button_KMtEr8"],
+      "name": "Åpningstider",
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "zoom-in",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_mqpjY7": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4MLpyD": {
+          "type": "heading",
+          "settings": { "heading": "", "heading_size": "h1" }
+        },
+        "text_MrVHpz": {
+          "type": "text",
+          "settings": { "text": "", "text_style": "body" }
+        },
+        "buttons_qpWjVV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading_4MLpyD", "text_MrVHpz", "buttons_qpWjVV"],
+      "name": "Footer",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "contact_form_aEqLxp": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_8bWemp",
+    "main",
+    "17518207028022da4e",
+    "image_with_text_pcDHmw",
+    "contact_form_aEqLxp",
+    "image_banner_mqpjY7"
+  ]
+}
