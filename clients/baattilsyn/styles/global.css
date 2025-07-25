@@ -1,0 +1,7 @@
+@import './theme.css';
+body{font-family:var(--font-body);margin:0;padding:0;line-height:1.6;background:var(--color-bathvit)}
+header,nav,main,footer{padding:1rem}
+nav a{margin-right:1rem;text-decoration:none;color:var(--color-himmelbla)}
+header img{height:60px}
+.sponsors{border-top:1px solid var(--color-havgra);padding-top:1rem;margin-top:2rem}
+@media(max-width:600px){nav{display:flex;flex-direction:column}nav a{margin:0.5rem 0}}
