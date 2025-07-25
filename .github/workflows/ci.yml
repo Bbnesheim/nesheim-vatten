@@ -14,7 +14,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm install
+      - run: npm install --package-lock=false
+        # AGENTS.md allows merge markers in package-lock.json
       - run: npm run lint
       - run: npm run format:check
 
@@ -25,5 +26,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm install
+      - run: npm install --package-lock=false
+        # AGENTS.md allows merge markers in package-lock.json
       - run: npm test --silent
