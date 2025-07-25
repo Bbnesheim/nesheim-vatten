@@ -1,15 +1,18 @@
 # Nesheim & Vatten Consulting
 
-*Crafting brand, sales, design and online store solutions with clarity and impact.*
+_Crafting brand, sales, design and online store solutions with clarity and impact._
 
 ## About
+
 Nesheim & Vatten delivers strategic consulting and creative services covering:
+
 - **Brand strategy & visual identity**
 - **Sales enablement & funnels**
 - **Graphic design & digital assets**
 - **Website building & e‑commerce setup**
 
 ## Repository Structure
+
 - `clients/` – project files per client
 - `docs/` – brand assets, case studies and marketing material
 - `tools/` – automation scripts
@@ -19,14 +22,18 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 
 
 ## Installation
+
 ```bash
 npm install
 ```
 
 ## Development
+
 Run linters and tests with:
+
 ```bash
 npm run lint
+npm run format
 npm test
 ```
 To preview the website locally, run:
@@ -47,9 +54,9 @@ mise settings add idiomatic_version_file_enable_tools node
 ```
 
 ## Contributing
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines and review our [Code of Conduct](docs/CODE_OF_CONDUCT.md).
 
 ## License
+
 This project is licensed under the [MIT License](LICENSE).
 
 Additional information about automation tools is available in [docs/AGENTS.md](docs/AGENTS.md).
