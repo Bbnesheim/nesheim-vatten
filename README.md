@@ -19,6 +19,7 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 
 ## Documentation
 Full project documentation is available in [docs/INDEX.md](docs/INDEX.md).
+The visual identity is described in the [Brand Guide](docs/BRAND_GUIDE.md).
 
 ## Installation
 ```bash
