@@ -1,33 +1,32 @@
 # baattilsyn.no
 
-Denne mappen inneholder koden til nettsiden **baattilsyn.no**. Strukturen er forenklet slik at alt innhold samles i ett prosjekt.
+Dette prosjektet inneholder alle filer til nettsiden **baattilsyn.no**.
+Versjon 2 av nettstedet ligger i mappen `website/baattilsyn.no/` og består av
+rene HTML-sider. Den tidligere utgaven ligger i `website/baattilsyn-website-v1/`.
 
 ```
 clients/baattilsyn/
-├── assets/        # Bilder, logoer og andre medier
-├── components/    # React-komponenter (foreløpig tom)
-├── pages/         # HTML-sider
-├── styles/        # Globale stilark og temavariabler
-├── docs/          # Denne README og brand guide
-└── index.tsx      # Fremtidig React-innsteg
+├── contracts/
+├── deliverables/
+├── design/
+├── meetings/
+├── strategy/
+└── website/
+    ├── baattilsyn.no/            # gjeldende nettside (website_v2)
+    └── baattilsyn-website-v1/    # tidligere versjon
 ```
 
-## Bygg og start lokalt
+## Lokalt oppsett
 
-Installer avhengigheter og start et enkelt utviklingsmiljø:
+Installer avhengigheter og start en enkel server for forhåndsvisning:
 
 ```bash
 npm install         # første gang
-npm run dev         # starter lokal server av `pages/`-mappen
+npx http-server website/baattilsyn.no
 ```
 
-## Legge til nye sider eller bilder
+## Innhold i `website/baattilsyn.no`
 
-- HTML-sider legges i `pages/` og refererer til ressurser med `../assets` eller `../styles`.
-- Bilder, logoer og lignende lagres i `assets/`.
-- Globale stiler defineres i `styles/` hvor `theme.css` beskriver farger og fonter.
-
-## TODO
-
-- Lage faktiske React-komponenter og bruke `index.tsx` som applikasjonsrot.
-- Fjerne statiske HTML-sider når React-versjonen er klar.
+- `index.html`
+- `tjenester.html`
+- `kontakt-oss.html`
