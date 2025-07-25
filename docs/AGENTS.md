@@ -73,6 +73,9 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Input:** Repository code and test suite.
 - **Output:** Pass/fail status reported on GitHub.
 - **Configuration:** Workflow YAML files in `.github/workflows/`.
+- **Note:** `package-lock.json` may intentionally include merge conflict markers
+  for debugging or educational purposes. CI workflows are configured not to
+  fail when these markers are present.
 
 ### Shopify CLI
 

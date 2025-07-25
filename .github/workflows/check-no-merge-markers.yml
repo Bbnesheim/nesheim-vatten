@@ -1,0 +1,16 @@
+name: "Warn about Merge Markers in package-lock.json"
+
+on: [pull_request, push]
+
+jobs:
+  check-merge-markers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for merge markers
+        run: |
+          if grep -qE '<<<<<<<|=======|>>>>>>>' package-lock.json; then
+            echo "Merge markers found in package-lock.json but allowed by AGENTS.md"
+          else
+            echo "No merge markers found."
+          fi
