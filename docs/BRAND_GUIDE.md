@@ -1,117 +1,110 @@
 # Nesheim & Vatten Brand Guide
 
-## 1. Intro / Purpose
-Dette dokumentet beskriver kjerneelementer i merkevaren **Nesheim & Vatten Consulting**. Informasjonen er basert på eksisterende filer i repoet. Nettstedet `nesheimvatten.no` kunne ikke hentes pga. nettverksbegrensninger.
+## Intro / Purpose
+This guide documents the visual identity of **Nesheim & Vatten Consulting** as implemented on `nesheimvatten.no`. All values are sourced from the repository Shopify theme files under `docs/website/`.
 
-## 2. Logo
-Logoer ligger under `docs/brand-assets/logo/`:
-- **Full Logo** (`Full Logo.svg`)
-- **Square Logo** (`Square Logo.svg`)
+## Logo
+Logos are stored in `docs/brand-assets/logo/`.
 
-**Clear-space:** min. 24&nbsp;px rundt logoen.
+- Use `Full Logo.svg` as the primary logo and `Square Logo.svg` when space is limited.
+- Maintain at least 24&nbsp;px clear space around the logo.
+- Minimum recommended logo height is 40&nbsp;px.
+- Two color versions exist: dark (#303232) and blue (#5f70b1). Use the white version on dark backgrounds.
 
-**Minst størrelser:** 40&nbsp;px høyde anbefales.
+## Color Palette
+The theme defines several color schemes. Core brand colors are extracted from `config/settings_data.json`:
 
-Logoen finnes i mørk (#303232) og blå (#5f70b1) versjon. Bruk hvit logo på mørke bakgrunner.
+| Name       | Hex       | RGB            | Usage                             |
+|------------|-----------|----------------|-----------------------------------|
+| Primary    | `#2346b6` | `35 70 182`    | Buttons and highlights            |
+| Secondary  | `#323230` | `50 50 48`     | Dark backgrounds                  |
+| Accent     | `#5f70b1` | `95 112 177`   | Links and secondary buttons       |
+| Text       | `#303232` | `48 50 50`     | Main text                         |
+| Background | `#ffffff` | `255 255 255`  | Page background                   |
 
-## 3. Fargepalett
+## Typography
+Font information is defined via the theme `type_header_font` and `type_body_font` settings.
 
-| Navn | Hex | RGB | Bruk |
-|------|-----|-----|------|
-| Primær | `#5f70b1` | `95 112 177` | Hovedknapper, lenker |
-| Sekundær | `#2f3132` | `47 49 50` | Header/footer bakgrunn |
-| Tekst | `#303232` | `48 50 50` | Primær tekst |
-| Aksent | `#d62828`* | `214 40 40` | Fremheving |
-| Bakgrunn | `#fdf0d5`* | `253 240 213` | Sidebakgrunn |
+| Element      | Font family                                   | Weight | Example size |
+|--------------|-----------------------------------------------|--------|--------------|
+| Headings     | `Futura`, `Arial`, sans-serif                 | 400    | `h1` 3.3–4.4rem |
+| Body text    | `Ubuntu`, `Arial`, sans-serif                 | 400    | `1.5rem`       |
 
-(*Aksent og bakgrunn hentet fra tidligere utgave.)
+Heading scale is set to 110% and body scale to 100%. Approximate sizes:
 
-## 4. Typografi
-
-| Element | Fontfamilie | Vekter | Line-height |
-|---------|-------------|-------|-------------|
-| Overskrifter | `Inter`, `Arial`, sans-serif | 700 | 1.2 |
-| Brødtekst | `Inter`, `Arial`, sans-serif | 400 | 1.6 |
-
-Størrelseshierarki (px):
 ```
-H1: 32
-H2: 28
-H3: 24
-H4: 20
-H5: 18
-H6: 16
-Body: 16
-Small: 14
+H1: 3.3rem (4.4rem on desktop)
+H2: 2.2rem (2.64rem on desktop)
+H3: 1.87rem (1.98rem on desktop)
+H4: 1.65rem
+H5: 1.32rem (1.43rem on desktop)
+H6: 1rem
+Body: 1.5rem
 ```
 
-## 5. UI-komponenter
-- **Knapp:** bakgrunn `#5f70b1`, tekst hvit, radius 4&nbsp;px.
-- **Hover:** mørkere nyanse (`#4c5a8f`).
-- **Disabled:** gråtonet bakgrunn `#2f3132` med 40&nbsp;% opasitet.
-- **Lenke:** farge `#5f70b1`; hover underline.
-- **Input-felt:** 1&nbsp;px border `#303232`, radius 4&nbsp;px.
-- **Kort:** hvit bakgrunn, skygge `0 2px 4px rgba(0,0,0,0.1)`.
+## UI Components
+Key component styles use CSS custom properties from `theme.liquid`.
 
-### Eksempel (CSS)
+### Button
 ```css
 .button {
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  color: rgb(var(--color-button-text));
+  border-radius: var(--buttons-radius);
+  padding: 0 3rem;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
-.button:hover { background: #4c5a8f; }
-.button:disabled { background: rgba(47,49,50,0.4); }
+.button:hover::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + 1px)
+      rgba(var(--color-button), var(--alpha-button-background));
+}
 ```
 
-## 6. Ikoner og bilder
-- Enkle linjeikoner i samme farger som teksten.
-- Bilder med nøytral tone, god kontrast til tekst.
-
-## 7. Tone-of-voice
-- Profesjonell og konsis.
-- Fokus på klar, handlingsorientert tekst.
-- Unngå sjargong og for mange emojis.
-
-## 8. Design tokens
-
-Tokens ligger i `styles/tokens.css`:
+### Link
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-:root {
-  --color-primary: #5f70b1;
-  --color-secondary: #2f3132;
-  --color-text: #303232;
-  --color-accent: #d62828;
-  --color-background: #fdf0d5;
-  --font-heading: 'Inter', Arial, sans-serif;
-  --font-body: 'Inter', Arial, sans-serif;
+.link {
+  text-decoration: underline;
+  color: rgb(var(--color-link));
 }
 ```
 
-### Eksempel `tailwind.config.js`
-```js
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#5f70b1',
-        secondary: '#2f3132',
-        text: '#303232',
-        accent: '#d62828',
-        background: '#fdf0d5',
-      },
-      fontFamily: {
-        heading: ['Inter', 'Arial', 'sans-serif'],
-        body: ['Inter', 'Arial', 'sans-serif'],
-      }
-    }
-  }
-};
+### Input
+```css
+.field__input {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  border-radius: var(--inputs-radius);
+  box-shadow: 0 0 0 var(--inputs-border-width)
+      rgba(var(--color-foreground), var(--inputs-border-opacity));
+}
 ```
 
-## Åpent / trenger avklaringer
-- Direkte data fra `nesheimvatten.no` kunne ikke hentes (nettverksblokkering).
-- Fargene er derfor basert på tidligere brand guide og logo-SVG.
-- Typografien er antatt `Inter` ettersom den brukes i repoet.
+### Card
+```css
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset)
+      var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
+  background: rgb(var(--color-background));
+}
+```
+
+## Iconography & Images
+Use simple line icons in the same color as body text. Images should have a neutral tone and maintain sufficient contrast.
+
+## Tone-of-Voice
+Communication should be professional and concise with an action-oriented focus. Avoid jargon and excessive emojis.
+
+## Design Tokens
+Tokens defined in `styles/tokens.css`:
+```css
+:root {
+  --color-primary: #2346b6;
+  --color-secondary: #323230;
+  --color-accent: #5f70b1;
+  --color-text: #303232;
+  --color-background: #ffffff;
+  --font-heading: 'Futura', Arial, sans-serif;
+  --font-body: 'Ubuntu', Arial, sans-serif;
+}
+```

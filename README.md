@@ -18,7 +18,6 @@ Nesheim & Vatten delivers strategic consulting and creative services covering:
 - `archive/` – outdated or archived resources
 
 
-
 ## Installation
 ```bash
 npm install
