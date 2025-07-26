@@ -79,7 +79,7 @@
       "block_order": ["heading_cY9WQC", "text_aNPVkf", "button_LzNnex"],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/nome-kommunevapen.webp",
+        "image": "",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -148,6 +148,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rorlegger-reparerer-vask-avlop-1.webp",
             "caption": "TJENESTE: TETTE RØR OG AVLØP 🚿",
+            "heading": "<strong>Hjelp med tette rør og avløp<\/strong>",
             "heading": "<strong>Hjelp med tette rør og avløp i Nome, Bø, Drangedal og Midt-Telemark<\/strong>",
             "text": "",
             "button_label": "",
@@ -159,6 +160,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/vannskade-lekkasje-reparasjon-bad.webp",
             "caption": "TJENESTE: LEKKASJER OG REPARASJONER 🔧",
+            "heading": "<strong>Rask reparasjon av lekkasjer og vannskader<\/strong>",
             "heading": "<strong>Rask reparasjon av lekkasjer og vannskader i Nome, Bø og omegn<\/strong>",
             "text": "",
             "button_label": "Akutt hjelp!",
@@ -215,7 +217,7 @@
             "image": "",
             "caption": "TJENESTE: VARMEANLEGG 🔥",
             "heading": "<strong>Effektive varmeanlegg for komfort og energieffektivitet<\/strong>",
-            "text": "<p>Vi leverer, installerer og vedlikeholder moderne varmeanlegg for privatboliger, hytter og næringsbygg i Nome, Midt-Telemark, Bø og Drangedal. Våre løsninger gir optimal varmefordeling, lavere energikostnader og økt komfort – tilpasset ditt behov og budsjett. Vi tilbyr også serviceavtaler for å sikre driftssikkerhet året rundt.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -226,7 +228,7 @@
             "image": "shopify:\/\/shop_images\/rorlegger-sjekker-vannmaler-ventiler.webp",
             "caption": " Tjeneste: Service og vedlikehold 🔄",
             "heading": "<strong>Serviceavtaler og vedlikehold for lang levetid<\/strong>",
-            "text": "<p>Regelmessig service og vedlikehold av rørsystemer og varmeanlegg gir økt levetid og driftssikkerhet. Vi tilbyr skreddersydde serviceavtaler for både privatboliger, hytter og næringsbygg i Nome, Midt-Telemark, Bø og Drangedal.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -267,6 +269,12 @@
         "row_Hpp9eC": {
           "type": "row",
           "settings": {
+            "image": "",
+            "caption": "TJENESTE: FORTØYNINGSKONTROLL ⚓",
+            "heading": "<strong>Fortøyningskontroll for trygg havn langs kysten<\/strong>",
+            "text": "",
+            "button_label": "Les mer",
+            "button_link": "shopify:\/\/pages\/kontakt"
             "image": "shopify:\/\/shop_images\/rorlegger-installasjon-gulvvarme-nybygg.webp",
             "caption": "TJENESTER: RØRINSPEKSJON 📹",
             "heading": "<strong>Rørinspeksjon i Nome, Bø og Midt-Telemark – unngå vannskader<\/strong>",
@@ -278,6 +286,11 @@
         "row_Hzyi3H": {
           "type": "row",
           "settings": {
+            "image": "",
+            "caption": "TJENESTE: VINTERLAGRING ❄️",
+            "heading": "<strong>Vinterlagring og overvåking av fritidsbåt<\/strong>",
+            "text": "",
+            "button_label": "Book plass",
             "image": "shopify:\/\/shop_images\/katt-drikker-fra-kran-bad.webp",
             "caption": "TJENESTER: GRATIS BEFARING 📝",
             "heading": "<strong>Gratis befaring av rørlegger i Nome, Bø, Midt-Telemark og Drangedal<\/strong>",
@@ -289,6 +302,11 @@
         "row_HicEbX": {
           "type": "row",
           "settings": {
+            "image": "",
+            "caption": "TJENESTE: SKADEFORBYGGENDE INSPEKSJON 🔍",
+            "heading": "<strong>Båtservice og forebyggende inspeksjon<\/strong>",
+            "text": "",
+            "button_label": "Kontakt oss",
             "image": "shopify:\/\/shop_images\/moderne-toalett-veggmontert-bad.webp",
             "caption": "TJENESTER: SANITÆR 🚽",
             "heading": "<strong>Sanitæranlegg og sanitærinstallasjon i Nome, Bø og Midt-Telemark<\/strong>",
@@ -371,7 +389,7 @@
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Lurer du på noe med rør?",
+        "heading": "Lurer du på noe om båttilsyn?",
         "heading_size": "h2",
         "color_scheme": "",
         "padding_top": 36,
