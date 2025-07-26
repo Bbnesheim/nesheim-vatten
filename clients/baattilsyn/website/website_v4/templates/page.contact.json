@@ -5,25 +5,35 @@
       "blocks": {
         "heading_tk4J6x": {
           "type": "heading",
-          "settings": { "heading": "Slik når du oss", "heading_size": "h1" }
+          "settings": {
+            "heading": "Kontakt oss i dag",
+            "heading_size": "h1"
+          }
         },
         "text_JFWwBg": {
           "type": "text",
-          "settings": { "text": "Har du sp00f8rsm00e5l om b00e5tsikkerhet eller 00f8nsker 00e5 bestille b00e5ttilsyn? Ta kontakt i dag.", "text_style": "body" }
+          "settings": {
+            "text": "Har du spørsmål om båttilsyn eller trenger rask hjelp? Send oss en melding eller ring, så svarer vi raskt.",
+            "text_style": "body"
+          }
         },
         "buttons_YpDdQP": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Send en melding",
-            "button_link_1": "shopify://pages/kontakt",
+            "button_label_1": "Ring nå",
+            "button_link_1": "tel:+4790940810",
             "button_style_secondary_1": false,
-            "button_label_2": "tel:+4799999999",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Send e-post",
+            "button_link_2": "mailto:post@baattilsyn.no",
+            "button_style_secondary_2": true
           }
         }
       },
-      "block_order": ["heading_tk4J6x", "text_JFWwBg", "buttons_YpDdQP"],
+      "block_order": [
+        "heading_tk4J6x",
+        "text_JFWwBg",
+        "buttons_YpDdQP"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
@@ -35,43 +45,55 @@
         "color_scheme": "",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
-        "alt": "Telefon som ringer Båttilsyn"
+        "show_text_below": false,
+        "alt": "Telefon som ringer til Båttilsyn"
       }
     },
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": { "padding_top": 36, "padding_bottom": 36 }
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "17518207028022da4e": {
       "type": "apps",
-      "settings": { "include_margins": true }
+      "settings": {
+        "include_margins": true
+      }
     },
     "image_with_text_pcDHmw": {
       "type": "image-with-text",
       "blocks": {
         "heading_kLFT7n": {
           "type": "heading",
-          "settings": { "heading": "Åpningstider", "heading_size": "h1" }
+          "settings": {
+            "heading": "Åpningstider",
+            "heading_size": "h2"
+          }
         },
         "text_r46xgB": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Mandag - Fredag: 08 - 16<br\/>Tilgjengelig utenom åpningstider ved akutte behov.<\/strong><\/p>",
+            "text": "<p><strong>Mandag - Fredag: 08 - 16<br/>Org.nr. 999 999 999 MVA<br/>Vi svarer innen 24 timer.</strong></p>",
             "text_style": "body"
           }
         },
         "button_KMtEr8": {
           "type": "button",
           "settings": {
-            "button_label": "",
-            "button_link": "shopify:\/\/pages\/kontakt",
+            "button_label": "Kontakt oss",
+            "button_link": "shopify://pages/kontakt",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_kLFT7n", "text_r46xgB", "button_KMtEr8"],
+      "block_order": [
+        "heading_kLFT7n",
+        "text_r46xgB",
+        "button_KMtEr8"
+      ],
       "name": "Åpningstider",
       "settings": {
         "height": "small",
@@ -85,20 +107,26 @@
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-5",
         "padding_top": 36,
-        "padding_bottom": 36
-      }
+        "padding_bottom": 36,
         "alt": "Oversikt over åpningstider"
+      }
     },
     "image_banner_mqpjY7": {
       "type": "image-banner",
       "blocks": {
         "heading_4MLpyD": {
           "type": "heading",
-          "settings": { "heading": "", "heading_size": "h1" }
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
         },
         "text_MrVHpz": {
           "type": "text",
-          "settings": { "text": "Du finner oss ved havnen i Telemark. Kom gjerne innom for en prat.", "text_style": "body" }
+          "settings": {
+            "text": "Du finner oss ved havnen i Telemark. Kom gjerne innom for en prat.",
+            "text_style": "body"
+          }
         },
         "buttons_qpWjVV": {
           "type": "buttons",
@@ -106,13 +134,17 @@
             "button_label_1": "Finn oss på kartet",
             "button_link_1": "https://goo.gl/maps/xyz",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Om oss",
+            "button_link_2": "shopify://pages/om-oss",
+            "button_style_secondary_2": true
           }
         }
       },
-      "block_order": ["heading_4MLpyD", "text_MrVHpz", "buttons_qpWjVV"],
+      "block_order": [
+        "heading_4MLpyD",
+        "text_MrVHpz",
+        "buttons_qpWjVV"
+      ],
       "name": "Footer",
       "settings": {
         "image_overlay_opacity": 0,
@@ -124,8 +156,8 @@
         "color_scheme": "",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
+        "show_text_below": false,
         "alt": "Kart over havnen i Telemark"
-        "show_text_below": false
       }
     },
     "contact_form_aEqLxp": {
@@ -133,7 +165,7 @@
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Kontakt oss",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -147,5 +179,7 @@
     "image_with_text_pcDHmw",
     "contact_form_aEqLxp",
     "image_banner_mqpjY7"
-  ]
+  ],
+  "meta_title": "Kontakt Båttilsyn – ring, send e-post eller bestill service",
+  "meta_description": "Ta kontakt for båtoppsyn eller akutt hjelp. Vi svarer raskt på telefon og e-post, og tilbyr service i Norge. Org.nr. 123456789. Kontakt oss for åpningstider."
 }
