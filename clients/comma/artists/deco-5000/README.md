@@ -2,13 +2,16 @@
 
 This folder contains all assets, planning documents and marketing material for **DECO 5000**, an Oslo-based trance act signed to the COMMA. label. Each subfolder holds ready-to-use content for collaborators, promoters and the internal team.
 
+Use the quick links and project structure below to navigate the repository.
+
 ## Quick Links
 - [Brand Guide](BRAND_GUIDE.md)
 - [Electronic Press Kit](portfolio/epk/epk.md)
+- [Press Kit Summary](press-kit-summary.md)
 - [SEO Pack](docs/seo/seo.deco-5000-metadata.md)
 - [Presskit Onepager Template](branding/templates/presskit-onepager-template.md)
 
-## Folder Overview
+## Project Structure
 ```text
 ./branding
 ./branding/logo
