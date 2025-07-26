@@ -100,7 +100,7 @@
 }
 
 .localization-selector option {
-  color: var(--color-primary);
+  color: var(--color-main);
 }
 
 .localization-selector + .disclosure__list-wrapper {

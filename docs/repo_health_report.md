@@ -43,7 +43,7 @@
 - **Infrastruktur:** 80/100 – avhengigheter og scripts er på plass, men Node-versjoner spriker fortsatt.
 - **CI:** 80/100 – workflow kjører lint, format og test, men bruker Node 20.
 - **Lint/Test:** 80/100 – alle nødvendige script finnes og fungerer.
-- **Docs:** 85/100 – dokumentasjonen er oppdatert og konsistent.
+- **Docs:** 85/100 – dokumentasjonen er oppdatert og konsistent. SETUP og ARCHITECTURE beskriver nå SEO-prosessen og hvor sidemaler ligger.
 - **Design tokens:** 90/100 – tokens og dokumentasjon samsvarer.
 
 **Total score:** 83/100
