@@ -1,3 +1,2 @@
-node_modules/**
-**/*.liquid
 clients/**/website/**/templates/*.json
+clients/**/website/**/*.liquid
