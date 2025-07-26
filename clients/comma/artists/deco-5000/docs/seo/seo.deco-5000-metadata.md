@@ -11,6 +11,7 @@
 **OG Description:** Experience the 5K blend of uplifting melodies and modern production. Latest tracks and tour news from COMMA.’s rising star.
 
 **OG Image Alt:** DECO 5000 performing a dynamic trance set with Oslo skyline visuals in the background
+**OG URL:** https://dotcomma.store/artists/deco-5000
 
 **Keywords:**
 - DECO 5000

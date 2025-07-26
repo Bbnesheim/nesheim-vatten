@@ -15,7 +15,9 @@
     "name": "COMMA."
   },
   "image": "https://dotcomma.store/media/deco5000.jpg",
+  "url": "https://dotcomma.store/artists/deco-5000",
   "areaServed": ["NO", "DE", "FR", "BR"],
+  "description": "Oslo trance artist delivering fast, euphoric neotrance under the COMMA. label.",
   "potentialAction": {
     "@type": "ListenAction",
     "target": {

@@ -16,6 +16,8 @@
 
 ## Visual Identity Overview
 See [`branding/`](branding/) for colour palette, typography, logos and ready-to-use templates.
+Key colours mirror the COMMA. brand: deep blue accents with neutral dark backgrounds.
+Headlines use the `Syne` font while body copy is set in `Inter` for clarity.
 
 ## Audience & Market Targets
 Focused expansion into **Germany**, **France** and **South America** during 2025–2026 with club shows and digital campaigns.
