@@ -1,31 +1,25 @@
 # 🛥️ Båttilsyn – Brand Guide
 
-Denne brand guiden sikrer en helhetlig og profesjonell visuell identitet for nettsiden **baattilsyn.no**. Den er rettet mot utviklere og designere som jobber med prosjektet, og inneholder fargekoder, typografi, logobruk og retningslinjer.
+Denne guiden beskriver farger og typografi for nettsiden **baattilsyn.no**.
 
----
+## 🎨 1. Fargepalett
 
-## 🎨 1. Fargepalett (maritimt tema)
-
-| Navn         | Hex-kode | Bruk |
-|--------------|----------|------|
-| Marineblå    | `#002F6C` | Primær bakgrunn, header, CTA-knapper |
-| Himmelblå    | `#6CA0DC` | Sekundære aksenter, hover-effekter |
-| Havgrå       | `#A8B1B8` | Nøytral bakgrunn, sekjsonsbakgrunn |
-| Båt-hvit     | `#F9FAFB` | Primær bakgrunn og tekstboks |
-| Signalrød    | `#C8102E` | Aksenter, advarsler, lenker, CTA |
-
----
+| Navn             | Hex-kode | Bruk |
+|------------------|---------|-------------|
+| Dark Navy        | `#0B1F3A` | Header, footer og andre bakgrunner |
+| Off-White        | `#F9F9F6` | Hovedbakgrunn og innholdsbokser |
+| Sandish          | `#EEE6D8` | Kontrastfelt og kort |
+| Light Blue       | `#B0D7F4` | Lenker, knapper og hover |
+| Maritime Yellow  | `#FFD447` | Fremheving av CTA |
 
 ## ✍️ 2. Typografi
 
-- **Primær font:** `Montserrat`, sans-serif  
-- **Brødtekst fallback:** `Arial`, sans-serif  
-- **Heading fallback:** `Helvetica Neue`, sans-serif  
+- **Primær font:** `Montserrat`, Arial, sans-serif
+- Brukt til både overskrifter og brødtekst
 
-**CSS-import eksempel:**
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
 body {
   font-family: 'Montserrat', Arial, sans-serif;
 }
+```
