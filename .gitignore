@@ -5,3 +5,9 @@ node_modules/
 *.log
 dist/
 build/
+
+# Ignore raw media assets
+*.wav
+*.psd
+assets/raw/
+media/
