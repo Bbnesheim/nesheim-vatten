@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "DECO 5000",
+  "alternateName": "DECO5K",
+  "sameAs": [
+    "https://instagram.com/deco5000",
+    "https://soundcloud.com/deco5000",
+    "https://open.spotify.com/artist/deco5000",
+    "https://youtube.com/@deco5000"
+  ],
+  "genre": "Trance",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "COMMA."
+  },
+  "image": "https://dotcomma.store/media/deco5000.jpg",
+  "areaServed": ["NO", "DE", "FR", "BR"],
+  "potentialAction": {
+    "@type": "ListenAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://open.spotify.com/artist/deco5000"
+    }
+  }
+}
