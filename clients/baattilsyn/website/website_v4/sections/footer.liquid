@@ -305,11 +305,11 @@
         <li>E-post: <a href="mailto:post@baattilsyn.no">post@baattilsyn.no</a></li>
       </ul>
     </div>
-    <div class="footer__block footer__logo-wrapper">
-      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
-        <img src="{{ 'SVG.svg' | asset_url }}" alt="Båttilsyn logo" class="footer-logo" width="400" height="200">
-      </a>
-    </div>
+      <div class="footer__block footer__logo-wrapper">
+        <a href="#top" class="footer-logo">
+          <img src="{{ 'SVG.svg' | asset_url }}" alt="Båttilsyn logo">
+        </a>
+      </div>
   </div>
 </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
