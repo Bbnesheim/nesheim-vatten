@@ -8,27 +8,27 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_kqWGX6": {
+    "image_banner_hero": {
       "type": "image-banner",
       "blocks": {
-        "heading_xYQp7E": {
+        "heading_block": {
           "type": "heading",
           "settings": {
-            "heading": "Vår historie",
+            "heading": "Båttilsyn – trygghet for båten din",
             "heading_size": "h1"
           }
         },
-        "text_L8JaLJ": {
+        "text_block": {
           "type": "text",
           "settings": {
-            "text": "Båttilsyn startet i Telemark og bygger på maritimt håndverk. Vi jobber for optimal båtsikkerhet og regelmessig vedlikehold av båt",
+            "text": "Vi tilbyr profesjonelt tilsyn av båt og båtoppsyn året rundt, enten båten ligger på sjøen eller på land.",
             "text_style": "body"
           }
         },
-        "buttons_FywKft": {
+        "buttons_block": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Bli kunde i dag",
+            "button_label_1": "Kontakt oss",
             "button_link_1": "shopify://pages/kontakt",
             "button_style_secondary_1": false,
             "button_label_2": "Se våre tjenester",
@@ -38,107 +38,60 @@
         }
       },
       "block_order": [
-        "heading_xYQp7E",
-        "text_L8JaLJ",
-        "buttons_FywKft"
+        "heading_block",
+        "text_block",
+        "buttons_block"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-right",
-        "desktop_content_alignment": "right",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-          "alt": "Fagperson fra Båttilsyn inspiserer seilbåt"
-      }
-    },
-    "image_banner_3TT83y": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_FMdjrq": {
-          "type": "heading",
-          "settings": {
-            "heading": "Hva vi tilbyr",
-            "heading_size": "h1"
-          }
-        },
-        "text_kdVeeN": {
-          "type": "text",
-          "settings": {
-            "text": "Fra regelmessig båttilsyn til komplett vedlikehold av båt. Våre tjenester gir trygghet hele året.",
-            "text_style": "body"
-          }
-        },
-        "buttons_tPWr37": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Se våre tjenester",
-            "button_link_1": "shopify://pages/tjenester",
-            "button_style_secondary_1": false,
-            "button_label_2": "Få tilbud",
-            "button_link_2": "mailto:post@battilsyn.no",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_FMdjrq",
-        "text_kdVeeN",
-        "buttons_tPWr37"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
+        "image": "",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
         "color_scheme": "",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-          "alt": "Sjøklar båt etter grundig vedlikehold"
-        "show_text_below": true
+        "show_text_below": true,
+        "alt": "Båter i norsk havn"
       }
     },
-    "image_with_text_nqtX64": {
+    "image_with_text_services": {
       "type": "image-with-text",
       "blocks": {
-        "heading_tBcbyC": {
+        "heading_services": {
           "type": "heading",
           "settings": {
-            "heading": "Hvorfor velge oss?",
-            "heading_size": "h1"
+            "heading": "Tjenester",
+            "heading_size": "h2"
           }
         },
-        "text_3cpXgV": {
+        "text_services": {
           "type": "text",
           "settings": {
-            "text": "<p>Vi kombinerer maritimt håndverk med ny teknologi for best mulig båtsikkerhet.</p>",
+            "text": "Fra enkel båtsjekk til full båtservice. Vi tilbyr grunnpakke, vinterpakke og akutt hjelp når du trenger det.",
             "text_style": "body"
           }
         },
-        "button_iFqLQA": {
+        "button_services": {
           "type": "button",
           "settings": {
-            "button_label": "Kontakt vårt team",
+            "button_label": "Les mer",
             "button_link": "shopify://pages/tjenester",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_tBcbyC",
-        "text_3cpXgV",
-        "button_iFqLQA"
+        "heading_services",
+        "text_services",
+        "button_services"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -146,156 +99,39 @@
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "alt": "Mann kontrollerer fortøyning"
       }
     },
-    "multirow_JbxPTV": {
-      "type": "multirow",
-      "blocks": {
-        "row_yCmjNw": {
-          "type": "row",
-          "settings": {
-            "caption": "",
-            "heading": "Lokal kunnskap",
-            "text": "<p>Vi kjenner forholdene i Telemark og tilpasser tilsynet etter din havn.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_w6XpCa": {
-          "type": "row",
-          "settings": {
-            "caption": "",
-            "heading": "Personlig oppfølging",
-            "text": "<p>Du får en fast kontaktperson som kjenner din båt.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_gTmCQn": {
-          "type": "row",
-          "settings": {
-            "caption": "",
-            "heading": "Sikkerhet",
-            "text": "<p>Vi følger nøye opp alle punkter slik at du kan føle deg trygg på sjøen.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_yCmjNw",
-        "row_w6XpCa",
-        "row_gTmCQn"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_48Dmmz": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_6UfKLq": {
-          "type": "column",
-          "settings": {
-            "title": "Enkel bestilling",
-            "text": "<p>Kontakt oss på nett eller telefon for å avtale tilsyn.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_ryTtkF": {
-          "type": "column",
-          "settings": {
-            "title": "Faste rapporter",
-            "text": "<p>Du mottar tydelige rapporter etter hver inspeksjon.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_7jVNct": {
-          "type": "column",
-          "settings": {
-            "title": "Tilpassede avtaler",
-            "text": "<p>Vi skreddersyr tjenestene etter dine behov.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_6UfKLq",
-        "column_ryTtkF",
-        "column_7jVNct"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_t6V7FK": {
+    "image_with_text_grunnpakke": {
       "type": "image-with-text",
       "blocks": {
-        "heading_XTRpie": {
+        "heading_grunnpakke": {
           "type": "heading",
           "settings": {
-            "heading": "Bli kjent med teamet",
-            "heading_size": "h1"
+            "heading": "Grunnpakke",
+            "heading_size": "h2"
           }
         },
-        "text_c8qqmW": {
+        "text_grunnpakke": {
           "type": "text",
           "settings": {
-            "text": "<p>Møt våre dyktige fagfolk som hjelper deg med båttilsyn og vedlikehold.</p>",
+            "text": "Regelmessig ettersyn av båt med kontroll av fortøyninger, presenning, lensing og rapport etter hver runde.",
             "text_style": "body"
-          }
-        },
-        "button_nCrETc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Kontakt oss",
-            "button_link": "shopify://pages/kontakt",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_XTRpie",
-        "text_c8qqmW",
-        "button_nCrETc"
+        "heading_grunnpakke",
+        "text_grunnpakke"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -303,44 +139,156 @@
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "alt": "Fritidsbåt ved brygge"
       }
     },
-    "custom_liquid_qwQ8AW": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
+    "image_with_text_vinterpakke": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_vinterpakke": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vinterpakke",
+            "heading_size": "h2"
+          }
+        },
+        "text_vinterpakke": {
+          "type": "text",
+          "settings": {
+            "text": "Tilsyn av båt under vinterlagring på land med kontroll av presenning, batteri og tildekking.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_vinterpakke",
+        "text_vinterpakke"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "custom_liquid": "GOOGLE MAPS LOCATION",
+        "image": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "alt": "Båt under vinterlagring"
       }
     },
-    "contact_form_BQzHYH": {
+    "image_with_text_dekningsomrade": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dekning": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dekningsområde",
+            "heading_size": "h2"
+          }
+        },
+        "text_dekning": {
+          "type": "text",
+          "settings": {
+            "text": "Vi tilbyr båttilsyn fra Oslofjorden til Nord-Norge og betjener kystbyer som Bergen, Stavanger, Kristiansand og Trondheim.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dekning",
+        "text_dekning"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "alt": "Kart over norske kystbyer"
+      }
+    },
+    "image_with_text_hvorfor": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hvorfor": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hvorfor velge oss",
+            "heading_size": "h2"
+          }
+        },
+        "text_hvorfor": {
+          "type": "text",
+          "settings": {
+            "text": "Personlig oppfølging, lokal kunnskap og raske tilbakemeldinger gir deg full kontroll og trygghet.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hvorfor",
+        "text_hvorfor"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "alt": "Servicemann hjelper båteier"
+      }
+    },
+    "contact_form_cta": {
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Kontakt oss",
-        "heading_size": "h1",
+        "heading": "Bestill båttilsyn i dag",
+        "heading_size": "h2",
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
   "order": [
     "main",
-    "image_banner_kqWGX6",
-    "image_banner_3TT83y",
-    "image_with_text_nqtX64",
-    "multirow_JbxPTV",
-    "multicolumn_48Dmmz",
-    "image_with_text_t6V7FK",
-    "custom_liquid_qwQ8AW",
-    "contact_form_BQzHYH"
-  ]
+    "image_banner_hero",
+    "image_with_text_services",
+    "image_with_text_grunnpakke",
+    "image_with_text_vinterpakke",
+    "image_with_text_dekningsomrade",
+    "image_with_text_hvorfor",
+    "contact_form_cta"
+  ],
+  "meta_title": "Om Båttilsyn – din partner for ettersyn av fritidsbåter",
+  "meta_description": "Vi tilbyr profesjonelt båtoppsyn og ettersyn av båt langs hele kysten. Les om våre grunn- og vinterpakker, og hvorfor båtfolk velger oss. Kontakt oss i dag."
 }
