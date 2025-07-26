@@ -11,14 +11,14 @@
         "heading_rRgaDV": {
           "type": "heading",
           "settings": {
-            "heading": "Nome Rør AS – din lokale rørleggermester i Nome, Bø, Midt-Telemark og Drangedal",
+            "heading": "",
             "heading_size": "h2"
           }
         },
         "text_idteEx": {
           "type": "text",
           "settings": {
-            "text": "Nome Rør AS tilbyr trygghet og kvalitet i alle typer rørleggeroppdrag. Rask responstid, gratis befaring og personlig oppfølging for privatpersoner og bedrifter i Telemark.",
+            "text": "",
             "text_style": "subtitle"
           }
         },
@@ -37,7 +37,7 @@
       "block_order": ["heading_rRgaDV", "text_idteEx", "buttons_8Kqy3e"],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/nome-ror-as-banner.webp",
+          "image": "",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "ambient",
@@ -63,7 +63,7 @@
         "text_aNPVkf": {
           "type": "text",
           "settings": {
-            "text": "<p>Nome Rør AS leverer komplette rørleggertjenester til boliger, hytter, borettslag og næringsbygg. Rørleggermester Kjetil Høidalen har jobbet i faget siden 2005 og etablerte bedriften for å gi kunder i Nome, Bø, Midt-Telemark og Drangedal rask hjelp og høy faglig kvalitet til konkurransedyktige priser. Våre verdier er tilgjengelighet, pålitelighet og personlig service – helt uten unødvendig byråkrati.<\/p>",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -107,7 +107,7 @@
         "text_P47bhy": {
           "type": "text",
           "settings": {
-            "text": "Hos Nome Rør AS møter du direkte rørleggermesteren selv – <strong>Kjetil Høidalen<\/strong>. Kjetil etablerte Nome Rør AS i 2023, med <strong>18 års erfaring som rørleggermester<\/strong> er du sikret høyeste kvalitet. Velg en rørlegger hvor du slipper lange ventetider, og får i stedet <strong>rask respons, personlig oppfølging og løsninger som er tilpasset dine behov<\/strong>. Fra bad og kjøkken til vannpumper og hytter, for både private og bedrifter i<strong> Nome, Bø, Midt-Telemark og Drangedal<\/strong>. Akutt behov eller ønske om jevnlig vedlikehold? Ta kontakt! Vi samarbeider med Rørlegger på hjul, Viking Bad og Høiax for å sikre deg markedets beste produkter.",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -149,7 +149,7 @@
             "image": "shopify:\/\/shop_images\/rorlegger-reparerer-vask-avlop-1.webp",
             "caption": "TJENESTE: TETTE RØR OG AVLØP 🚿",
             "heading": "<strong>Hjelp med tette rør og avløp i Nome, Bø, Drangedal og Midt-Telemark<\/strong>",
-            "text": "<p>Har du problemer med tette rør, tett sluk eller dårlig avløp hjemme, på hytta eller i næringsbygg? Nome Rør AS tilbyr effektiv åpning, rensing og vedlikehold av avløpssystemer i Nome, Bø, Midt-Telemark og Drangedal. Vi forebygger vannskader og sikrer trygg drift av rørene dine.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -160,7 +160,7 @@
             "image": "shopify:\/\/shop_images\/vannskade-lekkasje-reparasjon-bad.webp",
             "caption": "TJENESTE: LEKKASJER OG REPARASJONER 🔧",
             "heading": "<strong>Rask reparasjon av lekkasjer og vannskader i Nome, Bø og omegn<\/strong>",
-            "text": "<p>Har du vannlekkasje på kjøkkenet, dryppende kran eller lekkasje fra toalettet? Nome Rør AS rykker raskt ut og reparerer lekkasjer og vannskader på rør, kraner og sanitærutstyr. Vi sikrer deg en skadefri hverdag - enten du trenger hjelp hjemme, på hytta eller i næringslokaler.<\/p>",
+            "text": "",
             "button_label": "Akutt hjelp!",
             "button_link": "shopify:\/\/pages\/kontakt"
           }
@@ -171,7 +171,7 @@
             "image": "shopify:\/\/shop_images\/moderne-bad-interior-badekar-fliser.webp",
             "caption": "Tjeneste: Baderoms-rehabilitering og oppussing 🛁 ",
             "heading": "<strong>Totalrenovering av bad – fra befaring til ferdig bad<\/strong>",
-            "text": "<p>Drømmer du om et nytt og moderne bad? Vi hjelper deg med hele prosessen – fra gratis befaring og planlegging til ferdigstillelse. Vi tar oss av design, søknadsprosesser og prosjektledelse. Nome Rør AS leverer forskriftsmessig baderomsoppussing i Telemark.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -204,7 +204,7 @@
             "image": "shopify:\/\/shop_images\/rorlegger-monterer-varme-ror-nybygg.webp",
             "caption": "Tjeneste: Nyinstallasjon og modernisering 🏗️ ",
             "heading": "<strong>Effektive rørinstallasjoner i nybygg, tilbygg og hytter<\/strong>",
-            "text": "<p>Vi utfører komplett rørleggerarbeid for nybygg, tilbygg, hytter og næringsbygg. Nome Rør AS leverer energieffektive løsninger som møter dagens krav til funksjonalitet og komfort – tilpasset både bolig og bedrift.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -212,7 +212,7 @@
         "row_fG8Vib": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nome-ror-vannpumpeanlegg-teknisk-rom.webp",
+            "image": "",
             "caption": "TJENESTE: VARMEANLEGG 🔥",
             "heading": "<strong>Effektive varmeanlegg for komfort og energieffektivitet<\/strong>",
             "text": "<p>Vi leverer, installerer og vedlikeholder moderne varmeanlegg for privatboliger, hytter og næringsbygg i Nome, Midt-Telemark, Bø og Drangedal. Våre løsninger gir optimal varmefordeling, lavere energikostnader og økt komfort – tilpasset ditt behov og budsjett. Vi tilbyr også serviceavtaler for å sikre driftssikkerhet året rundt.<\/p>",
@@ -237,7 +237,7 @@
             "image": "shopify:\/\/shop_images\/rorlegger-strammer-dusjbatteri-narbild.webp",
             "caption": " Tjeneste: Akutthjelp og rørleggervakt 🚨",
             "heading": "<strong>Rørleggervakt og akutt hjelp – når du trenger det<\/strong>",
-            "text": "<p>Har du akutt vannlekkasje eller andre rørproblemer? Nome Rør AS tilbyr rørleggervakt og rask utrykning i hele regionen. Vi er tilgjengelige for akutt hjelp i Nome, Bø, Midt-Telemark og Drangedal – når du trenger det som mest.<\/p>",
+            "text": "",
             "button_label": "Akutt hjelp!",
             "button_link": "shopify:\/\/pages\/kontakt"
           }
@@ -270,7 +270,7 @@
             "image": "shopify:\/\/shop_images\/rorlegger-installasjon-gulvvarme-nybygg.webp",
             "caption": "TJENESTER: RØRINSPEKSJON 📹",
             "heading": "<strong>Rørinspeksjon i Nome, Bø og Midt-Telemark – unngå vannskader<\/strong>",
-            "text": "<p>Få full oversikt over rørene dine – uten unødvendig graving eller kostbar oppussing. Nome Rør AS tilbyr avansert rørinspeksjon med kamera i Nome, Bø og Midt-Telemark. Vi avdekker tette rør, lekkasjer og potensielle problemer før de blir kostbare skader. Perfekt ved boligkjøp, oppussing eller gjentatte problemer. Spar tid, penger og bekymringer.<\/p>",
+            "text": "",
             "button_label": "",
             "button_link": ""
           }
@@ -281,7 +281,7 @@
             "image": "shopify:\/\/shop_images\/katt-drikker-fra-kran-bad.webp",
             "caption": "TJENESTER: GRATIS BEFARING 📝",
             "heading": "<strong>Gratis befaring av rørlegger i Nome, Bø, Midt-Telemark og Drangedal<\/strong>",
-            "text": "<p>Skal du pusse opp, bygge nytt eller har problemer med rørene? Nome Rør AS tilbyr gratis og uforpliktende befaring i Nome, Bø, Midt-Telemark og Drangedal. En erfaren fagperson kartlegger behovet, vurderer tilstanden på rørene dine, og gir konkrete anbefalinger og pristilbud tilpasset ditt prosjekt.<\/p>",
+            "text": "",
             "button_label": "Book befaring",
             "button_link": "shopify:\/\/pages\/kontakt"
           }
@@ -292,7 +292,7 @@
             "image": "shopify:\/\/shop_images\/moderne-toalett-veggmontert-bad.webp",
             "caption": "TJENESTER: SANITÆR 🚽",
             "heading": "<strong>Sanitæranlegg og sanitærinstallasjon i Nome, Bø og Midt-Telemark<\/strong>",
-            "text": "<p>Nome Rør AS gir deg trygt vann, sikkert avløp og moderne sanitærløsninger. Vi hjelper deg med alt fra montering av kraner, toaletter og varmtvannsberedere, til komplette sanitæranlegg i nybygg og ved rehabilitering. Vi benytter kvalitetsprodukter som sikrer god funksjon, god helse og ivaretar miljøet.<\/p>",
+            "text": "",
             "button_label": "Kontakt oss om sanitær",
             "button_link": "shopify:\/\/pages\/kontakt"
           }
@@ -404,7 +404,7 @@
       "block_order": ["heading_3M6QRz", "text_j6DdMG", "buttons_nXHNbE"],
       "name": "Footer",
       "settings": {
-        "image": "shopify:\/\/shop_images\/nome-ror-as-logo-hq.webp",
+        "image": "",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
