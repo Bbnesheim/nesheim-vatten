@@ -4,15 +4,10 @@
   synchronized with that documentation.
 */
 :root {
-  --color-primary: #2346b6;
-  --color-secondary: #323230;
-  --color-accent: #5f70b1;
-  --color-text: #303232;
-  --color-background: #ffffff;
   --font-heading: 'Futura', Arial, sans-serif;
   --font-body: 'Ubuntu', Arial, sans-serif;
   --color-main: #0B1F3A;
-  --color-secondary-light: #F9F9F6;
+  --color-secondary: #F9F9F6;
   --color-sandish: #EEE6D8;
   --color-lightblue: #B0D7F4;
   --color-maritime-yellow: #FFD447;
