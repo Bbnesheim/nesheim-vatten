@@ -47,6 +47,7 @@
         "mobile_content_alignment": "center",
         "show_text_below": false,
         "alt": "Telefon som ringer til Båttilsyn"
+        "alt": "Telefon som ringer Båttilsyn"
       }
     },
     "main": {
