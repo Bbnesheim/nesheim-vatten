@@ -5,19 +5,19 @@
       "blocks": {
         "heading_tk4J6x": {
           "type": "heading",
-          "settings": { "heading": "", "heading_size": "h1" }
+          "settings": { "heading": "Slik når du oss", "heading_size": "h1" }
         },
         "text_JFWwBg": {
           "type": "text",
-          "settings": { "text": "", "text_style": "body" }
+          "settings": { "text": "Har du sp00f8rsm00e5l om b00e5tsikkerhet eller 00f8nsker 00e5 bestille b00e5ttilsyn? Ta kontakt i dag.", "text_style": "body" }
         },
         "buttons_YpDdQP": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
+            "button_label_1": "Send en melding",
+            "button_link_1": "shopify://pages/kontakt",
             "button_style_secondary_1": false,
-            "button_label_2": "",
+            "button_label_2": "tel:+4799999999",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -36,6 +36,7 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
+        "alt": "Telefon som ringer Båttilsyn"
       }
     },
     "main": {
@@ -86,6 +87,7 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+        "alt": "Oversikt over åpningstider"
     },
     "image_banner_mqpjY7": {
       "type": "image-banner",
@@ -96,13 +98,13 @@
         },
         "text_MrVHpz": {
           "type": "text",
-          "settings": { "text": "", "text_style": "body" }
+          "settings": { "text": "Du finner oss ved havnen i Telemark. Kom gjerne innom for en prat.", "text_style": "body" }
         },
         "buttons_qpWjVV": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
+            "button_label_1": "Finn oss på kartet",
+            "button_link_1": "https://goo.gl/maps/xyz",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -122,6 +124,7 @@
         "color_scheme": "",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
+        "alt": "Kart over havnen i Telemark"
         "show_text_below": false
       }
     },
@@ -129,7 +132,7 @@
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
       "settings": {
-        "heading": "Contact form",
+        "heading": "Kontakt oss",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,

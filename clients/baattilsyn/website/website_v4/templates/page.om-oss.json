@@ -14,25 +14,25 @@
         "heading_xYQp7E": {
           "type": "heading",
           "settings": {
-            "heading": "Om Båttilsyn",
+            "heading": "Vår historie",
             "heading_size": "h1"
           }
         },
         "text_L8JaLJ": {
           "type": "text",
           "settings": {
-            "text": "Din partner for trygghet og vedlikehold på sjøen",
+            "text": "Båttilsyn startet i Telemark og bygger på maritimt håndverk. Vi jobber for optimal båtsikkerhet og regelmessig vedlikehold av båt",
             "text_style": "body"
           }
         },
         "buttons_FywKft": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Kontakt oss nå",
+            "button_label_1": "Bli kunde i dag",
             "button_link_1": "shopify://pages/kontakt",
             "button_style_secondary_1": false,
-            "button_label_2": "Bestill en befaring",
-            "button_link_2": "mailto:post@battilsyn.no",
+            "button_label_2": "Se våre tjenester",
+            "button_link_2": "shopify://pages/tjenester",
             "button_style_secondary_2": false
           }
         }
@@ -54,6 +54,7 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+          "alt": "Fagperson fra Båttilsyn inspiserer seilbåt"
       }
     },
     "image_banner_3TT83y": {
@@ -62,14 +63,14 @@
         "heading_FMdjrq": {
           "type": "heading",
           "settings": {
-            "heading": "Tjenester som gir deg ro til sjøs",
+            "heading": "Hva vi tilbyr",
             "heading_size": "h1"
           }
         },
         "text_kdVeeN": {
           "type": "text",
           "settings": {
-            "text": "Vi tilpasser inspeksjon og vedlikehold etter dine behov.",
+            "text": "Fra regelmessig båttilsyn til komplett vedlikehold av båt. Våre tjenester gir trygghet hele året.",
             "text_style": "body"
           }
         },
@@ -101,6 +102,7 @@
         "color_scheme": "",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
+          "alt": "Sjøklar båt etter grundig vedlikehold"
         "show_text_below": true
       }
     },
@@ -117,14 +119,14 @@
         "text_3cpXgV": {
           "type": "text",
           "settings": {
-            "text": "<p>Vi kombinerer maritim erfaring med moderne teknologi for å gi deg presise tilstandsrapporter.</p>",
+            "text": "<p>Vi kombinerer maritimt håndverk med ny teknologi for best mulig båtsikkerhet.</p>",
             "text_style": "body"
           }
         },
         "button_iFqLQA": {
           "type": "button",
           "settings": {
-            "button_label": "Les mer om tjenestene",
+            "button_label": "Kontakt vårt team",
             "button_link": "shopify://pages/tjenester",
             "button_style_secondary": false
           }
@@ -158,8 +160,8 @@
           "type": "row",
           "settings": {
             "caption": "",
-            "heading": "Erfaring",
-            "text": "<p>Våre inspektører har over ti års erfaring fra maritim bransje.</p>",
+            "heading": "Lokal kunnskap",
+            "text": "<p>Vi kjenner forholdene i Telemark og tilpasser tilsynet etter din havn.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -267,14 +269,14 @@
         "heading_XTRpie": {
           "type": "heading",
           "settings": {
-            "heading": "Alltid klar for neste tur",
+            "heading": "Bli kjent med teamet",
             "heading_size": "h1"
           }
         },
         "text_c8qqmW": {
           "type": "text",
           "settings": {
-            "text": "<p>Med regelmessig oppfølging holder vi båten din i topp stand gjennom hele sesongen.</p>",
+            "text": "<p>Møt våre dyktige fagfolk som hjelper deg med båttilsyn og vedlikehold.</p>",
             "text_style": "body"
           }
         },
