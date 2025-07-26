@@ -5,21 +5,24 @@
       "blocks": {
         "heading_tk4J6x": {
           "type": "heading",
-          "settings": { "heading": "Slik når du oss", "heading_size": "h1" }
+          "settings": { "heading": "Kontakt oss i dag", "heading_size": "h1" }
         },
         "text_JFWwBg": {
           "type": "text",
-          "settings": { "text": "Har du sp00f8rsm00e5l om b00e5tsikkerhet eller 00f8nsker 00e5 bestille b00e5ttilsyn? Ta kontakt i dag.", "text_style": "body" }
+          "settings": {
+            "text": "Har du sp\u00F8rsm\u00E5l om b\u00E5ttilsyn eller trenger rask hjelp? Send oss en melding eller ring, s\u00E5 svarer vi raskt.",
+            "text_style": "body"
+          }
         },
         "buttons_YpDdQP": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Send en melding",
-            "button_link_1": "shopify://pages/kontakt",
+            "button_label_1": "Ring n\u00E5",
+            "button_link_1": "tel:+4790940810",
             "button_style_secondary_1": false,
-            "button_label_2": "tel:+4799999999",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Send e-post",
+            "button_link_2": "mailto:post@baattilsyn.no",
+            "button_style_secondary_2": true
           }
         }
       },
@@ -35,8 +38,8 @@
         "color_scheme": "",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
-        "alt": "Telefon som ringer Båttilsyn"
+        "show_text_below": false,
+        "alt": "Telefon som ringer B\u00E5ttilsyn"
       }
     },
     "main": {
@@ -53,26 +56,26 @@
       "blocks": {
         "heading_kLFT7n": {
           "type": "heading",
-          "settings": { "heading": "Åpningstider", "heading_size": "h1" }
+          "settings": { "heading": "\u00C5pningstider", "heading_size": "h2" }
         },
         "text_r46xgB": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Mandag - Fredag: 08 - 16<br\/>Tilgjengelig utenom åpningstider ved akutte behov.<\/strong><\/p>",
+            "text": "<p><strong>Mandag - Fredag: 08 - 16<br/>Org.nr. 999 999 999 MVA<br/>Vi svarer innen 24 timer.<\/strong><\/p>",
             "text_style": "body"
           }
         },
         "button_KMtEr8": {
           "type": "button",
           "settings": {
-            "button_label": "",
-            "button_link": "shopify:\/\/pages\/kontakt",
+            "button_label": "Kontakt oss",
+            "button_link": "shopify://pages/kontakt",
             "button_style_secondary": false
           }
         }
       },
       "block_order": ["heading_kLFT7n", "text_r46xgB", "button_KMtEr8"],
-      "name": "Åpningstider",
+      "name": "\u00C5pningstider",
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -85,9 +88,9 @@
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-5",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "alt": "Oversikt over \u00E5pningstider"
       }
-        "alt": "Oversikt over åpningstider"
     },
     "image_banner_mqpjY7": {
       "type": "image-banner",
@@ -103,7 +106,7 @@
         "buttons_qpWjVV": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Finn oss på kartet",
+            "button_label_1": "Finn oss p\u00E5 kartet",
             "button_link_1": "https://goo.gl/maps/xyz",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -124,8 +127,8 @@
         "color_scheme": "",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
+        "show_text_below": false,
         "alt": "Kart over havnen i Telemark"
-        "show_text_below": false
       }
     },
     "contact_form_aEqLxp": {
@@ -133,7 +136,7 @@
       "name": "t:sections.contact-form.presets.name",
       "settings": {
         "heading": "Kontakt oss",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
