@@ -1,0 +1,1 @@
+DECO 5000 is an Oslo-born producer delivering fast, emotionally charged trance. Signed to COMMA., he has become a key figure in Norway’s neotrance wave, known for immersive live shows and crisp, uplifting releases.

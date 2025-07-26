@@ -1,17 +1,46 @@
-# DECO 5000
+# DECO 5000 Repository
 
-Project structure for the trance artist **DECO 5000** signed to the COMMA. label.
-This folder is organised so collaborators can easily plug in new material and
-expand the brand.
+This folder contains all assets, planning documents and marketing material for **DECO 5000**, an Oslo-based trance act signed to the COMMA. label. Each subfolder holds ready-to-use content for collaborators, promoters and the internal team.
 
-## Folders
-- `docs/` – background material, research, and label notes
-- `branding/` – logos, typography, colour schemes, templates
-- `portfolio/` – track list, showreel, live set captures, media kit
-- `releases/` – yearly release folders such as `2025/decosystema`
-- `social/` – post templates, captions, platform-ready exports
-- `press/` – press coverage, interviews, third-party mentions
-- `web/` – content for dotcomma.store: bio, metadata, links
-- `gig-history/` – flyers, recap notes, performance history
-- `planning/` – campaign planning, roadmap, goals
-- `assets/` – shared assets like images, PSDs, videos, audio previews
+## Quick Links
+- [Brand Guide](BRAND_GUIDE.md)
+- [Electronic Press Kit](portfolio/epk/epk.md)
+- [SEO Pack](docs/seo/seo.deco-5000-metadata.md)
+- [Presskit Onepager Template](branding/templates/presskit-onepager-template.md)
+
+## Folder Overview
+```text
+./branding
+./branding/logo
+./branding/templates
+./portfolio
+./portfolio/epk
+./portfolio/audio
+./portfolio/video
+./assets
+./assets/artwork
+./assets/audio-snippets
+./assets/images
+./social
+./social/captions
+./social/calendar
+./tasks
+./docs
+./docs/seo
+./docs/legal
+./releases
+./releases/2020
+./releases/2021
+./releases/2022
+./releases/2023
+./releases/2024
+./releases/2025
+./gig-history
+./planning
+```
+
+## Contribution Rules
+- Use **kebab-case** for all file and folder names.
+- Keep writing concise and in Markdown format.
+- No references or crossovers with Marensius or @hovlandmusic_; DECO 5000 is a distinct project.
+- Submit changes via pull request following the project’s git workflow.

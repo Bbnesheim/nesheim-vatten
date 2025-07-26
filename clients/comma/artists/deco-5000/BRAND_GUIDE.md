@@ -1,10 +1,24 @@
-# Brand Guide
+# Brand Guide – DECO 5000
 
-## Visual Identity
-- _Placeholder for logo usage, colour palette and typography_
+## Brand Pillars
+1. **Emotional Intensity** – music that channels deep feelings through soaring melodies.
+2. **Forward-Thinking Production** – blending classic trance elements with modern sound design.
+3. **Immersive Live Experience** – the "5K experience" combines visuals and high energy sets.
 
 ## Tone of Voice
-- _Placeholder for messaging and copy guidelines_
+- **Do:** keep language energetic, optimistic and concise. Emphasise movement and emotion.
+- **Don't:** use slang or references tied to other aliases.
 
-## Usage Rules
-- _Placeholder for how to apply branding across media_
+## Taglines & Positioning
+- "Fast, euphoric, emotionally intense trance."
+- "Oslo’s gateway to the neotrance movement."
+- "COMMA.’s forward-facing trance powerhouse."
+
+## Visual Identity Overview
+See [`branding/`](branding/) for colour palette, typography, logos and ready-to-use templates.
+
+## Audience & Market Targets
+Focused expansion into **Germany**, **France** and **South America** during 2025–2026 with club shows and digital campaigns.
+
+## Separation Statement
+DECO 5000 is managed exclusively under COMMA. with no overlap with Herman Marensius Gjersøe’s other projects (Marensius or @hovlandmusic_).
