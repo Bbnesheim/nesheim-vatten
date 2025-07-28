@@ -1,0 +1,30 @@
+release_id: 3626535
+catalog_number: COMMA.001
+title: Iris EP
+label: COMMA.records
+upc: "7300343566830"
+release_date: 2025-02-12
+artists:
+  - Hovland
+  - Marensius
+tracks:
+  - title: Transit
+    version: Original
+    isrc: SE5BU2544210
+    file: "Hovland, Marensius - Transit (Master).wav"
+  - title: Ekeberg
+    version: Original
+    isrc: SE5BU2544211
+    file: "Hovland, Marensius - Ekeberg (Original Mix).wav"
+  - title: Iris
+    version: Original
+    isrc: SE5BU2544212
+    file: "Hovland, Marensius - Iris (Original Mix).wav"
+  - title: Transit
+    version: Radio Edit
+    isrc: SE5BU2544213
+    file: "Hovland, Marensius - Transit (Edit) (Master).wav"
+  - title: Iris
+    version: Radio Edit
+    isrc: SE5BU2544214
+    file: "Hovland, Marensius - Iris (Radio Edit).wav"
