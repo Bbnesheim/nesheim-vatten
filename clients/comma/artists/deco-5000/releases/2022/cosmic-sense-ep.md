@@ -1,7 +1,7 @@
 # Cosmic Sense EP
 
-- **Release Date:** 2022-09-22
-- **Label:** COMMA.
+- **Release Date:** 2022-07-01
+- **Label:** Groove Estate Records
 - **Format:** EP
 - **Platforms:** Spotify, Bandcamp
 
