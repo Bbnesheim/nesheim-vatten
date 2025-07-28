@@ -1,7 +1,7 @@
 # Beyond Time
 
-- **Release Date:** 2021-05-01
-- **Label:** COMMA.
+- **Release Date:** 2021-06-16
+- **Label:** Self-released
 - **Format:** Single
 - **Platforms:** Spotify, Apple Music
 

@@ -1,6 +1,6 @@
 # Rights and Ownership
 
-All masters and compositions are owned by Herman Marensius Gjersøe under the DECO 5000 alias and licensed exclusively to COMMA. Artwork remains property of the respective designers.
+All masters and compositions are owned by Herman Marensius Gjersøe under the DECO 5000 alias. Early material was self-released or issued on partner labels, while *Decosystema Vol. 1* and later works are licensed exclusively to COMMA. Artwork remains property of the respective designers.
 
 ## Copyright Statement
 ```

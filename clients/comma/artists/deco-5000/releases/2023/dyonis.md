@@ -1,7 +1,7 @@
 # Dyonis
 
-- **Release Date:** 2023-05-18
-- **Label:** COMMA.
+- **Release Date:** 2023-06-29
+- **Label:** Atom Trance Force
 - **Format:** Single
 - **Platforms:** Spotify, Apple Music
 
