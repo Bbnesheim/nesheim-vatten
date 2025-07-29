@@ -5,12 +5,12 @@
   - share_link: {String} url to be added to the input the user will get/copy.
 
   Usage:
-  {% render 'share-button',
+  {% render 'components/share-button/share-button',
     block: block,
     share_link: share_url
   %}
 {% endcomment %}
-<script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'components/share-button/share.js' | asset_url }}" defer="defer"></script>
 
 <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
   <button class="share-button__button hidden">

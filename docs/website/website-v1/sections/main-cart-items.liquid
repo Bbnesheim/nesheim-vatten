@@ -1,9 +1,9 @@
-{{ 'component-cart.css' | asset_url | stylesheet_tag }}
-{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
-{{ 'component-totals.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="/dist/assets/component-cart.min.css">
+<link rel="stylesheet" href="/dist/assets/component-cart-items.min.css">
+<link rel="stylesheet" href="/dist/assets/component-totals.min.css">
+<link rel="stylesheet" href="/dist/assets/component-price.min.css">
+<link rel="stylesheet" href="/dist/assets/component-discounts.min.css">
+<link rel="stylesheet" href="/dist/assets/quantity-popover.min.css">
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -20,10 +20,10 @@
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
-  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+  <script src="/dist/assets/cart.min.js" defer="defer"></script>
 {%- endunless -%}
 
-<script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<script src="/dist/assets/quantity-popover.min.js" defer="defer"></script>
 
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">

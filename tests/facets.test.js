@@ -19,7 +19,7 @@ describe('FacetFiltersForm.createSearchParams', () => {
     global.FormData = window.FormData;
     global.debounce = (fn) => fn;
 
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v2/assets/facets.js');
+    const scriptPath = path.resolve(__dirname, '../docs/website/website-v2/components/facets/facets.js');
     const scriptContent = fs.readFileSync(scriptPath, 'utf8');
     window.Function(scriptContent).call(window);
     instance = document.querySelector('facet-filters-form');

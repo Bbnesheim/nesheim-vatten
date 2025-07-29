@@ -96,7 +96,7 @@ Use simple line icons in the same color as body text. Images should have a neutr
 Communication should be professional and concise with an action-oriented focus. Avoid jargon and excessive emojis.
 
 ## Design Tokens
-Tokens defined in `styles/tokens.css`:
+Tokens defined in `styles/modules/tokens.css`:
 ```css
 :root {
   --color-primary: #2346b6;

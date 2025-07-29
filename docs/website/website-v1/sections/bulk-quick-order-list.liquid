@@ -1,6 +1,6 @@
-{{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="/dist/assets/quick-order-list.min.css">
 
-<script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+<script src="/dist/assets/quick-order-list.min.js" defer="defer"></script>
 
 {% render 'quick-order-list', product: product, show_image: true, show_sku: true, is_modal: true %}
 

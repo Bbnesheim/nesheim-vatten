@@ -7,7 +7,7 @@
 - Lint konfigurasjon: `.prettierrc.json`, `.stylelintrc.json`, `.stylelintignore`, `.htmllintrc`, `.htmllintignore`
 - Dokumentasjon under `docs/`
 - Klientmapper under `clients/`
-- Design tokens i `styles/tokens.css`
+- Design tokens i `styles/modules/tokens.css`
 - Tester i `tests/`
 - Scripts i `tools/`
 
@@ -37,7 +37,7 @@
 - `docs/README.md`, `AGENTS.md`, `ARCHITECTURE.md`, `BRAND_GUIDE.md` finnes.
 
 ### Design Tokens
-- `styles/tokens.css` samsvarer med tokenlisten i `docs/BRAND_GUIDE.md`【F:styles/tokens.css†L1-L15】【F:docs/BRAND_GUIDE.md†L98-L110】.
+- `styles/modules/tokens.css` samsvarer med tokenlisten i `docs/BRAND_GUIDE.md`【F:styles/modules/tokens.css†L1-L15】【F:docs/BRAND_GUIDE.md†L98-L110】.
 
 ## Repo Health Score
 - **Infrastruktur:** 80/100 – avhengigheter og scripts er på plass, men Node-versjoner spriker fortsatt.

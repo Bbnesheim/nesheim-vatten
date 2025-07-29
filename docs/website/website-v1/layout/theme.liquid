@@ -28,15 +28,15 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+    <script src="/dist/assets/constants.min.js" defer="defer"></script>
+    <script src="/dist/assets/pubsub.min.js" defer="defer"></script>
+    <script src="/dist/assets/global.min.js" defer="defer"></script>
+    <script src="/dist/assets/details-disclosure.min.js" defer="defer"></script>
+    <script src="/dist/assets/details-modal.min.js" defer="defer"></script>
+    <script src="/dist/assets/search-form.min.js" defer="defer"></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
-      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
+      <script src="/dist/assets/animations.min.js" defer="defer"></script>
     {%- endif -%}
 
     {{ content_for_header }}
@@ -255,15 +255,15 @@
       }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/dist/assets/base.min.css">
+    <link rel="stylesheet" href="/dist/assets/component-cart-items.min.css" media="print" onload="this.media='all'">
 
     {%- if settings.cart_type == 'drawer' -%}
-      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
-      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-      {{ 'component-price.css' | asset_url | stylesheet_tag }}
-      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+      <link rel="stylesheet" href="/dist/assets/component-cart-drawer.min.css">
+      <link rel="stylesheet" href="/dist/assets/component-cart.min.css">
+      <link rel="stylesheet" href="/dist/assets/component-totals.min.css">
+      <link rel="stylesheet" href="/dist/assets/component-price.min.css">
+      <link rel="stylesheet" href="/dist/assets/component-discounts.min.css">
     {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
@@ -278,14 +278,14 @@
     {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
-      <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
+      <link rel="preload stylesheet" href="/dist/assets/component-localization-form.min.css">
+      <script src="/dist/assets/localization-form.min.js" defer="defer"></script>
     {%- endif -%}
 
     {%- if settings.predictive_search_enabled -%}
       <link
         rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
+        href="/dist/assets/component-predictive-search.min.css"
         media="print"
         onload="this.media='all'"
       >
@@ -366,11 +366,11 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script src="/dist/assets/predictive-search.min.js" defer="defer"></script>
     {%- endif -%}
 
     {%- if settings.cart_type == 'drawer' -%}
-      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+      <script src="/dist/assets/cart-drawer.min.js" defer="defer"></script>
     {%- endif -%}
   </body>
 </html>
