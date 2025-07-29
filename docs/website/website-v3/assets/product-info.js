@@ -33,17 +33,20 @@ if (!customElements.get('product-info')) {
         this.preProcessHtmlCallbacks.push(callback);
       }
 
-      initQuantityHandlers() {
-        if (!this.quantityInput) return;
+        initQuantityHandlers() {
+          if (!this.quantityInput) return;
 
-        this.quantityForm = this.querySelector('.product-form__quantity');
-        if (!this.quantityForm) return;
+          this.quantityForm = this.querySelector('.product-form__quantity');
+          if (!this.quantityForm) return;
 
-        this.setQuantityBoundries();
-        if (!this.dataset.originalSection) {
-          this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
+          this.setQuantityBoundries();
+          if (!this.dataset.originalSection && typeof globalThis.subscribe === 'function') {
+            this.cartUpdateUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.cartUpdate,
+              this.fetchQuantityRules.bind(this)
+            );
+          }
         }
-      }
 
       disconnectedCallback() {
         this.onVariantChangeUnsubscriber();

@@ -17,15 +17,17 @@ if (!customElements.get('product-info')) {
         this.quantityInput = this.querySelector('.quantity__input');
       }
 
-      connectedCallback() {
-        this.initializeProductSwapUtility();
+        connectedCallback() {
+          this.initializeProductSwapUtility();
 
-        this.onVariantChangeUnsubscriber = subscribe(
-          PUB_SUB_EVENTS.optionValueSelectionChange,
-          this.handleOptionValueChange.bind(this)
-        );
+          if (typeof globalThis.subscribe === 'function') {
+            this.onVariantChangeUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.optionValueSelectionChange,
+              this.handleOptionValueChange.bind(this)
+            );
+          }
 
-        this.initQuantityHandlers();
+          this.initQuantityHandlers();
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
 
@@ -33,17 +35,20 @@ if (!customElements.get('product-info')) {
         this.preProcessHtmlCallbacks.push(callback);
       }
 
-      initQuantityHandlers() {
-        if (!this.quantityInput) return;
+        initQuantityHandlers() {
+          if (!this.quantityInput) return;
 
-        this.quantityForm = this.querySelector('.product-form__quantity');
-        if (!this.quantityForm) return;
+          this.quantityForm = this.querySelector('.product-form__quantity');
+          if (!this.quantityForm) return;
 
-        this.setQuantityBoundries();
-        if (!this.dataset.originalSection) {
-          this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
+          this.setQuantityBoundries();
+          if (!this.dataset.originalSection && typeof globalThis.subscribe === 'function') {
+            this.cartUpdateUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.cartUpdate,
+              this.fetchQuantityRules.bind(this)
+            );
+          }
         }
-      }
 
       disconnectedCallback() {
         this.onVariantChangeUnsubscriber();

@@ -27,14 +27,19 @@ class CartItems extends HTMLElement {
 
   cartUpdateUnsubscriber = undefined;
 
-  connectedCallback() {
-    this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
-      if (event.source === 'cart-items') {
-        return;
+    connectedCallback() {
+      if (typeof globalThis.subscribe === 'function') {
+        this.cartUpdateUnsubscriber = globalThis.subscribe(
+          PUB_SUB_EVENTS.cartUpdate,
+          (event) => {
+            if (event.source === 'cart-items') {
+              return;
+            }
+            return this.onCartUpdate();
+          }
+        );
       }
-      return this.onCartUpdate();
-    });
-  }
+    }
 
   disconnectedCallback() {
     if (this.cartUpdateUnsubscriber) {
