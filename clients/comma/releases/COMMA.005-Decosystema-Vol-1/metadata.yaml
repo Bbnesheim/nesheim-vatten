@@ -1,13 +1,33 @@
 catalog_number: COMMA.005
-title: "Decosystema-Vol-1"
+title: Decosystema Vol. 1
 label: COMMA.records
-release_date: "@@TODO"
-upc: "@@TODO"
-release_id: "@@TODO"
+release_date: 2025-06-06
+upc: 7300344820283
+release_id: 3825337
 artists:
-  - "@@TODO"
+  - DECO 5000
 tracks:
-  - title: "@@TODO"
-    version: original
-    isrc: "@@TODO"
-    file: "@@TODO"
+  - title: Decosystema
+    version: Original
+    isrc: SE6XX2541573
+    file: "DECO 5000 - Decosystema.wav"
+  - title: Moments
+    version: Original
+    isrc: SE6XX2541574
+    file: "DECO 5000 - MOMENTS.wav"
+  - title: Sublunar
+    version: Original
+    isrc: SE6XX2541575
+    file: "DECO 5000 - Sublunar.wav"
+  - title: Beating Heart
+    version: Original
+    isrc: SE6XX2541576
+    file: "DECO 5000 - Beatingheart.wav"
+  - title: Decosystema
+    version: Hovland Remix
+    isrc: SE6XX2541577
+    file: "DECO 5000 - Decosystema (Hovland Remix).wav"
+  - title: Decosystema
+    version: TRUSSEL Remix
+    isrc: SE6XX2541578
+    file: "DECO 5000 - Decosystema (TRUSSEL Remix).wav"
