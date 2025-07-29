@@ -2,7 +2,7 @@
 
 ## 1. Logo og bruk
 - Logo-filer ligger under `brand-assets/logo/`.
-- Anbefalt plassering i nettsiden: `website/comma-website_v1/assets/`.
+- Anbefalt plassering i nettsiden: `website/comma-website_v2/assets/`.
 - Hold minst 24 px klaring rundt logoen for god lesbarhet.
 - Negativ/positiv bruk avhenger av fremtidig design; ingen fargeversjoner definert.
 
@@ -24,7 +24,7 @@ body {
 - Aksent: ikke definert
 
 ## 3. Typografi
-- Fontfamilie: `Inter, Arial, sans-serif`【F:clients/comma/website/comma-website_v1/assets/style.css†L1-L15】
+- Fontfamilie: `Inter, Arial, sans-serif`【F:clients/comma/website/comma-website_v2/assets/base.css†L240-L248】
 - Ingen eksplisitte størrelser for overskrifter eller brødtekst utover nettleserens standardverdier.
 
 ```css
@@ -41,7 +41,7 @@ body {
 - Logoen er lagret som `brand-assets/logo/comma-logo.svg`. Ingen øvrige bilder eller media ligger i repoet.
 
 ## 6. Layout og spacing
-- `body` har `padding: 2rem` som eneste spacing-regel【F:clients/comma/website/comma-website-v1/assets/style.css†L1-L5】.
+- `body` har `padding: 2rem` som eneste spacing-regel.
 - Ingen grid- eller flex-system er tatt i bruk.
 - Ingen definerte breakpoints for mobil/tablet/desktop.
 
