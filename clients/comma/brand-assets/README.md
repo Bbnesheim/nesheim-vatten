@@ -1,6 +1,6 @@
 # Brand Assets
 
-Official visual identity files for COMMA. This folder includes:
+Official visual identity files for COMMA. This folder now includes the finalized logo and font files:
 
 ```
 brand-assets/
