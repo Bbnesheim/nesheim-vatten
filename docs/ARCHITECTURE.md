@@ -49,3 +49,7 @@ Innholdet for nettsidens kjernesider redigeres i Shopify-temaet `clients/baattil
 `page.om-oss.json` og `page.contact.json` inneholder tekst, bilder og meta-felter som brukes av søkemotorer.
 Verktøyene Prettier, Stylelint og htmllint kjøres via `npm run lint` og ignorerer disse templatedirene slik at JSON- og Liquid-filer ikke blir endret automatisk.
 Fargepaletten og tonen i teksten styres av [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+
+## Extending or overriding tokens
+
+Global design tokens reside in `styles/modules/tokens.css`. Theme styles import this file directly. To customize tokens for a specific client project, create a new file next to your theme's `base.css` and override the variables you need. Then import both the shared token file and your override file in the desired order.
