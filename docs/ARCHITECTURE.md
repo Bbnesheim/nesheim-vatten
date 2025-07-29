@@ -43,6 +43,10 @@ npm test
 
 Websites can be previewed with Shopify CLI or any static server (see `docs/setup.md`). Continuous integration runs the same lint and test steps via GitHub Actions defined in `.github/workflows/ci.yml` whenever code is pushed or a pull request is opened on `main`.
 
+## Writing tests
+
+Unit tests live in the `tests/` directory and run with Jest using `jsdom` to simulate browser behaviour. Each theme script can be loaded inside a JSDOM environment and any required globals (like `debounce` or `fetchConfig`) should be mocked. Add new `*.test.js` files here and run `npm test` to execute the suite locally or via CI.
+
 ## SEO og innholdsstruktur
 
 Innholdet for nettsidens kjernesider redigeres i Shopify-temaet `clients/baattilsyn/website/website_v4/`.
