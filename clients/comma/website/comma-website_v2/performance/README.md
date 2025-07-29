@@ -20,3 +20,11 @@ Guidelines for keeping the COMMA site fast and efficient.
 ## Unused Assets
 
 Periodically review loaded scripts and stylesheets to remove anything not in use.
+
+## Automated Lighthouse Checks
+
+The repository includes a GitHub Actions workflow that runs
+[Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) on each push and
+pull request. The workflow serves the staged theme build and fails if any
+category score falls below **90**. Review the `Lighthouse CI` job under the
+Actions tab for detailed results.
