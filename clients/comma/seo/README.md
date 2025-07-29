@@ -1,3 +1,11 @@
 # SEO
 
-Documents covering keyword research and technical optimisation go here.
+Keyword research, metadata templates and structured data live here.
+
+```
+seo/
+├── blog_content/
+└── templates/
+```
+
+Marketers and web developers should update this directory when optimising content.
