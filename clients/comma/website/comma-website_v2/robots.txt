@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: /sitemap.xml
+
+# Cache static JavaScript and CSS assets for one year
+Cache-Control: public, max-age=31536000
