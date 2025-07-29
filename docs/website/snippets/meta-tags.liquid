@@ -37,3 +37,22 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ og_title | escape }}">
 <meta name="twitter:description" content="{{ og_description | escape }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "{{ shop.name }}",
+      "url": "{{ shop.url }}"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ canonical_url }}",
+      "name": "{{ og_title }}",
+      "description": "{{ og_description }}"
+    }
+  ]
+}
+</script>
