@@ -67,6 +67,23 @@ npm test
 
 Websites can be previewed with Shopify CLI or any static server (see `docs/setup.md`). Continuous integration runs the same lint and test steps via GitHub Actions defined in `.github/workflows/ci.yml` whenever code is pushed or a pull request is opened on `main`.
 
+## Adding a new component
+
+Component files live inside each Shopify theme under folders like `sections/`, `snippets/` and `assets/`. When creating a new component you typically add Liquid, CSS and JavaScript files, then build and test the project:
+
+```bash
+npm run build
+npm test
+```
+
+Preview the changes locally to ensure the component behaves as expected:
+
+```bash
+cd docs/website/website-v1
+shopify theme serve
+```
+
+Once the component works, open a pull request following the steps in [CONTRIBUTING.md](CONTRIBUTING.md#pull-request-process).
 ## Writing tests
 
 Unit tests live in the `tests/` directory and run with Jest using `jsdom` to simulate browser behaviour. Each theme script can be loaded inside a JSDOM environment and any required globals (like `debounce` or `fetchConfig`) should be mocked. Add new `*.test.js` files here and run `npm test` to execute the suite locally or via CI.
