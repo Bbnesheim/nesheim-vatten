@@ -15,6 +15,7 @@ Add structured data as needed. Placeholder for future schema snippets.
 
 - [ ] All images include meaningful `alt` attributes
 - [ ] Decorative images use empty alt tags (`alt=""`)
+- [ ] Theme snippets add `role="presentation"` with `alt=""` for decorative images
 
 ## Sitemap Audit
 
