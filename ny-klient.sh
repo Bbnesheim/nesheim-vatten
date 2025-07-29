@@ -24,8 +24,8 @@ git add "$CLIENT_PATH"
 # 4. Commit
 git commit -m "Opprettet grunnstruktur for klient: $CLIENT_NAME"
 
-# 5. Push til GitHub
-git push origin "$CLIENT_NAME"
+# 5. Push til GitHub (valgfritt)
+read -p "Push branch to origin? [y/N] " answer && [ "$answer" = "y" ] && git push origin "$CLIENT_NAME"
 
 echo "✅ Ferdig! Ny branch '$CLIENT_NAME' er pushet med klientstruktur."
 
