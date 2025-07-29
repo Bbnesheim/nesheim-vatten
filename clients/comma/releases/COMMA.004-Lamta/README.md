@@ -2,18 +2,23 @@
 
 **Label**: COMMA.records  
 **Catalog Number**: COMMA.004  
-**Release Date**: @@TODO  
-**UPC**: @@TODO  
+**Release Date**: 16 Apr 2025  
+**UPC**: 7300344377091  
+**Release ID**: 3751546  
 
 ## 🎧 Tracklist
 
-1. @@TODO
-2. @@TODO
+1. **Lamta** (Original) — `SE6XY2570444`
 
-## 👥 Artists
+## 👥 Contributors
 
-- @@TODO
+- **Violand** — Primary Artist  
+- **Hovland** — Producer, Programming  
+- **Herman Hovland** — Composer, Programming  
+- **Jørgen Vigre** — Composer, Programming, Co-Producer  
+- **Bendik Nesheim** — Graphic Design
 
 ## 🗒️ Notes
 
-This release is managed under the COMMA. label. Metadata to be completed.
+COMMA.004 marks the debut of Violand on the label, exploring a melodic house identity with layered synth textures and sharp arrangement.
+

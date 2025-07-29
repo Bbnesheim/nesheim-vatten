@@ -1,5 +1,12 @@
 contributors:
-  - name: "@@TODO"
-    roles: [primary artist, composer, producer]
-  - name: "@@TODO"
-    roles: [co-producer]
+  - name: Violand
+    roles: [primary artist]
+  - name: Hovland
+    roles: [producer, programming]
+  - name: Herman Hovland
+    roles: [composer, programming]
+  - name: Jørgen Vigre
+    roles: [composer, programming, co-producer]
+  - name: Bendik Nesheim
+    roles: [graphic design]
+
