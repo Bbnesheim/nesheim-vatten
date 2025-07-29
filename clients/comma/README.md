@@ -1,48 +1,23 @@
-# COMMA
+# COMMA. Label Overview
 
-This folder holds the project materials for **COMMA**, a music label and management venture. The repository here is the base import only—no changes have been made to the code yet.
+This directory contains all operational documents, assets and website code for **COMMA.**. Use the subfolders to navigate specific areas of the label.
 
-Use the subfolders to organise everything related to the client:
+## Folder Purpose
+- **artists/** – profiles and electronic press kits for each signed artist
+- **brand-assets/** – official logos, colour palettes and design references
+- **content/** – blog posts, newsletters and copy drafts
+- **contracts/** – legal agreements ⚠️ empty, pending archive
+- **deliverables/** – final files handed over to partners ⚠️ empty
+- **deployment/** – technical notes for theme deployment
+- **design/** – graphic source files ⚠️ to be added
+- **marketing/** – strategy and promotional planning
+- **meetings/** – agendas and meeting notes ⚠️ empty
+- **platforms/** – integration setups for Shopify, Meta, TikTok etc.
+- **releases/** – metadata and assets for each catalogue release
+- **sales-integrations/** – configurations for e‑commerce channels
+- **seo/** – keyword research and metadata templates
+- **strategy/** – roadmaps and overall project planning
+- **website/** – source code for comma-records.com
 
-- **contracts/** – agreements and legal documents
-- **meetings/** – meeting notes and agendas
-- **strategy/** – plans and roadmaps
-- **design/** – artwork, graphics and other design assets
-- **website/** – website code and configuration
-- **deliverables/** – final files handed over to the client
-
-All content is owned by COMMA. Further work on branding, design and technical setup will expand on this foundation.
-
-## Artist Folder Structure Standard
-
-Each artist repo follows this structure:
-artists/artist-name/
-├── assets/
-│   ├── artwork/
-│   ├── audio-snippets/
-│   └── images/
-├── branding/
-│   ├── logo/
-│   ├── templates/
-│   └── wordmarks/
-├── docs/
-│   ├── legal/
-│   └── seo/
-├── gig-history/
-├── planning/
-├── portfolio/
-│   ├── audio/
-│   ├── epk/
-│   └── video/
-├── releases/
-│   ├── 2020/
-│   ├── 2021/
-│   ├── 2022/
-│   ├── 2023/
-│   ├── 2024/
-│   └── 2025/
-├── social/
-│   ├── calendar/
-│   └── captions/
-├── tasks/
-└── web/
+## Maintainers
+The COMMA. core team maintains this folder with assistance from Nesheim & Vatten Consulting. See [../TASKS.md](TASKS.md) for active work items.

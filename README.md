@@ -1,63 +1,41 @@
-# Nesheim & Vatten Consulting
+# COMMA. Repository
 
-_Crafting brand, sales, design and online store solutions with clarity and impact._
+This repository contains all brand assets, artist materials and platform code for **COMMA.**, an independent electronic music label. It is maintained by the COMMA. team in collaboration with Nesheim & Vatten Consulting.
 
-## About
+## Purpose
+- Centralise documentation for marketing, design and releases
+- Provide source code for comma-records.com and related integrations
+- Track tasks and planning for upcoming releases
 
-Nesheim & Vatten delivers strategic consulting and creative services covering:
+## Key Folders
+- `clients/comma/artists/` – artist profiles and EPKs
+- `clients/comma/brand-assets/` – logos, fonts and style guides
+- `clients/comma/content/` – blog posts and newsletter drafts
+- `clients/comma/platforms/` – integrations with Shopify and social channels
+- `clients/comma/releases/` – release metadata and assets
+- `docs/` – internal guidelines and changelogs
 
-- **Brand strategy & visual identity**
-- **Sales enablement & funnels**
-- **Graphic design & digital assets**
-- **Website building & e‑commerce setup**
-
-## Repository Structure
-
-- `clients/` – project files per client
-- `docs/` – brand assets, case studies and marketing material
-- `tools/` – automation scripts
-- `templates/` – reusable templates
-- `tests/` – automated tests
-- `archive/` – outdated or archived resources
-
+## Roadmap Overview
+Current focus is on launching the next website iteration and finalising release COMMA.006. See `clients/comma/strategy/` for detailed plans.
 
 ## Installation
-
 ```bash
 npm install
 ```
 
 ## Development
-
-Run linters and tests with:
-
 ```bash
 npm run lint
 npm run format
 npm test
 ```
-To preview the website locally, run:
-```bash
-npm run dev
-```
+Local previews are served via Shopify CLI or any static server from the `clients/comma/website/` folder.
 
-## Verktøy og versjonshåndtering
-
-### Node-versjonshåndtering
-
-Dette prosjektet bruker `.nvmrc` til å spesifisere Node-versjon (18.20.8).
-
-For utviklere som bruker [`mise`](https://github.com/jdx/mise), anbefales det å kjøre følgende én gang for å unngå advarsler:
-
-```bash
-mise settings add idiomatic_version_file_enable_tools node
-```
+## Team
+This repository is primarily maintained by the COMMA. label crew with support from Nesheim & Vatten Consulting for technical operations.
 
 ## Contributing
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines on how to propose changes and run local checks.
+Please read [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) before submitting pull requests.
+
 ## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Additional information about automation tools is available in [docs/AGENTS.md](docs/AGENTS.md).
-Release notes can be found in [docs/CHANGELOG.md](docs/CHANGELOG.md).
+MIT – see [LICENSE](LICENSE).
