@@ -7,7 +7,7 @@
 
 **Needs Work**
 - `contracts/`, `deliverables/`, `design/` and `meetings/` folders are empty.
-- Duplicate website folders `comma-website-v1` and `comma-website_v1` should be consolidated.
+- Legacy folders `comma-website-v1` and `comma-website_v1` have been removed; `comma-website_v2` contains the current theme.
 - Upcoming release COMMA.006 requires metadata.
 
 **Recommendations**
