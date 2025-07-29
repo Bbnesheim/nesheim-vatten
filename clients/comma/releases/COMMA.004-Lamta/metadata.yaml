@@ -1,0 +1,13 @@
+catalog_number: COMMA.004
+title: "Lamta"
+label: COMMA.records
+release_date: "@@TODO"
+upc: "@@TODO"
+release_id: "@@TODO"
+artists:
+  - "@@TODO"
+tracks:
+  - title: "@@TODO"
+    version: original
+    isrc: "@@TODO"
+    file: "@@TODO"
