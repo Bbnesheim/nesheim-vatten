@@ -62,6 +62,10 @@ pnpm test
 
 Alle tester bør kjøres uten feil.
 
+## Optimaliser bilder
+
+Kommandoen `npm run optimize:images` bruker Sharp til å lage WebP- og AVIF-versjoner av alle bildefiler under `clients/**/assets/`. Filene plasseres i samme mappe som originalen.
+
 ## SEO-innhold og temafiler
 
 Tekstene for "Om oss" og "Kontakt oss" ligger i Shopify-temaet under `clients/baattilsyn/website/website_v4/templates/` som `page.om-oss.json` og `page.contact.json`.
