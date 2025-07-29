@@ -6,8 +6,8 @@ This directory contains all operational documents, assets and website code for *
 - **artists/** – profiles and electronic press kits for each signed artist
 - **brand-assets/** – official logos, colour palettes and design references
 - **content/** – blog posts, newsletters and copy drafts
-- **contracts/** – legal agreements ⚠️ empty, pending archive
-- **deliverables/** – final files handed over to partners ⚠️ empty
+ - **contracts/** – archived under `../../archive/comma/contracts`
+ - **deliverables/** – archived under `../../archive/comma/deliverables`
 - **deployment/** – technical notes for theme deployment
 - **design/** – graphic source files ⚠️ to be added
 - **marketing/** – strategy and promotional planning

@@ -2,10 +2,10 @@
 
 Client folder for VBM Elektro.
 
-- **contracts/** – Agreements and legal docs
+ - **contracts/** – archived under `../../archive/vbm-elektro/contracts`
 - **meetings/** – Notes and agendas from meetings
 - **strategy/** – Project strategy, goals, and plans
 - **design/** – Design files, logo assets, and graphics
 - **website/** – Any web or digital deliverables
-- **deliverables/** – Final delivered files and handoffs
+ - **deliverables/** – archived under `../../archive/vbm-elektro/deliverables`
 

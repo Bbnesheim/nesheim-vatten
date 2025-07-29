@@ -8,4 +8,4 @@
 - [x] No empty directories remain without `.gitkeep`
 - [x] `.gitignore` excludes `*.wav`, `*.psd` and media directories
 - [ ] Consolidate duplicate website folders
-- [ ] Archive empty `contracts/` and `deliverables/`
+- [x] Archive empty `contracts/` and `deliverables/` ✅ 2025-07-29
