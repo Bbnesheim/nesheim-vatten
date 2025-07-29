@@ -31,6 +31,30 @@ A website project lives inside `clients/<client-name>/website/<project-name>` or
 
 The repository primarily holds Shopify themes consisting of Liquid templates, JavaScript and CSS. Node.js is used for tooling and tests. There is no dedicated build step at the moment, but linters (Stylelint and htmllint) and a small Jest suite validate the code.
 
+## Component layout
+
+Liquid components store their Liquid, JavaScript and CSS together under `components/<name>/`.
+Example structure:
+
+```
+components/
+  cart-drawer/
+    cart-drawer.liquid
+    cart-drawer.js
+    cart-drawer.css
+  facets/
+    facets.liquid
+    facets.js
+    facets.css
+```
+
+Components are rendered and loaded using their folder path:
+
+```
+{% render 'components/cart-drawer/cart-drawer' %}
+{{ 'components/cart-drawer/cart-drawer.js' | asset_url | script_tag }}
+```
+
 ## Build, deploy & pipelines
 
 Local development:
