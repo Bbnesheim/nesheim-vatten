@@ -1,3 +1,5 @@
+globalThis.subscribe = globalThis.subscribe || undefined;
+
 if (!customElements.get('quick-add-bulk')) {
   customElements.define(
     'quick-add-bulk',
@@ -21,7 +23,7 @@ if (!customElements.get('quick-add-bulk')) {
       }
 
       connectedCallback() {
-        if (typeof subscribe === 'function') {
+        if (typeof globalThis.subscribe === 'function') {
           this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
             if (
               event.source === 'quick-add' ||

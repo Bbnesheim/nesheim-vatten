@@ -41,8 +41,8 @@ describe('QuickAddBulk.renderSections', () => {
       __dirname,
       '../docs/website/website-v1/assets/quick-add-bulk.js'
     );
-    const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-    window.Function(scriptContent).call(window);
+    delete require.cache[require.resolve(scriptPath)];
+    require(scriptPath);
     QuickAddBulk = window.customElements.get('quick-add-bulk');
     instance = new QuickAddBulk();
     document.body.appendChild(instance);
