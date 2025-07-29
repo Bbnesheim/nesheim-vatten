@@ -7,6 +7,7 @@ describe('QuickAddBulk.renderSections', () => {
 
   beforeEach(() => {
     global.subscribe = jest.fn();
+    global.PUB_SUB_EVENTS = { cartUpdate: 'cart-update' };
 
     const dom = new JSDOM(
       `<!DOCTYPE html><cart-drawer><div id="CartDrawer" class="drawer__inner"></div></cart-drawer><div id="cart-icon-bubble"></div>`,
@@ -56,6 +57,7 @@ describe('QuickAddBulk.renderSections', () => {
     delete global.HTMLElement;
     delete global.customElements;
     delete global.subscribe;
+    delete global.PUB_SUB_EVENTS;
   });
 
   test('toggles is-empty when cart is empty', () => {

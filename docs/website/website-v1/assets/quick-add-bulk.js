@@ -1,3 +1,4 @@
+var subscribe;
 globalThis.subscribe = globalThis.subscribe || undefined;
 
 if (!customElements.get('quick-add-bulk')) {
@@ -24,7 +25,9 @@ if (!customElements.get('quick-add-bulk')) {
 
       connectedCallback() {
         if (typeof globalThis.subscribe === 'function') {
-          this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
+          this.cartUpdateUnsubscriber = globalThis.subscribe(
+            PUB_SUB_EVENTS.cartUpdate,
+            (event) => {
             if (
               event.source === 'quick-add' ||
               (event.cartData.items && !event.cartData.items.some((item) => item.id === parseInt(this.dataset.index))) ||
