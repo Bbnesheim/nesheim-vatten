@@ -1,0 +1,16 @@
+id: marensius
+display_name: Marensius
+roles:
+  - primary artist
+  - producer
+aliases:
+  - Herman Marensius Gjersøe
+origin_country: NO
+active: true
+genres:
+  - electronic
+  - ambient
+socials:
+  instagram: "@hermanmarensius"
+  soundcloud: "@@TODO"
+  spotify: "@@TODO"

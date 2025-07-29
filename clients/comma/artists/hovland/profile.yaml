@@ -1,0 +1,16 @@
+id: hovland
+display_name: Hovland
+roles:
+  - primary artist
+  - producer
+aliases:
+  - Herman Hovland
+origin_country: NO
+active: true
+genres:
+  - electronic
+  - ambient
+socials:
+  instagram: "@hovlandmusic_"
+  soundcloud: "@@TODO"
+  spotify: "@@TODO"
