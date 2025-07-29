@@ -289,7 +289,23 @@
 </article>
 
 <script type="application/ld+json">
-  {{ article | structured_data }}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ article.title | json }},
+    {% if article.image %}
+    "image": [{{ article.image | image_url | json }}],
+    {% endif %}
+    "datePublished": {{ article.published_at | date: '%Y-%m-%d' | json }},
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | json }}
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ article.url | json }}
+    }
+  }
 </script>
 
 {% schema %}
