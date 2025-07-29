@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
+global.subscribe = jest.fn();
+
 describe('QuickAddBulk.renderSections', () => {
   let window, document, QuickAddBulk, instance;
 
