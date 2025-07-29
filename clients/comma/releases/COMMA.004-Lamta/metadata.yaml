@@ -1,13 +1,14 @@
 catalog_number: COMMA.004
-title: "Lamta"
+title: Lamta
 label: COMMA.records
-release_date: "@@TODO"
-upc: "@@TODO"
-release_id: "@@TODO"
+release_date: 2025-04-16
+upc: 7300344377091
+release_id: 3751546
 artists:
-  - "@@TODO"
+  - Violand
 tracks:
-  - title: "@@TODO"
-    version: original
-    isrc: "@@TODO"
-    file: "@@TODO"
+  - title: Lamta
+    version: Original
+    isrc: SE6XY2570444
+    file: "Violand - Lamta.wav"
+
