@@ -25,6 +25,7 @@ npm install
 
 ## Development
 ```bash
+npm run lint:js
 npm run lint
 npm run format
 npm test

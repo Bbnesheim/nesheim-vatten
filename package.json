@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
-    "lint": "npm run lint:css && npm run lint:html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmllint \"clients/**/*.html\"",
     "dev": "npx serve clients/baattilsyn/pages",
@@ -16,6 +16,11 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "glob": "^11.0.3",
+    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\""
+  },
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
     "htmllint": "^0.7.3",
     "htmllint-cli": "^0.0.6",
     "husky": "^9.1.7",
