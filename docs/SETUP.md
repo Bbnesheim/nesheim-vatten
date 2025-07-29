@@ -35,8 +35,16 @@ mise install
 pnpm install
 # eller npm install
 ```
+## 4. Bygg statiske filer
 
-## 4. Start utviklingsserveren
+```bash
+npm run build
+```
+
+Dette genererer minifiserte filer i `dist/assets/` som brukes av malene.
+
+
+## 5. Start utviklingsserveren
 
 ```bash
 pnpm dev
@@ -45,7 +53,7 @@ pnpm dev
 
 Dette vil starte en lokal server slik at du kan se nettsiden i nettleseren.
 
-## 5. Kjør testene
+## 6. Kjør testene
 
 ```bash
 pnpm test

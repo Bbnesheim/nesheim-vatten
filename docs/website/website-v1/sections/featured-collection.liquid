@@ -1,27 +1,27 @@
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="/dist/assets/component-card.min.css">
+<link rel="stylesheet" href="/dist/assets/component-price.min.css">
 
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="/dist/assets/component-slider.min.css">
+<link rel="stylesheet" href="/dist/assets/template-collection.min.css">
 
 {% if section.settings.image_shape == 'blob' %}
-  {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="/dist/assets/mask-blobs.min.css">
 {%- endif -%}
 
 {%- unless section.settings.quick_add == 'none' -%}
-  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <link rel="stylesheet" href="/dist/assets/quick-add.min.css">
+  <script src="/dist/assets/product-form.min.js" defer="defer"></script>
 {%- endunless -%}
 
 {%- if section.settings.quick_add == 'standard' -%}
-  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="/dist/assets/quick-add.min.js" defer="defer"></script>
 {%- endif -%}
 
 {%- if section.settings.quick_add == 'bulk' -%}
-  <script src="{{ 'quick-add-bulk.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
+  <script src="/dist/assets/quick-add-bulk.min.js" defer="defer"></script>
+  <script src="/dist/assets/quantity-popover.min.js" defer="defer"></script>
+  <script src="/dist/assets/price-per-item.min.js" defer="defer"></script>
+  <script src="/dist/assets/quick-order-list.min.js" defer="defer"></script>
 {%- endif -%}
 
 {%- style -%}
