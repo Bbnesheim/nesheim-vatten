@@ -31,6 +31,30 @@ A website project lives inside `clients/<client-name>/website/<project-name>` or
 
 The repository primarily holds Shopify themes consisting of Liquid templates, JavaScript and CSS. Node.js is used for tooling and tests. There is no dedicated build step at the moment, but linters (Stylelint and htmllint) and a small Jest suite validate the code.
 
+## Component layout
+
+Liquid components store their Liquid, JavaScript and CSS together under `components/<name>/`.
+Example structure:
+
+```
+components/
+  cart-drawer/
+    cart-drawer.liquid
+    cart-drawer.js
+    cart-drawer.css
+  facets/
+    facets.liquid
+    facets.js
+    facets.css
+```
+
+Components are rendered and loaded using their folder path:
+
+```
+{% render 'components/cart-drawer/cart-drawer' %}
+{{ 'components/cart-drawer/cart-drawer.js' | asset_url | script_tag }}
+```
+
 ## Build, deploy & pipelines
 
 Local development:
@@ -43,9 +67,34 @@ npm test
 
 Websites can be previewed with Shopify CLI or any static server (see `docs/setup.md`). Continuous integration runs the same lint and test steps via GitHub Actions defined in `.github/workflows/ci.yml` whenever code is pushed or a pull request is opened on `main`.
 
+## Adding a new component
+
+Component files live inside each Shopify theme under folders like `sections/`, `snippets/` and `assets/`. When creating a new component you typically add Liquid, CSS and JavaScript files, then build and test the project:
+
+```bash
+npm run build
+npm test
+```
+
+Preview the changes locally to ensure the component behaves as expected:
+
+```bash
+cd docs/website/website-v1
+shopify theme serve
+```
+
+Once the component works, open a pull request following the steps in [CONTRIBUTING.md](CONTRIBUTING.md#pull-request-process).
+## Writing tests
+
+Unit tests live in the `tests/` directory and run with Jest using `jsdom` to simulate browser behaviour. Each theme script can be loaded inside a JSDOM environment and any required globals (like `debounce` or `fetchConfig`) should be mocked. Add new `*.test.js` files here and run `npm test` to execute the suite locally or via CI.
+
 ## SEO og innholdsstruktur
 
 Innholdet for nettsidens kjernesider redigeres i Shopify-temaet `clients/baattilsyn/website/website_v4/`.
 `page.om-oss.json` og `page.contact.json` inneholder tekst, bilder og meta-felter som brukes av søkemotorer.
 Verktøyene Prettier, Stylelint og htmllint kjøres via `npm run lint` og ignorerer disse templatedirene slik at JSON- og Liquid-filer ikke blir endret automatisk.
 Fargepaletten og tonen i teksten styres av [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+
+## Extending or overriding tokens
+
+Global design tokens reside in `styles/modules/tokens.css`. Theme styles import this file directly. To customize tokens for a specific client project, create a new file next to your theme's `base.css` and override the variables you need. Then import both the shared token file and your override file in the desired order.
