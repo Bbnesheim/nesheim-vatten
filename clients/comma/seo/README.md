@@ -9,3 +9,4 @@ seo/
 ```
 
 Marketers and web developers should update this directory when optimising content.
+Template locations for Shopify pages are listed in [docs/SETUP.md](../../docs/SETUP.md).
