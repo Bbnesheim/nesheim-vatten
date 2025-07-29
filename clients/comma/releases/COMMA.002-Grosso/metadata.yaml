@@ -1,13 +1,13 @@
+release_id: 3693918
 catalog_number: COMMA.002
-title: "Grosso"
+title: Grosso
 label: COMMA.records
-release_date: "@@TODO"
-upc: "@@TODO"
-release_id: "@@TODO"
+upc: "7300344013975"
+release_date: 2025-03-12
 artists:
-  - "@@TODO"
+  - Hovland
 tracks:
-  - title: "@@TODO"
-    version: original
-    isrc: "@@TODO"
-    file: "@@TODO"
+  - title: Grosso
+    version: Original
+    isrc: SE6XY2512680
+    file: "Hovland - Grosso.wav"
