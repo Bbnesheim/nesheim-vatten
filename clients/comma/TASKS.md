@@ -11,7 +11,7 @@
 | Plan social media calendar | Med | Marketing | TBD | 🚧 2025-07-29 |
 | Write SEO optimized product descriptions | High | SEO | TBD | 🚧 2025-07-29 |
 | Publish weekly blog content | Med | Marketing/SEO | TBD | 🚧 2025-07-29 |
-| Set up influencer affiliate program | Low | Marketing | TBD | ⛔ Pending research |
+| Set up influencer affiliate program (Shopify Collabs) | Low | Marketing | TBD | 🚧 2025-07-29 |
 
 ## Completed
 None yet
