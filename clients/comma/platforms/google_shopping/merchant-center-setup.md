@@ -4,3 +4,5 @@
 2. Verify and claim your website URL.
 3. Enter business information and tax/shipping settings.
 4. Link your Google Ads account if running paid campaigns.
+
+See `merchant-center-configuration.md` for the current account settings.
