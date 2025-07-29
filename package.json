@@ -5,10 +5,10 @@
     "test": "jest",
     "lint": "npm run lint:css && npm run lint:html",
     "lint:css": "stylelint \"**/*.css\"",
-    "lint:html": "htmllint \"clients/baattilsyn/pages/*.html\"",
+    "lint:html": "htmllint \"clients/**/*.html\"",
     "dev": "npx serve clients/baattilsyn/pages",
-    "format": "prettier -w clients/baattilsyn/website/website-tests/website_test1",
-    "format:check": "prettier -c clients/baattilsyn/website/website-tests/website_test1"
+    "format": "prettier -w \"**/*.{js,css,html}\"",
+    "format:check": "prettier -c \"**/*.{js,css,html}\""
   },
   "devDependencies": {
     "htmllint": "^0.7.3",
