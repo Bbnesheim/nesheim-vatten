@@ -21,6 +21,7 @@ Install dependencies and run linters and tests before opening a PR:
 ```bash
 npm install
 npm run lint
+npm run format
 npm test
 ```
 
