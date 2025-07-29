@@ -4,8 +4,8 @@
 | --- | --- | --- | --- | --- |
 | Finalize brand assets (logo, fonts) | High | Designer | TBD | ✅ 2025-07-29 |
 | Build Shopify store and theme | High | Dev | TBD | ✅ 2025-07-29 |
-| Integrate Meta (IG/Facebook) shop | High | Dev | TBD | ⛔ Needs account access |
-| Connect TikTok Shopping | Med | Dev | TBD | ⛔ Needs account access |
+| Integrate Meta (IG/Facebook) shop | High | Dev | TBD | 🚧 2025-07-29 |
+| Connect TikTok Shopping | Med | Dev | TBD | 🚧 2025-07-29 |
 | Set up Google Shopping feed | Med | Dev | TBD | ⛔ Requires Merchant Center |
 | Launch email marketing funnel | High | Marketing | TBD | 🚧 2025-07-29 |
 | Plan social media calendar | Med | Marketing | TBD | 🚧 2025-07-29 |
