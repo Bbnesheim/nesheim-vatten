@@ -18,32 +18,43 @@ if (!customElements.get('price-per-item')) {
 
       connectedCallback() {
         // Update variantId if variant is switched on product page
-        this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-          this.variantId = event.data.variant.id.toString();
-          this.getVolumePricingArray();
-        });
-
-        this.updatePricePerItemUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (response) => {
-          if (!response.cartData) return;
-
-          // Item was added to cart via product page
-          if (response.cartData['variant_id'] !== undefined) {
-            if (response.productVariantId === this.variantId) this.updatePricePerItem(response.cartData.quantity);
-            // Qty was updated in cart
-          } else if (response.cartData.item_count !== 0) {
-            const isVariant = response.cartData.items.find((item) => item.variant_id.toString() === this.variantId);
-            if (isVariant && isVariant.id.toString() === this.variantId) {
-              // The variant is still in cart
-              this.updatePricePerItem(isVariant.quantity);
-            } else {
-              // The variant was removed from cart, qty is 0
-              this.updatePricePerItem(0);
+        if (typeof globalThis.subscribe === 'function') {
+          this.variantIdChangedUnsubscriber = globalThis.subscribe(
+            PUB_SUB_EVENTS.variantChange,
+            (event) => {
+              this.variantId = event.data.variant.id.toString();
+              this.getVolumePricingArray();
             }
-            // All items were removed from cart
-          } else {
-            this.updatePricePerItem(0);
-          }
-        });
+          );
+
+          this.updatePricePerItemUnsubscriber = globalThis.subscribe(
+            PUB_SUB_EVENTS.cartUpdate,
+            (response) => {
+              if (!response.cartData) return;
+
+              // Item was added to cart via product page
+              if (response.cartData['variant_id'] !== undefined) {
+                if (response.productVariantId === this.variantId)
+                  this.updatePricePerItem(response.cartData.quantity);
+                // Qty was updated in cart
+              } else if (response.cartData.item_count !== 0) {
+                const isVariant = response.cartData.items.find(
+                  (item) => item.variant_id.toString() === this.variantId
+                );
+                if (isVariant && isVariant.id.toString() === this.variantId) {
+                  // The variant is still in cart
+                  this.updatePricePerItem(isVariant.quantity);
+                } else {
+                  // The variant was removed from cart, qty is 0
+                  this.updatePricePerItem(0);
+                }
+                // All items were removed from cart
+              } else {
+                this.updatePricePerItem(0);
+              }
+            }
+          );
+        }
       }
 
       disconnectedCallback() {

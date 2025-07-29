@@ -21,20 +21,29 @@ if (!customElements.get('quick-add-bulk')) {
       }
 
       connectedCallback() {
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
-          if (
-            event.source === 'quick-add' ||
-            (event.cartData.items && !event.cartData.items.some((item) => item.id === parseInt(this.dataset.index))) ||
-            (event.cartData.variant_id && !(event.cartData.variant_id === parseInt(this.dataset.index)))
-          ) {
-            return;
-          }
-          // If its another section that made the update
-          this.onCartUpdate().then(() => {
-            this.listenForActiveInput();
-            this.listenForKeydown();
-          });
-        });
+        if (typeof globalThis.subscribe === 'function') {
+          this.cartUpdateUnsubscriber = globalThis.subscribe(
+            PUB_SUB_EVENTS.cartUpdate,
+            (event) => {
+              if (
+                event.source === 'quick-add' ||
+                (event.cartData.items &&
+                  !event.cartData.items.some(
+                    (item) => item.id === parseInt(this.dataset.index)
+                  )) ||
+                (event.cartData.variant_id &&
+                  !(event.cartData.variant_id === parseInt(this.dataset.index)))
+              ) {
+                return;
+              }
+              // If its another section that made the update
+              this.onCartUpdate().then(() => {
+                this.listenForActiveInput();
+                this.listenForKeydown();
+              });
+            }
+          );
+        }
       }
 
       disconnectedCallback() {

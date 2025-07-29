@@ -29,25 +29,42 @@ if (!customElements.get('recipient-form')) {
       variantChangeUnsubscriber = undefined;
       cartErrorUnsubscriber = undefined;
 
-      connectedCallback() {
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
-          if (event.source === 'product-form' && event.productVariantId.toString() === this.currentProductVariantId) {
-            this.resetRecipientForm();
-          }
-        });
+        connectedCallback() {
+          if (typeof globalThis.subscribe === 'function') {
+            this.cartUpdateUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.cartUpdate,
+              (event) => {
+                if (
+                  event.source === 'product-form' &&
+                  event.productVariantId.toString() === this.currentProductVariantId
+                ) {
+                  this.resetRecipientForm();
+                }
+              }
+            );
 
-        this.variantChangeUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-          if (event.data.sectionId === this.dataset.sectionId) {
-            this.currentProductVariantId = event.data.variant.id.toString();
-          }
-        });
+            this.variantChangeUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.variantChange,
+              (event) => {
+                if (event.data.sectionId === this.dataset.sectionId) {
+                  this.currentProductVariantId = event.data.variant.id.toString();
+                }
+              }
+            );
 
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartError, (event) => {
-          if (event.source === 'product-form' && event.productVariantId.toString() === this.currentProductVariantId) {
-            this.displayErrorMessage(event.message, event.errors);
+            this.cartErrorUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.cartError,
+              (event) => {
+                if (
+                  event.source === 'product-form' &&
+                  event.productVariantId.toString() === this.currentProductVariantId
+                ) {
+                  this.displayErrorMessage(event.message, event.errors);
+                }
+              }
+            );
           }
-        });
-      }
+        }
 
       disconnectedCallback() {
         if (this.cartUpdateUnsubscriber) {

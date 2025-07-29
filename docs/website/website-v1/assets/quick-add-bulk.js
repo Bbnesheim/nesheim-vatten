@@ -1,6 +1,3 @@
-var subscribe;
-globalThis.subscribe = globalThis.subscribe || undefined;
-
 if (!customElements.get('quick-add-bulk')) {
   customElements.define(
     'quick-add-bulk',

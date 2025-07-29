@@ -28,14 +28,19 @@ if (!customElements.get('quick-order-list')) {
       }
 
       connectedCallback() {
-        this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, async (event) => {
-          // skip if cart event was triggered by this section
-          if (event.source === this.id) return;
+        if (typeof globalThis.subscribe === 'function') {
+          this.cartUpdateUnsubscriber = globalThis.subscribe(
+            PUB_SUB_EVENTS.cartUpdate,
+            async (event) => {
+              // skip if cart event was triggered by this section
+              if (event.source === this.id) return;
 
-          this.toggleTableLoading(true);
-          await this.refresh();
-          this.toggleTableLoading(false);
-        });
+              this.toggleTableLoading(true);
+              await this.refresh();
+              this.toggleTableLoading(false);
+            }
+          );
+        }
 
         this.initEventListeners();
       }

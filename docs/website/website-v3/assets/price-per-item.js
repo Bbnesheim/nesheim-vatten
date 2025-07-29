@@ -16,20 +16,27 @@ if (!customElements.get('price-per-item')) {
       updatePricePerItemUnsubscriber = undefined;
       variantIdChangedUnsubscriber = undefined;
 
-      connectedCallback() {
-        // Update variantId if variant is switched on product page
-        this.variantIdChangedUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
-          this.variantId = event.data.variant.id.toString();
-          this.getVolumePricingArray();
-        });
+        connectedCallback() {
+          // Update variantId if variant is switched on product page
+          if (typeof globalThis.subscribe === 'function') {
+            this.variantIdChangedUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.variantChange,
+              (event) => {
+                this.variantId = event.data.variant.id.toString();
+                this.getVolumePricingArray();
+              }
+            );
 
-        this.updatePricePerItemUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (response) => {
-          if (!response.cartData) return;
+            this.updatePricePerItemUnsubscriber = globalThis.subscribe(
+              PUB_SUB_EVENTS.cartUpdate,
+              (response) => {
+                if (!response.cartData) return;
 
-          // Item was added to cart via product page
-          if (response.cartData['variant_id'] !== undefined) {
-            if (response.productVariantId === this.variantId) this.updatePricePerItem(response.cartData.quantity);
-            // Qty was updated in cart
+                // Item was added to cart via product page
+                if (response.cartData['variant_id'] !== undefined) {
+                  if (response.productVariantId === this.variantId)
+                    this.updatePricePerItem(response.cartData.quantity);
+                  // Qty was updated in cart
           } else if (response.cartData.item_count !== 0) {
             const isVariant = response.cartData.items.find((item) => item.variant_id.toString() === this.variantId);
             if (isVariant && isVariant.id.toString() === this.variantId) {
