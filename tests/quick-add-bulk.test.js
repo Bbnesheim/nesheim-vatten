@@ -2,12 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
-global.subscribe = jest.fn();
-
 describe('QuickAddBulk.renderSections', () => {
   let window, document, QuickAddBulk, instance;
 
   beforeEach(() => {
+    global.subscribe = jest.fn();
+
     const dom = new JSDOM(
       `<!DOCTYPE html><cart-drawer><div id="CartDrawer" class="drawer__inner"></div></cart-drawer><div id="cart-icon-bubble"></div>`,
       { url: 'https://example.com' }
@@ -19,6 +19,7 @@ describe('QuickAddBulk.renderSections', () => {
     global.DOMParser = window.DOMParser;
     global.HTMLElement = window.HTMLElement;
     global.customElements = window.customElements;
+    window.subscribe = global.subscribe;
     global.debounce = (fn) => fn;
     global.ON_CHANGE_DEBOUNCE_TIMER = 0;
     global.BulkAdd = class extends window.HTMLElement {
@@ -54,6 +55,7 @@ describe('QuickAddBulk.renderSections', () => {
     delete global.DOMParser;
     delete global.HTMLElement;
     delete global.customElements;
+    delete global.subscribe;
   });
 
   test('toggles is-empty when cart is empty', () => {
