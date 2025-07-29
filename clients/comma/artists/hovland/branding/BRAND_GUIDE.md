@@ -14,7 +14,7 @@ Hovland explores ambient and progressive house under the COMMA. label. All visua
 |-------|-----|-------|
 | Background | `#ffffff` | default page background |
 | Text | `#000000` | headings and body text |
-| Accent | _TBD_ | optional artist highlight |
+| Accent | `#009FFE` | buttons and important links |
 
 ## Logo Usage
 - Store logo files in `branding/logo/`
