@@ -8,7 +8,8 @@
     "lint:html": "htmllint \"clients/**/*.html\"",
     "dev": "npx serve clients/baattilsyn/pages",
     "format": "prettier -w \"**/*.{js,css,html}\"",
-    "format:check": "prettier -c \"**/*.{js,css,html}\""
+    "format:check": "prettier -c \"**/*.{js,css,html}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "htmllint": "^0.7.3",
@@ -17,6 +18,7 @@
     "jsdom": "^22.0.0",
     "lighthouse": "^12.8.0",
     "prettier": "^3.6.2",
-    "stylelint": "^16.22.0"
+    "stylelint": "^16.22.0",
+    "husky": "^9.1.7"
   }
 }
