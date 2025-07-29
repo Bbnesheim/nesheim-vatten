@@ -1,8 +1,8 @@
 # BRAND_GUIDE.md – COMMA
 
 ## 1. Logo og bruk
-- Ingen logo-filer finnes i prosjektet.
-- Anbefalt plassering når logo legges til: `website/comma-website-v1/assets/`.
+- Logo-filer ligger under `brand-assets/logo/`.
+- Anbefalt plassering i nettsiden: `website/comma-website_v1/assets/`.
 - Hold minst 24 px klaring rundt logoen for god lesbarhet.
 - Negativ/positiv bruk avhenger av fremtidig design; ingen fargeversjoner definert.
 
@@ -11,7 +11,7 @@ Prosjektet inneholder ingen egendefinerte farger. Siden bruker standard hvit bak
 
 ```scss
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 2rem;
 }
@@ -24,12 +24,12 @@ body {
 - Aksent: ikke definert
 
 ## 3. Typografi
-- Fontfamilie: `Arial, sans-serif`【F:clients/comma/website/comma-website-v1/assets/style.css†L1-L5】
+- Fontfamilie: `Inter, Arial, sans-serif`【F:clients/comma/website/comma-website_v1/assets/style.css†L1-L15】
 - Ingen eksplisitte størrelser for overskrifter eller brødtekst utover nettleserens standardverdier.
 
 ```css
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
 }
 ```
 
@@ -38,7 +38,7 @@ body {
 - Nettstedet består kun av en overskrift og et avsnitt.
 
 ## 5. Bildebruk og media
-- Ingen bildefiler, video eller andre media er lagret i repoet.
+- Logoen er lagret som `brand-assets/logo/comma-logo.svg`. Ingen øvrige bilder eller media ligger i repoet.
 
 ## 6. Layout og spacing
 - `body` har `padding: 2rem` som eneste spacing-regel【F:clients/comma/website/comma-website-v1/assets/style.css†L1-L5】.
