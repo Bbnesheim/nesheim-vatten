@@ -2,7 +2,7 @@
 
 - [ ] Meta integration configured
 - [ ] TikTok Shopping connected
-- [ ] Google Shopping feed live
+- [x] Google Shopping feed live ✅ 2025-07-29
 - [ ] SEO descriptions drafted ✅ 2025-07-29
 - [ ] Blog content pipeline ready ✅ 2025-07-29
 - [ ] Email funnel scheduled ✅ 2025-07-29
