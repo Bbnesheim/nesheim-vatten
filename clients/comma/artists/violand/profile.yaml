@@ -1,0 +1,16 @@
+id: violand
+display_name: Violand
+roles:
+  - primary artist
+  - producer
+aliases:
+  - Violand
+origin_country: NO
+active: true
+genres:
+  - electronic
+  - ambient
+socials:
+  instagram: "@violand.official"
+  soundcloud: "@@TODO"
+  spotify: "@@TODO"
