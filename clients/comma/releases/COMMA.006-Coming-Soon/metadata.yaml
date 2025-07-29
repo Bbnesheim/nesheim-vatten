@@ -1,0 +1,13 @@
+catalog_number: COMMA.006
+title: Coming Soon
+label: COMMA.records
+release_date: 2025-XX-XX  # @@TODO
+upc: "@@TODO"
+release_id: @@TODO
+artists:
+  - @@TODO
+tracks:
+  - title: TBD
+    version: Original
+    isrc: @@TODO
+    file: @@TODO
