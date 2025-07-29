@@ -1,13 +1,13 @@
+release_id: 3712639
 catalog_number: COMMA.003
-title: "For-This-Moment"
+title: For This Moment
 label: COMMA.records
-release_date: "@@TODO"
-upc: "@@TODO"
-release_id: "@@TODO"
+upc: "7300344227655"
+release_date: 2025-03-XX  # @@TODO: Use actual day if known
 artists:
-  - "@@TODO"
+  - Marensius
 tracks:
-  - title: "@@TODO"
-    version: original
-    isrc: "@@TODO"
-    file: "@@TODO"
+  - title: For This Moment
+    version: Original
+    isrc: SE6XY2525973
+    file: "Marensius - For This Moment(3).wav"
