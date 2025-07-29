@@ -1,3 +1,5 @@
+globalThis.subscribe = globalThis.subscribe || undefined;
+
 if (!customElements.get('quick-order-list')) {
   customElements.define(
     'quick-order-list',
