@@ -1,6 +1,6 @@
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="/dist/assets/section-image-banner.min.css">
+<link rel="stylesheet" href="/dist/assets/component-slider.min.css">
+<link rel="stylesheet" href="/dist/assets/component-slideshow.min.css">
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
@@ -258,7 +258,7 @@
 </slideshow-component>
 
 {%- if request.design_mode -%}
-  <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+  <script src="/dist/assets/theme-editor.min.js" defer="defer"></script>
 {%- endif -%}
 
 {% schema %}
