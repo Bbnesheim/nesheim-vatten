@@ -6,6 +6,7 @@ Client folder for VBM Elektro.
 - **meetings/** – Notes and agendas from meetings
 - **strategy/** – Project strategy, goals, and plans
 - **design/** – Design files, logo assets, and graphics
-- **website/** – Any web or digital deliverables
- - **deliverables/** – archived under `../../archive/vbm-elektro/deliverables`
+- **deliverables/** – archived under `../../archive/vbm-elektro/deliverables`
+
+Any website deliverables are kept in `themes/vbm-elektro/website/`.
 

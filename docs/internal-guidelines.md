@@ -50,7 +50,8 @@ Each client gets their own structured folder under `clients/`, with these subfol
 - `design/`
 - `meetings/`
 - `strategy/`
-- `website/`
+
+Website code is stored under `themes/<client-name>/website/`.
 
 Refer to `folder-structure.txt` for the complete directory tree.
 

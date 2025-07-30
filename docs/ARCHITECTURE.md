@@ -5,12 +5,13 @@ This document explains the overall structure of the Nesheim & Vatten repository 
 ## Folder overview
 
 - `archive/` – archived or outdated resources kept for reference
-- `clients/` – per-client project files (contracts, meetings, design, website, etc.)
+- `clients/` – per-client project files (contracts, meetings, design, etc.)
 - `docs/` – documentation, brand assets and marketing material
 - `styles/` – global design tokens and CSS used across projects
 - `templates/` – reusable templates such as proposals or invoices
 - `tests/` – automated Jest test suite
 - `tools/` – helper scripts like `create-structure.sh`
+- `themes/` – Shopify themes and static site code
 
 The `.github/` directory contains GitHub Actions workflows for linting and testing.
 
@@ -23,7 +24,6 @@ Client work is grouped under `clients/<client-name>/`. Each client folder normal
 - `strategy/`
 - `design/`
 - `deliverables/`
-- `website/`
 
 A website project lives inside `themes/<client-name>/website/<project-name>` or directly under `themes/` if there is only one site. You can run `./tools/create-structure.sh` to generate a basic directory tree.
 

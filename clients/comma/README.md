@@ -17,7 +17,8 @@ This directory contains all operational documents, assets and website code for *
 - **sales-integrations/** – configurations for e‑commerce channels
 - **seo/** – keyword research and metadata templates
 - **strategy/** – roadmaps and overall project planning
-- **website/** – source code for comma-records.com
+-
+Website code is stored in `themes/comma/website/comma-website_v2/`.
 
 ## Maintainers
 The COMMA. core team maintains this folder with assistance from Nesheim & Vatten Consulting. See [../TASKS.md](TASKS.md) for active work items.

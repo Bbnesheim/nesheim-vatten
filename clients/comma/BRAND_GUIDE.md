@@ -2,7 +2,7 @@
 
 ## 1. Logo og bruk
 - Logo-filer ligger under `brand-assets/logo/`.
-- Anbefalt plassering i nettsiden: `website/comma-website_v2/assets/`.
+- Anbefalt plassering i nettsiden: `themes/comma/website/comma-website_v2/assets/`.
 - Hold minst 24 px klaring rundt logoen for god lesbarhet.
 - Negativ/positiv bruk avhenger av fremtidig design; ingen fargeversjoner definert.
 
