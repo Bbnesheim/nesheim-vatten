@@ -18,7 +18,7 @@ describe('CartNotification.getSectionInnerHTML', () => {
 
     const scriptPath = path.resolve(
       __dirname,
-      '../docs/website/website-v1/assets/cart-notification.js'
+      '../themes/website-v1/assets/cart-notification.js'
     );
     CartNotification = require(scriptPath);
     instance = new CartNotification();

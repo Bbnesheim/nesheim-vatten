@@ -1,7 +1,7 @@
 # Nesheim & Vatten Brand Guide
 
 ## Intro / Purpose
-This guide documents the visual identity of **Nesheim & Vatten Consulting** as implemented on `nesheimvatten.no`. All values are sourced from the repository Shopify theme files under `docs/website/`.
+This guide documents the visual identity of **Nesheim & Vatten Consulting** as implemented on `nesheimvatten.no`. All values are sourced from the repository Shopify theme files under `themes/`.
 
 ## Logo
 Logos are stored in `docs/brand-assets/logo/`.

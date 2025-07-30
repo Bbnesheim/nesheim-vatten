@@ -16,7 +16,7 @@ describe('SearchForm component', () => {
 
     const scriptPath = path.resolve(
       __dirname,
-      '../docs/website/website-v1/assets/search-form.js'
+      '../themes/website-v1/assets/search-form.js'
     );
     SearchForm = require(scriptPath);
 

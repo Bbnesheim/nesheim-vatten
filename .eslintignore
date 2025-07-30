@@ -1,5 +1,4 @@
-clients/**/website/**
-docs/website/**
+themes/**
 dist/
 build/
 archive/**

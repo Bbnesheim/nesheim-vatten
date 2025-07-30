@@ -32,7 +32,7 @@ eslint --fix
 npm run format
 npm test
 ```
-Local previews are served via Shopify CLI or any static server from the `clients/comma/website/` folder.
+Local previews are served via Shopify CLI or any static server from the `themes/comma/website/` folder.
 
 ## Team
 This repository is primarily maintained by the COMMA. label crew with support from Nesheim & Vatten Consulting for technical operations.

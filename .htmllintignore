@@ -1,5 +1,5 @@
 node_modules/**
 **/*.liquid
-clients/**/website/**/templates/*.json
-clients/**/website/**/website-tests/**
+themes/**/templates/*.json
+themes/**/website-tests/**
 archive/**

@@ -39,7 +39,7 @@ describe('QuickAddBulk.renderSections', () => {
     };
     const scriptPath = path.resolve(
       __dirname,
-      '../docs/website/website-v1/assets/quick-add-bulk.js'
+      '../themes/website-v1/assets/quick-add-bulk.js'
     );
     delete require.cache[require.resolve(scriptPath)];
     QuickAddBulk = require(scriptPath);
