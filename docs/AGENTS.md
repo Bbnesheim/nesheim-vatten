@@ -83,10 +83,10 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Purpose:** Preview Shopify themes during development.
 - **Usage:**
   ```bash
-  cd docs/website/website-v1
+  cd themes/website-v1
   shopify theme serve
   ```
-- **Input:** Theme files under `docs/website/`.
+- **Input:** Theme files under `themes/`.
 - **Output:** Local development server and preview URL.
 - **Configuration:** Requires Shopify CLI authentication with a store.
 
@@ -95,7 +95,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Purpose:** Serve static website files without Shopify CLI.
 - **Usage:**
   ```bash
-  npx http-server docs/website/website-v1
+  npx http-server themes/website-v1
   ```
 - **Input:** Static files in the specified folder.
 - **Output:** Local web server accessible via a local address.

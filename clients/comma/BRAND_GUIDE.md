@@ -24,7 +24,7 @@ body {
 - Aksent: ikke definert
 
 ## 3. Typografi
-- Fontfamilie: `Inter, Arial, sans-serif`【F:clients/comma/website/comma-website_v2/assets/base.css†L240-L248】
+- Fontfamilie: `Inter, Arial, sans-serif`【F:themes/comma/website/comma-website_v2/assets/base.css†L240-L248】
 - Ingen eksplisitte størrelser for overskrifter eller brødtekst utover nettleserens standardverdier.
 
 ```css

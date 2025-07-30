@@ -1,4 +1,4 @@
 node_modules
-clients/**/website/**/templates/**
-clients/**/website/website-tests/**
+themes/**/templates/**
+themes/**/website-tests/**
 archive/**

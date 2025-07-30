@@ -23,7 +23,7 @@ describe('DetailsModal custom element', () => {
     global.trapFocus = jest.fn();
     global.removeTrapFocus = jest.fn();
 
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/details-modal.js');
+    const scriptPath = path.resolve(__dirname, '../themes/website-v1/assets/details-modal.js');
     delete require.cache[require.resolve(scriptPath)];
     require(scriptPath);
 

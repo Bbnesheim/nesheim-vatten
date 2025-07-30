@@ -25,7 +25,7 @@ Client work is grouped under `clients/<client-name>/`. Each client folder normal
 - `deliverables/`
 - `website/`
 
-A website project lives inside `clients/<client-name>/website/<project-name>` or simply in `website/` if there is only one site. You can run `./tools/create-structure.sh` to generate a basic directory tree.
+A website project lives inside `themes/<client-name>/website/<project-name>` or directly under `themes/` if there is only one site. You can run `./tools/create-structure.sh` to generate a basic directory tree.
 
 ## Technology stack
 
@@ -79,7 +79,7 @@ npm test
 Preview the changes locally to ensure the component behaves as expected:
 
 ```bash
-cd docs/website/website-v1
+cd themes/website-v1
 shopify theme serve
 ```
 
@@ -90,7 +90,7 @@ Unit tests live in the `tests/` directory and run with Jest using `jsdom` to sim
 
 ## SEO og innholdsstruktur
 
-Innholdet for nettsidens kjernesider redigeres i Shopify-temaet `clients/baattilsyn/website/website_v4/`.
+Innholdet for nettsidens kjernesider redigeres i Shopify-temaet `themes/baattilsyn/website/website_v4/`.
 `page.om-oss.json` og `page.contact.json` inneholder tekst, bilder og meta-felter som brukes av søkemotorer.
 Verktøyene Prettier, Stylelint og htmllint kjøres via `npm run lint` og ignorerer disse templatedirene slik at JSON- og Liquid-filer ikke blir endret automatisk.
 Fargepaletten og tonen i teksten styres av [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).

@@ -7,7 +7,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const entries = {};
 // Grab all JS and CSS files in the assets folder
-glob.sync('./docs/website/website-v1/assets/**/*.{js,css}').forEach(file => {
+glob.sync('./themes/website-v1/assets/**/*.{js,css}').forEach(file => {
   const ext = path.extname(file);
   const name = path.basename(file, ext);
   entries[name] = './' + file;

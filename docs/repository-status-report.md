@@ -1,7 +1,7 @@
 # Repository Status Report
 
 **Up-to-date**
-- Website code under `clients/comma/website/` reflects current production version.
+- Website code under `themes/comma/website/` reflects current production version.
 - Release metadata through COMMA.005 is complete.
 - Documentation in `README.md` files refreshed July 2025.
 
@@ -23,7 +23,7 @@
 
 ## Website Assets Overview
 
-There are 32 JavaScript modules under `docs/website/website-v1/assets`. Prior to
+There are 32 JavaScript modules under `themes/website-v1/assets`. Prior to
 this update only four of them had automated tests. Additional Jest tests now
 cover `details-modal.js` and `pubsub.js`, but most modules remain untested.
 

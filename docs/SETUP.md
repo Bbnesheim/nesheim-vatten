@@ -66,19 +66,19 @@ All tests should run without failures.
 
 ## 7. Preview the website
 
-The `docs/website` folder contains Shopify theme files and static assets. You can preview them in one of two ways:
+The `themes/` folder contains Shopify theme files and static assets. You can preview them in one of two ways:
 
 1. **With Shopify CLI** (recommended for Shopify work):
    ```bash
-   cd docs/website/website-v1
+   cd themes/website-v1
    shopify theme serve
    ```
    This requires [Shopify CLI](https://shopify.dev/apps/tools/cli) and authentication with your store.
 2. **With a simple static server** (for general HTML/CSS/JS preview):
    ```bash
-   npx http-server docs/website/website-v1
+   npx http-server themes/website-v1
    ```
-   Then open the provided local address in your browser. Other theme versions live under `docs/website/` (e.g., `website-v2`, `website-v3`).
+   Then open the provided local address in your browser. Other theme versions live under `themes/` (e.g., `website-v2`, `website-v3`).
 
 ## 8. Optimise images
 
@@ -86,7 +86,7 @@ Run `npm run optimize:images` to create WebP and AVIF versions of image files un
 
 ## 9. SEO content and theme files
 
-The "About us" and "Contact us" texts live in the Shopify theme under `clients/baattilsyn/website/website_v4/templates/` as `page.om-oss.json` and `page.contact.json`. Edit them directly in Git. Run `npm run lint` and `npm test` before committing. Linting excludes `.liquid` and `templates/*.json` via ignore files so the theme is unaffected. Run `eslint --fix` and `npm run format` to automatically fix and format files. Colours and tone are described in [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+The "About us" and "Contact us" texts live in the Shopify theme under `themes/baattilsyn/website/website_v4/templates/` as `page.om-oss.json` and `page.contact.json`. Edit them directly in Git. Run `npm run lint` and `npm test` before committing. Linting excludes `.liquid` and `templates/*.json` via ignore files so the theme is unaffected. Run `eslint --fix` and `npm run format` to automatically fix and format files. Colours and tone are described in [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
 
 ## 10. Recommended caching setup
 

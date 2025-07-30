@@ -8,7 +8,7 @@ describe('pubsub module', () => {
   beforeEach(() => {
     const dom = new JSDOM('<!DOCTYPE html>');
     window = dom.window;
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/pubsub.js');
+    const scriptPath = path.resolve(__dirname, '../themes/website-v1/assets/pubsub.js');
     const scriptContent = fs.readFileSync(scriptPath, 'utf8');
     window.Function(scriptContent).call(window);
     subscribe = window.subscribe;

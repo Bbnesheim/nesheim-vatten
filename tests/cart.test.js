@@ -24,7 +24,7 @@ describe('CartItems.getSectionInnerHTML', () => {
 
     const scriptPath = path.resolve(
       __dirname,
-      '../docs/website/website-v1/assets/cart.js'
+      '../themes/website-v1/assets/cart.js'
     );
     const cartModule = require(scriptPath);
     CartItems = cartModule.CartItems || cartModule;

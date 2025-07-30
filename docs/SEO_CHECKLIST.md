@@ -2,7 +2,7 @@
 
 Use this checklist when updating or launching pages.
 
-- [ ] Verify each template under `docs/website/templates/` contains a meaningful `description` field.
+- [ ] Verify each template under `themes/templates/` contains a meaningful `description` field.
 - [ ] Update `meta-tags.liquid` with page specific `<title>` and JSON-LD data.
 - [ ] Run `npm run lint` and `npm test` before committing changes.
 
