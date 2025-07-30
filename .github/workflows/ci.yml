@@ -27,3 +27,19 @@ jobs:
           node-version: 18.20.8
 
       - run: npm test --silent
+
+  optimize-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.20.8
+
+      - run: npm run optimize:images
+      - uses: actions/upload-artifact@v3
+        with:
+          name: optimized-images
+          path: |
+            clients/**/assets/**/*.webp
+            clients/**/assets/**/*.avif

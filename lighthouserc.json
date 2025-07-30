@@ -2,7 +2,17 @@
   "ci": {
     "collect": {
       "url": ["https://comma-records.com"],
-      "numberOfRuns": 1
+      "numberOfRuns": 1,
+      "settings": {
+        "budgets": [
+          {
+            "resourceSizes": [
+              { "resourceType": "script", "budget": 250 },
+              { "resourceType": "stylesheet", "budget": 250 }
+            ]
+          }
+        ]
+      }
     },
     "assert": {
       "assertions": {

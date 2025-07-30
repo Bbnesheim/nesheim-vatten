@@ -3,6 +3,7 @@ const glob = require('glob');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const entries = {};
 // Grab all JS and CSS files in the assets folder
@@ -29,9 +30,19 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: '[name].min.css' }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'disabled',
+      generateStatsFile: true,
+      statsFilename: 'bundle-stats.json'
+    }),
   ],
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
+  },
+  performance: {
+    hints: 'error',
+    maxEntrypointSize: 250000,
+    maxAssetSize: 250000,
   },
 };
