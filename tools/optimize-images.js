@@ -1,7 +1,26 @@
-const glob = require('glob');
-const sharp = require('sharp');
+let glob;
+let sharp;
+
+try {
+  glob = require('glob');
+} catch {
+  console.error('The "glob" module is required. Install it with "npm install glob".');
+  process.exit(1);
+}
+
+try {
+  sharp = require('sharp');
+} catch {
+  console.error('The "sharp" module is required. Install it with "npm install sharp".');
+  process.exit(1);
+}
 
 const files = glob.sync('clients/**/assets/**/*.{png,jpg,jpeg}', { nodir: true });
+
+if (files.length === 0) {
+  console.log('No image files found for optimization.');
+  process.exit(0);
+}
 
 (async () => {
   for (const file of files) {
