@@ -1,9 +1,8 @@
-const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
 describe('DetailsModal custom element', () => {
-  let window, document, DetailsModal, instance;
+  let window, document, instance;
 
   beforeEach(() => {
     const html = `<!DOCTYPE html>
@@ -27,7 +26,7 @@ describe('DetailsModal custom element', () => {
     const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/details-modal.js');
     delete require.cache[require.resolve(scriptPath)];
     require(scriptPath);
-    DetailsModal = window.customElements.get('details-modal');
+
     instance = document.querySelector('details-modal');
   });
 
