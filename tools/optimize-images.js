@@ -1,6 +1,5 @@
 const glob = require('glob');
 const sharp = require('sharp');
-const path = require('path');
 
 const files = glob.sync('clients/**/assets/**/*.{png,jpg,jpeg}', { nodir: true });
 
