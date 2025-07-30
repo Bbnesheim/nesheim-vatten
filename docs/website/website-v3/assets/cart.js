@@ -166,13 +166,14 @@ class CartItems extends HTMLElement {
     ];
   }
   // Fetch updated cart data from the server
+  // Fetch updated cart state from the server
   fetchCartUpdate(body) {
     return fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
       .then((response) => response.text())
       .then((state) => JSON.parse(state));
   }
 
-  // Update cart DOM sections with server-rendered HTML
+  // Render cart sections with markup from the server response
   renderCartSections(state) {
     this.classList.toggle('is-empty', state.item_count === 0);
     const cartDrawerWrapper = document.querySelector('cart-drawer');
@@ -192,7 +193,7 @@ class CartItems extends HTMLElement {
     });
   }
 
-  // Keep focus on the updated cart line for accessibility
+  // Keep focus on the updated line item for accessibility
   focusUpdatedItem(line, name, state) {
     const cartDrawerWrapper = document.querySelector('cart-drawer');
     const lineItem =
