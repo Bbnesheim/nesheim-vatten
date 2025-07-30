@@ -12,3 +12,6 @@ coverage/
 *.psd
 assets/raw/
 media/
+
+# Ignore zip archives
+*.zip
