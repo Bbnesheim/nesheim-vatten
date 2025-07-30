@@ -67,6 +67,7 @@ Alle tester bør kjøres uten feil.
 ## Optimaliser bilder
 
 Kommandoen `npm run optimize:images` bruker Sharp til å lage WebP- og AVIF-versjoner av alle bildefiler under `clients/**/assets/`. Filene plasseres i samme mappe som originalen.
+Når scriptet kjøres vises meldingen `Optimized <fil>` for hver bildefil som behandles. Hvis ingen bilder blir funnet, skrives `No image files found for optimization.`. Mangler avhengighetene `glob` eller `sharp` får du beskjed om å installere dem.
 
 ## SEO-innhold og temafiler
 
