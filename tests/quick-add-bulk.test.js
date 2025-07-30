@@ -71,4 +71,17 @@ describe('QuickAddBulk.renderSections', () => {
     instance.renderSections(parsedState, []);
     expect(cartDrawer.classList.contains('is-empty')).toBe(true);
   });
+
+  test('sanitizes section HTML before rendering', () => {
+    document.getElementById('cart-icon-bubble').innerHTML = '<div class="shopify-section"></div>';
+    instance.getSectionsToRender = () => [
+      { id: 'cart-icon-bubble', section: 'cart-icon-bubble', selector: '.shopify-section' },
+    ];
+    const parsedState = {
+      items: [],
+      sections: { 'cart-icon-bubble': '<div class="shopify-section">test<script>alert(1)</script></div>' },
+    };
+    instance.renderSections(parsedState, []);
+    expect(document.querySelector('#cart-icon-bubble .shopify-section').innerHTML).toBe('test');
+  });
 });
