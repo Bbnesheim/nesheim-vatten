@@ -4,5 +4,6 @@ Client: To Ellis
 - meetings/: Notes and agendas
 - strategy/: Planning docs
 - design/: Design assets
-- website/: Website work
- - deliverables/: archived under `../../archive/to-ellis/deliverables`
+- deliverables/: archived under `../../archive/to-ellis/deliverables`
+
+Website work lives in `themes/to-ellis/website/`.

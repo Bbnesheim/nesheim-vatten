@@ -13,4 +13,4 @@ clients/comma/
 ├── sales-integrations/     # Channel-specific sales configurations
 ├── seo/                    # Keyword research and SEO templates
 ├── strategy/               # Roadmaps and high level planning documents
-└── website/                # Source code for comma-records.com
+# Website code lives in `themes/comma/website/`
