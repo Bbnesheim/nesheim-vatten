@@ -1,5 +1,10 @@
 {
-  "env": { "browser": true, "node": true, "es2021": true },
+  "env": { "browser": true, "node": true, "es2021": true, "jest": true },
+  "globals": {
+    "Shopify": "readonly",
+    "ShopifyAnalytics": "readonly",
+    "__st": "readonly"
+  },
   "extends": ["eslint:recommended", "prettier"],
   "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
   "rules": { "no-var": "error", "prefer-arrow-callback": "error" }
