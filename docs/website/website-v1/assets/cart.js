@@ -10,7 +10,6 @@ class CartRemoveButton extends HTMLElement {
   }
 }
 
-customElements.define('cart-remove-button', CartRemoveButton);
 
 class CartItems extends HTMLElement {
   constructor() {
@@ -276,24 +275,33 @@ class CartItems extends HTMLElement {
   }
 }
 
-customElements.define('cart-items', CartItems);
-
-if (!customElements.get('cart-note')) {
-  customElements.define(
-    'cart-note',
-    class CartNote extends HTMLElement {
-      constructor() {
-        super();
-
-        this.addEventListener(
-          'input',
-          debounce((event) => {
-            const body = JSON.stringify({ note: event.target.value });
-            fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } })
-              .then(() => CartPerformance.measureFromEvent('note-update:user-action', event));
-          }, ON_CHANGE_DEBOUNCE_TIMER)
-        );
+if (typeof customElements !== 'undefined') {
+  if (!customElements.get('cart-remove-button')) {
+    customElements.define('cart-remove-button', CartRemoveButton);
+  }
+  if (!customElements.get('cart-items')) {
+    customElements.define('cart-items', CartItems);
+  }
+  if (!customElements.get('cart-note')) {
+    customElements.define(
+      'cart-note',
+      class CartNote extends HTMLElement {
+        constructor() {
+          super();
+          this.addEventListener(
+            'input',
+            debounce((event) => {
+              const body = JSON.stringify({ note: event.target.value });
+              fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } })
+                .then(() =>
+                  CartPerformance.measureFromEvent('note-update:user-action', event)
+                );
+            }, ON_CHANGE_DEBOUNCE_TIMER)
+          );
+        }
       }
-    }
-  );
+    );
+  }
 }
+
+module.exports = { CartRemoveButton, CartItems };
