@@ -7,6 +7,10 @@ dist/
 build/
 coverage/
 
+# Ignore Next.js and cache directories
+.next/
+.cache/
+
 # Ignore raw media assets
 *.wav
 *.psd
@@ -15,3 +19,8 @@ media/
 
 # Ignore zip archives
 *.zip
+*.tar.gz
+
+# Ignore generated templates
+templates/*.xlsx
+templates/*.pptx
