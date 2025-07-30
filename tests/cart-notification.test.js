@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
@@ -17,10 +16,11 @@ describe('CartNotification.getSectionInnerHTML', () => {
     global.trapFocus = jest.fn();
     global.removeTrapFocus = jest.fn();
 
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/cart-notification.js');
-    const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-    window.Function(scriptContent).call(window);
-    CartNotification = window.customElements.get('cart-notification');
+    const scriptPath = path.resolve(
+      __dirname,
+      '../docs/website/website-v1/assets/cart-notification.js'
+    );
+    CartNotification = require(scriptPath);
     instance = new CartNotification();
     document.body.appendChild(instance);
   });

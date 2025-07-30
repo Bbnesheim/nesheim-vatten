@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
@@ -19,15 +18,16 @@ describe('SearchForm component', () => {
       __dirname,
       '../docs/website/website-v1/assets/search-form.js'
     );
-    const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-    window.Function(scriptContent).call(window);
-    SearchForm = window.customElements.get('search-form');
+    SearchForm = require(scriptPath);
 
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML =
-      '<form><search-form><input type="search"><button type="reset" class="hidden"></button></search-form></form>';
-    document.body.appendChild(wrapper.firstElementChild);
-    instance = document.querySelector('search-form');
+    const form = document.createElement('form');
+    instance = new SearchForm();
+    instance.innerHTML =
+      '<input type="search"><button type="reset" class="hidden"></button>';
+    instance.input = instance.querySelector('input[type="search"]');
+    instance.resetButton = instance.querySelector('button[type="reset"]');
+    form.appendChild(instance);
+    document.body.appendChild(form);
   });
 
   afterEach(() => {

@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
@@ -43,8 +42,7 @@ describe('QuickAddBulk.renderSections', () => {
       '../docs/website/website-v1/assets/quick-add-bulk.js'
     );
     delete require.cache[require.resolve(scriptPath)];
-    require(scriptPath);
-    QuickAddBulk = window.customElements.get('quick-add-bulk');
+    QuickAddBulk = require(scriptPath);
     instance = new QuickAddBulk();
     document.body.appendChild(instance);
     instance.dataset.index = '1';

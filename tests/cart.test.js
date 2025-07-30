@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
@@ -23,10 +22,12 @@ describe('CartItems.getSectionInnerHTML', () => {
     global.publish = jest.fn();
     global.PUB_SUB_EVENTS = { cartUpdate: 'cart-update' };
 
-    const scriptPath = path.resolve(__dirname, '../docs/website/website-v1/assets/cart.js');
-    const scriptContent = fs.readFileSync(scriptPath, 'utf8');
-    window.Function(scriptContent).call(window);
-    CartItems = window.customElements.get('cart-items');
+    const scriptPath = path.resolve(
+      __dirname,
+      '../docs/website/website-v1/assets/cart.js'
+    );
+    const cartModule = require(scriptPath);
+    CartItems = cartModule.CartItems || cartModule;
     instance = new CartItems();
     document.body.appendChild(instance);
   });
