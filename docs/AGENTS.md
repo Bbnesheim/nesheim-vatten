@@ -8,6 +8,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 | --------------------- | ------------ | ------------------------------------------------------------ |
 | `create-structure.sh` | Bash script  | Generates the base folder structure with templates           |
 | Jest                  | Node.js CLI  | Runs JavaScript test suite under `tests/`                    |
+| jest-axe              | Node.js CLI  | Checks HTML snippets for accessibility issues                |
 | Stylelint             | Node.js CLI  | Lints CSS files using `.stylelintrc.json`                    |
 | htmllint              | Node.js CLI  | Lints HTML using `.htmllintrc` and `.htmllintignore`         |
 | Prettier              | Node.js CLI  | Formats code consistently across files                       |
@@ -38,6 +39,17 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Input:** `*.test.js` files.
 - **Output:** Test results printed in the console.
 - **Configuration:** Follows `package.json` settings; no extra config file.
+
+### jest-axe
+
+- **Purpose:** Run automated accessibility tests using the Axe engine.
+- **Usage:**
+  ```bash
+  npm run test:a11y
+  ```
+- **Input:** HTML snippets or DOM from JSDOM.
+- **Output:** Violations list printed in the console.
+- **Configuration:** Provided via Jest setup in `tests/accessibility.test.js`.
 
 ### Stylelint
 
