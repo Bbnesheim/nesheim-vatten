@@ -1,91 +1,100 @@
-# Kom i gang med utviklingsmiljøet
+# Project Setup
 
-Denne guiden beskriver de grunnleggende stegene for å få prosjektet opp å kjøre lokalt.
+This guide explains how to get the repository running locally. It merges information from the previous Norwegian and English setup guides.
 
-## 1. Installer mise
+## 1. Clone the repository
 
-[mise](https://github.com/jdx/mise) håndterer verktøyversjoner definert i `.tool-versions`.
-Installer med:
+```bash
+git clone <REPO-URL>
+cd nesheim-vatten
+```
+
+Replace `<REPO-URL>` with the Git address of your fork or the upstream repository.
+
+## 2. Install mise and tool versions
+
+[mise](https://github.com/jdx/mise) manages the tool versions defined in `.tool-versions`.
+Install it with:
 
 ```bash
 curl https://mise.run | sh
 ```
 
-Installer prosjektets avhengigheter:
-
-```bash
-npm install
-```
-
-Start utviklingsserveren:
-
-````bash
-npm run dev
-Start et nytt terminalvindu eller følg installerens instruksjoner for å laste inn `mise`.
-
-## 2. Installer definerte verktøy
-
-Kjør `mise install` for å hente Node.js og pnpm i riktig versjon:
+Then install the tools specified for the project:
 
 ```bash
 mise install
-````
+```
 
-## 3. Installer prosjektavhengigheter
+## 3. Install project dependencies
+
+Use `pnpm` if available or fall back to `npm`:
 
 ```bash
 pnpm install
-# eller npm install
+# or
+npm install
 ```
-## 4. Bygg statiske filer
+
+## 4. Build static assets
 
 ```bash
 npm run build
 ```
 
-Dette genererer minifiserte filer i `dist/assets/` som brukes av malene.
+This generates minified files in `dist/assets/` for the Shopify themes.
 
-
-## 5. Start utviklingsserveren
+## 5. Start the development server
 
 ```bash
 pnpm dev
-# eller npm run dev
+# or
+npm run dev
 ```
 
-Dette vil starte en lokal server slik at du kan se nettsiden i nettleseren.
+A local server will be started so you can preview the site in your browser.
 
-## 6. Kjør testene
+## 6. Run the tests
 
 ```bash
 pnpm test
-# eller npm test
+# or
+npm test
 ```
 
-Alle tester bør kjøres uten feil.
+All tests should run without failures.
 
-## Optimaliser bilder
+## 7. Preview the website
 
-Kommandoen `npm run optimize:images` bruker Sharp til å lage WebP- og AVIF-versjoner av alle bildefiler under `clients/**/assets/`. Filene plasseres i samme mappe som originalen.
-Når scriptet kjøres vises meldingen `Optimized <fil>` for hver bildefil som behandles. Hvis ingen bilder blir funnet, skrives `No image files found for optimization.`. Mangler avhengighetene `glob` eller `sharp` får du beskjed om å installere dem.
+The `docs/website` folder contains Shopify theme files and static assets. You can preview them in one of two ways:
 
-## SEO-innhold og temafiler
+1. **With Shopify CLI** (recommended for Shopify work):
+   ```bash
+   cd docs/website/website-v1
+   shopify theme serve
+   ```
+   This requires [Shopify CLI](https://shopify.dev/apps/tools/cli) and authentication with your store.
+2. **With a simple static server** (for general HTML/CSS/JS preview):
+   ```bash
+   npx http-server docs/website/website-v1
+   ```
+   Then open the provided local address in your browser. Other theme versions live under `docs/website/` (e.g., `website-v2`, `website-v3`).
 
-Tekstene for "Om oss" og "Kontakt oss" ligger i Shopify-temaet under `clients/baattilsyn/website/website_v4/templates/` som `page.om-oss.json` og `page.contact.json`.
-Filene følger Shopifys JSON-struktur og inneholder også meta-felter for tittel og beskrivelse. Rediger dem direkte i git.
+## 8. Optimise images
 
-Kjør `npm run lint` og `npm test` før du committer. Linting ekskluderer `.liquid` og `templates/*.json` via ignore-filene slik at temaet ikke påvirkes. Kjør `eslint --fix` og `npm run format` for å rette og formatere filer automatisk. Fargepalett og tone beskrives i [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+Run `npm run optimize:images` to create WebP and AVIF versions of image files under `clients/**/assets/`. You will see `Optimized <file>` for each processed image or `No image files found for optimization.` if none were found. If dependencies like `glob` or `sharp` are missing you will be prompted to install them.
 
-## Anbefalt cacheoppsett
+## 9. SEO content and theme files
 
-For raske lastetider bør statiske filer i mappen `/assets/` caches lenge i nettleseren.
-Sett opp serveren eller Shopify-temaet slik at JavaScript- og CSS-filer leveres
-med en `Cache-Control`-header på opptil ett år:
+The "About us" and "Contact us" texts live in the Shopify theme under `clients/baattilsyn/website/website_v4/templates/` as `page.om-oss.json` and `page.contact.json`. Edit them directly in Git. Run `npm run lint` and `npm test` before committing. Linting excludes `.liquid` and `templates/*.json` via ignore files so the theme is unaffected. Run `eslint --fix` and `npm run format` to automatically fix and format files. Colours and tone are described in [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+
+## 10. Recommended caching setup
+
+For fast load times, cache static files in `/assets/` for a long time. Configure your server or Shopify theme to serve JavaScript and CSS with a `Cache-Control` header of up to one year:
 
 ```
 /assets/*.js  Cache-Control: public, max-age=31536000
 /assets/*.css Cache-Control: public, max-age=31536000
 ```
 
-Bruk filversjonering eller query-parametere ved endringer slik at oppdaterte
-filer lastes inn når innholdet endres.
+Use file versioning or query parameters when files change so the browser fetches the updated versions.
