@@ -65,7 +65,7 @@ npm run lint
 npm test
 ```
 
-Websites can be previewed with Shopify CLI or any static server (see `docs/setup.md`). Continuous integration runs the same lint and test steps via GitHub Actions defined in `.github/workflows/ci.yml` whenever code is pushed or a pull request is opened on `main`.
+Websites can be previewed with Shopify CLI or any static server (see `docs/SETUP.md`). Continuous integration runs the same lint and test steps via GitHub Actions defined in `.github/workflows/ci.yml` whenever code is pushed or a pull request is opened on `main`.
 
 ## Adding a new component
 
