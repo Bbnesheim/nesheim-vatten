@@ -12,6 +12,8 @@
     "format:check": "prettier -c \"**/*.{js,css,html}\"",
     "prepare": "husky install",
     "optimize:images": "node tools/optimize-images.js",
+    "build": "webpack --mode production",
+    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\""
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -19,6 +21,7 @@
     "@testing-library/react": "^14.2.1",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
+    "glob": "^11.0.3",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "glob": "^11.0.3",
