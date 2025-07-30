@@ -84,12 +84,12 @@
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
-              assign loop = '&loop=1&playlist=' | append: video_id
+              assign loop = '&amp;loop=1&amp;playlist=' | append: video_id
             endif
           -%}
           {%- if section.settings.video_url.type == 'youtube' -%}
             <iframe
-              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&amp;autoplay=1{{ loop }}"
               class="js-youtube"
               allow="autoplay; encrypted-media"
               allowfullscreen

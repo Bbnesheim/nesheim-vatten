@@ -13,6 +13,12 @@ jobs:
           node-version: 18.20.8
       - name: Install dependencies
         run: npm install
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+      - name: Set CHROME_PATH
+        run: echo "CHROME_PATH=$(which google-chrome)" >> $GITHUB_ENV
       - name: Run Lighthouse CI
         run: npx -y lighthouse-ci autorun --config=lighthouserc.json --failOn=all
       - name: Upload Lighthouse reports
