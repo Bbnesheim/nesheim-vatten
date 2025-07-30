@@ -1,2 +1,3 @@
 clients/**/website/**/templates/*.json
 clients/**/website/**/*.liquid
+archive/**

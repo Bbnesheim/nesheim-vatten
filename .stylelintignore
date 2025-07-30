@@ -1,3 +1,4 @@
 node_modules
 clients/**/website/**/templates/**
 clients/**/website/website-tests/**
+archive/**
