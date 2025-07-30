@@ -28,6 +28,7 @@ npm install
 ```bash
 npm run lint:js
 npm run lint
+eslint --fix
 npm run format
 npm test
 ```

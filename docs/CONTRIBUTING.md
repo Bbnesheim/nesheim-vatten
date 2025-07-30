@@ -9,7 +9,7 @@ We welcome contributions! This guide explains our workflow.
 
 ## Pull Request process
 1. Rebase your branch on the latest `main` before opening the PR.
-2. Use clear, imperative commit messages.
+2. Use clear, imperative commit messages (present tense, e.g. `Add tests`).
 3. Push your branch and open a PR.
 4. Request review from a project maintainer.
 5. At least one approval is required before merging.
@@ -21,6 +21,7 @@ Install dependencies and run linters and tests before opening a PR:
 ```bash
 npm install
 npm run lint
+eslint --fix
 npm run format
 npm test
 ```

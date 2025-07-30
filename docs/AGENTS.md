@@ -62,6 +62,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
   ```bash
   npm run format
   ```
+- **Tip:** Run `eslint --fix` first to automatically resolve lint errors.
 - **Input:** Code files in the repository.
 - **Output:** Files rewritten with consistent style.
 - **Configuration:** `.prettierrc.json` and `.prettierignore` (optional).
