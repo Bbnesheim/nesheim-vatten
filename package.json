@@ -13,8 +13,7 @@
     "prepare": "husky install",
     "optimize:images": "node tools/optimize-images.js",
     "build": "webpack --mode production",
-    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\""
-    "build": "webpack --mode production"
+    "check:conflicts": "node tools/check-conflicts.js"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
@@ -24,7 +23,6 @@
     "glob": "^11.0.3",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
-    "glob": "^11.0.3",
     "htmllint": "^0.7.3",
     "htmllint-cli": "^0.0.6",
     "husky": "^9.1.7",
