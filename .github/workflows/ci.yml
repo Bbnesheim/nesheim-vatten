@@ -15,6 +15,9 @@ jobs:
         with:
           node-version: 18.20.8
 
+      - name: Install dependencies
+        run: npm install
+
       - run: npm run lint
       - run: npm run format:check
 
@@ -25,6 +28,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.20.8
+
+      - name: Install dependencies
+        run: npm install
 
       - run: npm test --silent
 
@@ -37,7 +43,7 @@ jobs:
           node-version: 18.20.8
 
       - run: npm run optimize:images
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: optimized-images
           path: |
