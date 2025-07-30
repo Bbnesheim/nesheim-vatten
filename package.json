@@ -4,7 +4,7 @@
   "scripts": {
     "test": "jest --coverage",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
-    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\"",
+    "lint:js": "eslint \"**/*.js\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmllint \"clients/**/*.html\"",
     "dev": "npx serve clients/baattilsyn/pages",
