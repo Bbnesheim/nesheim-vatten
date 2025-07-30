@@ -73,7 +73,7 @@ Kommandoen `npm run optimize:images` bruker Sharp til å lage WebP- og AVIF-vers
 Tekstene for "Om oss" og "Kontakt oss" ligger i Shopify-temaet under `clients/baattilsyn/website/website_v4/templates/` som `page.om-oss.json` og `page.contact.json`.
 Filene følger Shopifys JSON-struktur og inneholder også meta-felter for tittel og beskrivelse. Rediger dem direkte i git.
 
-Kjør `npm run lint` og `npm test` før du committer. Linting ekskluderer `.liquid` og `templates/*.json` via ignore-filene slik at temaet ikke påvirkes. Fargepalett og tone beskrives i [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
+Kjør `npm run lint` og `npm test` før du committer. Linting ekskluderer `.liquid` og `templates/*.json` via ignore-filene slik at temaet ikke påvirkes. Kjør `eslint --fix` og `npm run format` for å rette og formatere filer automatisk. Fargepalett og tone beskrives i [`docs/BRAND_GUIDE.md`](BRAND_GUIDE.md).
 
 ## Anbefalt cacheoppsett
 
