@@ -171,6 +171,7 @@ class CartItems extends HTMLElement {
       .then((state) => JSON.parse(state));
   }
 
+  // Replace cart DOM sections with markup from the server response
   // Render cart sections with markup from the server response
   renderCartSections(state) {
     this.classList.toggle('is-empty', state.item_count === 0);

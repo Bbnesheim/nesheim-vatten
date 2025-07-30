@@ -163,6 +163,7 @@ class CartItems extends HTMLElement {
       },
     ];
   }
+  // Fetch updated cart JSON from the server
   // Fetch updated cart state from the server
   fetchCartUpdate(body) {
     return fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
