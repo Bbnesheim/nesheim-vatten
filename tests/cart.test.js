@@ -52,4 +52,9 @@ describe('CartItems.getSectionInnerHTML', () => {
     const html = '<div><span class="target">hello</span></div>';
     expect(instance.getSectionInnerHTML(html, '.target')).toBe('hello');
   });
+
+  test('strips script tags from HTML', () => {
+    const html = '<div><span class="target">hi<script>alert(1)</script></span></div>';
+    expect(instance.getSectionInnerHTML(html, '.target')).toBe('hi');
+  });
 });

@@ -1,3 +1,6 @@
+const createDOMPurify = require('dompurify');
+const DOMPurify = createDOMPurify(window);
+
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
@@ -115,7 +118,12 @@ class CartItems extends HTMLElement {
         .then((responseText) => {
           const html = new DOMParser().parseFromString(responseText, 'text/html');
           const sourceQty = html.querySelector('cart-items');
-          this.innerHTML = sourceQty.innerHTML;
+          if (sourceQty) {
+            const sanitized = DOMPurify.sanitize(sourceQty.innerHTML);
+            if (this.innerHTML !== sanitized) {
+              this.innerHTML = sanitized;
+            }
+          }
         })
         .catch((e) => {
           console.error(e);
@@ -186,11 +194,17 @@ class CartItems extends HTMLElement {
 
           this.getSectionsToRender().forEach((section) => {
             const elementToReplace =
-              document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-            elementToReplace.innerHTML = this.getSectionInnerHTML(
-              parsedState.sections[section.section],
-              section.selector
+              document.getElementById(section.id).querySelector(section.selector) ||
+              document.getElementById(section.id);
+            const newHtml = DOMPurify.sanitize(
+              this.getSectionInnerHTML(
+                parsedState.sections[section.section],
+                section.selector
+              )
             );
+            if (elementToReplace.innerHTML !== newHtml) {
+              elementToReplace.innerHTML = newHtml;
+            }
           });
           const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;
           let message = '';
@@ -247,7 +261,9 @@ class CartItems extends HTMLElement {
   }
 
   getSectionInnerHTML(html, selector) {
-    return new DOMParser().parseFromString(html, 'text/html').querySelector(selector).innerHTML;
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const el = doc.querySelector(selector);
+    return el ? DOMPurify.sanitize(el.innerHTML) : '';
   }
 
   enableLoading(line) {

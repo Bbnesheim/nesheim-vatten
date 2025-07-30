@@ -1,3 +1,7 @@
+const createDOMPurify = require('dompurify');
+
+const DOMPurify = createDOMPurify(window);
+
 class QuickAddBulk extends BulkAdd {
   constructor() {
     super();
@@ -95,7 +99,10 @@ class QuickAddBulk extends BulkAdd {
           const html = new DOMParser().parseFromString(responseText, 'text/html');
           const sourceQty = html.querySelector(`#quick-add-bulk-${this.dataset.index}-${this.sectionId}`);
           if (sourceQty) {
-            this.innerHTML = sourceQty.innerHTML;
+            const sanitized = DOMPurify.sanitize(sourceQty.innerHTML);
+            if (this.innerHTML !== sanitized) {
+              this.innerHTML = sanitized;
+            }
           }
           resolve();
         })
@@ -180,10 +187,15 @@ class QuickAddBulk extends BulkAdd {
           ? sectionElement.querySelector(section.selector)
           : sectionElement;
       if (elementToReplace) {
-        elementToReplace.innerHTML = this.getSectionInnerHTML(
-          parsedState.sections[section.section],
-          section.selector
+        const newHtml = DOMPurify.sanitize(
+          this.getSectionInnerHTML(
+            parsedState.sections[section.section],
+            section.selector
+          )
         );
+        if (elementToReplace.innerHTML !== newHtml) {
+          elementToReplace.innerHTML = newHtml;
+        }
       }
     });
 
