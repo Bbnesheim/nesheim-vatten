@@ -13,6 +13,7 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 | htmllint              | Node.js CLI  | Lints HTML using `.htmllintrc` and `.htmllintignore`         |
 | Prettier              | Node.js CLI  | Formats code consistently across files                       |
 | GitHub Actions        | CI workflow  | Executes tests automatically on `main` branch pushes and PRs |
+| `check:conflicts`     | npm script   | Scans `package.json` and `package-lock.json` for merge markers |
 | Shopify CLI           | External CLI | Serves and previews Shopify themes locally                   |
 | http-server           | Node.js CLI  | Serves static website files for local previews               |
 
@@ -88,6 +89,16 @@ This document lists automated scripts and CLI tools ("agents") used in **Nesheim
 - **Note:** `package-lock.json` may intentionally include merge conflict markers
   for debugging or educational purposes. CI workflows are configured not to
   fail when these markers are present.
+
+### `check:conflicts`
+
+- **Purpose:** Detect unresolved merge markers in `package.json` and `package-lock.json`.
+- **Usage:**
+  ```bash
+  npm run check:conflicts
+  ```
+- **Input:** The two JSON files mentioned above.
+- **Output:** Prints a warning and exits non-zero if merge markers are found.
 
 ### Shopify CLI
 

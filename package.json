@@ -13,14 +13,13 @@
     "format:check": "prettier -c \"**/*.{js,css,html}\"",
     "prepare": "husky install",
     "optimize:images": "node tools/optimize-images.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "check:conflicts": "grep -nE '<<<<<<<|=======|>>>>>>>' package.json package-lock.json | grep -v check:conflicts && (echo 'Merge markers found' && exit 1) || echo 'No merge markers found.'"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
-    "glob": "^11.0.3"
-  },
-  "devDependencies": {
+    "glob": "^11.0.3",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "htmllint": "^0.7.3",
