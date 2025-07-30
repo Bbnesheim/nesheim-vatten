@@ -1,3 +1,6 @@
+const createDOMPurify = require('dompurify');
+const DOMPurify = createDOMPurify(window);
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -65,7 +68,7 @@ class HTMLUpdateUtility {
 
   // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
   static setInnerHTML(element, html) {
-    element.innerHTML = html;
+    element.innerHTML = DOMPurify.sanitize(html);
     element.querySelectorAll('script').forEach((oldScriptTag) => {
       const newScriptTag = document.createElement('script');
       Array.from(oldScriptTag.attributes).forEach((attribute) => {
@@ -447,7 +450,7 @@ Shopify.CountryProvinceSelector.prototype = {
       for (var i = 0; i < provinces.length; i++) {
         var opt = document.createElement('option');
         opt.value = provinces[i][0];
-        opt.innerHTML = provinces[i][1];
+        opt.textContent = provinces[i][1];
         this.provinceEl.appendChild(opt);
       }
 
@@ -465,7 +468,7 @@ Shopify.CountryProvinceSelector.prototype = {
     for (var i = 0, count = values.length; i < values.length; i++) {
       var opt = document.createElement('option');
       opt.value = values[i];
-      opt.innerHTML = values[i];
+      opt.textContent = values[i];
       selector.appendChild(opt);
     }
   },
@@ -767,7 +770,7 @@ class BulkModal extends HTMLElement {
             const sourceQty = html.querySelector(
               '.quick-order-list-container'
             ).parentNode;
-            this.innerHTML = sourceQty.innerHTML;
+            this.innerHTML = DOMPurify.sanitize(sourceQty.innerHTML);
           })
           .catch((e) => {
             console.error(e);

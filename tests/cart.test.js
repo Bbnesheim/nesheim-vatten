@@ -16,9 +16,12 @@ describe('CartItems.getSectionInnerHTML', () => {
     global.debounce = (fn) => fn;
     global.ON_CHANGE_DEBOUNCE_TIMER = 0;
     global.trapFocus = jest.fn();
-    global.fetchConfig = () => ({})
+    global.fetchConfig = () => ({});
     global.routes = { cart_change_url: '', cart_update_url: '', cart_url: '' };
-    global.CartPerformance = { measure: jest.fn((_, fn) => fn()), measureFromEvent: jest.fn() };
+    global.CartPerformance = {
+      measure: jest.fn((_, fn) => fn()),
+      measureFromEvent: jest.fn(),
+    };
     global.publish = jest.fn();
     global.PUB_SUB_EVENTS = { cartUpdate: 'cart-update' };
 
@@ -54,7 +57,13 @@ describe('CartItems.getSectionInnerHTML', () => {
   });
 
   test('strips script tags from HTML', () => {
-    const html = '<div><span class="target">hi<script>alert(1)</script></span></div>';
+    const html =
+      '<div><span class="target">hi<script>alert(1)</script></span></div>';
+    expect(instance.getSectionInnerHTML(html, '.target')).toBe('hi');
+  });
+
+  test('removes inline event handlers', () => {
+    const html = '<div><span class="target" onclick="alert(1)">hi</span></div>';
     expect(instance.getSectionInnerHTML(html, '.target')).toBe('hi');
   });
 });

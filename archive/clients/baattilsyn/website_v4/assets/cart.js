@@ -1,3 +1,6 @@
+const createDOMPurify = require('dompurify');
+const DOMPurify = createDOMPurify(window);
+
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
@@ -131,7 +134,7 @@ class CartItems extends HTMLElement {
             'text/html'
           );
           const sourceQty = html.querySelector('cart-items');
-          this.innerHTML = sourceQty.innerHTML;
+          this.innerHTML = DOMPurify.sanitize(sourceQty.innerHTML);
         })
         .catch((e) => {
           console.error(e);
@@ -312,9 +315,11 @@ class CartItems extends HTMLElement {
   }
 
   getSectionInnerHTML(html, selector) {
-    return new DOMParser()
-      .parseFromString(html, 'text/html')
-      .querySelector(selector).innerHTML;
+    return DOMPurify.sanitize(
+      new DOMParser()
+        .parseFromString(html, 'text/html')
+        .querySelector(selector).innerHTML
+    );
   }
 
   enableLoading(line) {
