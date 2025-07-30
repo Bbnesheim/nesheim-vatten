@@ -14,6 +14,7 @@ This repository contains all brand assets, artist materials and platform code fo
 - `clients/comma/platforms/` – integrations with Shopify and social channels
 - `clients/comma/releases/` – release metadata and assets
 - `docs/` – internal guidelines and changelogs
+- `themes/` – Shopify themes and static site code
 - `apps/next/` – minimal Next.js demo for Båttilsyn
 
 ## Roadmap Overview
