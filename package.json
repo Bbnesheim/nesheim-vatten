@@ -10,16 +10,14 @@
     "format": "prettier -w \"**/*.{js,css,html}\"",
     "format:check": "prettier -c \"**/*.{js,css,html}\"",
     "prepare": "husky install",
-    "optimize:images": "node tools/optimize-images.js"
-    "build": "webpack --mode production"
+    "optimize:images": "node tools/optimize-images.js",
+    "build": "webpack --mode production",
+    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\""
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "glob": "^11.0.3",
-    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint \"**/*.js\""
-  },
-  "devDependencies": {
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "htmllint": "^0.7.3",
@@ -31,7 +29,6 @@
     "mini-css-extract-plugin": "^2.9.2",
     "prettier": "^3.6.2",
     "sharp": "^0.34.3",
-    "stylelint": "^16.22.0"
     "stylelint": "^16.22.0",
     "terser-webpack-plugin": "^5.3.14",
     "webpack": "^5.101.0",
