@@ -1,7 +1,7 @@
 # Repository Health Report
 
 ## Inventar
-- `package.json`, `package-lock.json`, `package.backup.json`
+- `package.json`, `package-lock.json`
 - `.tool-versions`, `.nvmrc`
 - `.github/workflows/ci.yml`
 - Lint konfigurasjon: `.prettierrc.json`, `.stylelintrc.json`, `.stylelintignore`, `.htmllintrc`, `.htmllintignore`

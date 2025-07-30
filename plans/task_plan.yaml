@@ -2,7 +2,6 @@
   title: "Fix package.json and restore npm scripts"
   rationale: "package.json er ugyldig og mangler scripts som CI forventer"
   actions:
-    - Kopier innhold fra package.backup.json til package.json
     - Legg til scriptet "format" som kjører prettier
     - Kjør "npm install" for å regenerere package-lock.json
   acceptance_criteria:
