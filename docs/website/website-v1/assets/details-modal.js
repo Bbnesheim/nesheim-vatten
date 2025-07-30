@@ -45,3 +45,9 @@ class DetailsModal extends HTMLElement {
 }
 
 customElements.define('details-modal', DetailsModal);
+// upgrade any existing elements for environments like JSDOM
+document.querySelectorAll('details-modal').forEach((el) => {
+  if (!(el instanceof DetailsModal)) customElements.upgrade(el);
+});
+// expose constructor for tests
+this.DetailsModal = DetailsModal;

@@ -23,3 +23,7 @@ function publish(eventName, data) {
     return Promise.resolve()
   }
 }
+
+// expose functions for tests
+this.subscribe = subscribe;
+this.publish = publish;
