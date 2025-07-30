@@ -20,3 +20,14 @@
 - `clients/comma/deliverables/`
 - `clients/comma/design/`
 - `clients/comma/meetings/`
+
+## Website Assets Overview
+
+There are 32 JavaScript modules under `docs/website/website-v1/assets`. Prior to
+this update only four of them had automated tests. Additional Jest tests now
+cover `details-modal.js` and `pubsub.js`, but most modules remain untested.
+
+Attempting to run `npm run build` followed by `npx webpack-bundle-analyzer
+dist/assets/bundle-stats.json` failed in this environment because webpack and its
+dependencies were not installed. Bundle size information could therefore not be
+generated.
