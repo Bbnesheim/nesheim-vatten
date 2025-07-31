@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
@@ -133,7 +136,7 @@ class CartItems extends HTMLElement {
             'text/html'
           );
           const sourceQty = html.querySelector('cart-items');
-          this.innerHTML = sourceQty.innerHTML;
+          this.innerHTML = DOMPurify.sanitize(sourceQty.innerHTML);
         })
         .catch((e) => {
           console.error(e);
@@ -185,10 +188,10 @@ class CartItems extends HTMLElement {
       const elementToReplace =
         document.getElementById(section.id).querySelector(section.selector) ||
         document.getElementById(section.id);
-      elementToReplace.innerHTML = this.getSectionInnerHTML(
+      elementToReplace.innerHTML = DOMPurify.sanitize(this.getSectionInnerHTML(
         state.sections[section.section],
         section.selector
-      );
+      ));
     });
   }
 

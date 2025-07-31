@@ -1,3 +1,6 @@
+const DOMPurify = window.DOMPurify;
+
+
 class CartDrawer extends HTMLElement {
   constructor() {
     super();
@@ -80,7 +83,7 @@ class CartDrawer extends HTMLElement {
         : document.getElementById(section.id);
 
       if (!sectionElement) return;
-      sectionElement.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.id], section.selector);
+      sectionElement.innerHTML = DOMPurify.sanitize(this.getSectionInnerHTML(parsedState.sections[section.id], section.selector));
     });
 
     setTimeout(() => {

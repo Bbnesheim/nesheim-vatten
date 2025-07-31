@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -56,7 +59,7 @@ class HTMLUpdateUtility {
 
   // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
   static setInnerHTML(element, html) {
-    element.innerHTML = html;
+    element.innerHTML = DOMPurify.sanitize(html);
     element.querySelectorAll('script').forEach((oldScriptTag) => {
       const newScriptTag = document.createElement('script');
       Array.from(oldScriptTag.attributes).forEach((attribute) => {
@@ -400,7 +403,7 @@ Shopify.CountryProvinceSelector.prototype = {
       for (let i = 0; i < provinces.length; i++) {
         const opt = document.createElement('option');
         opt.value = provinces[i][0];
-        opt.innerHTML = provinces[i][1];
+        opt.innerHTML = DOMPurify.sanitize(provinces[i][1]);
         this.provinceEl.appendChild(opt);
       }
 
@@ -418,7 +421,7 @@ Shopify.CountryProvinceSelector.prototype = {
     for (let i = 0, count = values.length; i < values.length; i++) {
       const opt = document.createElement('option');
       opt.value = values[i];
-      opt.innerHTML = values[i];
+      opt.innerHTML = DOMPurify.sanitize(values[i]);
       selector.appendChild(opt);
     }
   },
@@ -665,7 +668,7 @@ class BulkModal extends HTMLElement {
           .then((responseText) => {
             const html = new DOMParser().parseFromString(responseText, 'text/html');
             const sourceQty = html.querySelector('.quick-order-list-container').parentNode;
-            this.innerHTML = sourceQty.innerHTML;
+            this.innerHTML = DOMPurify.sanitize(sourceQty.innerHTML);
           })
           .catch((e) => {
             console.error(e);
@@ -1113,7 +1116,7 @@ class VariantSelects extends HTMLElement {
       );
     } else if (tagName === 'INPUT' && target.type === 'radio') {
       const selectedSwatchValue = target.closest(`.product-form__input`).querySelector('[data-selected-value]');
-      if (selectedSwatchValue) selectedSwatchValue.innerHTML = value;
+      if (selectedSwatchValue) selectedSwatchValue.innerHTML = DOMPurify.sanitize(value);
     }
   }
 
@@ -1159,11 +1162,11 @@ class ProductRecommendations extends HTMLElement {
       .then((response) => response.text())
       .then((text) => {
         const html = document.createElement('div');
-        html.innerHTML = text;
+        html.innerHTML = DOMPurify.sanitize(text);
         const recommendations = html.querySelector('product-recommendations');
 
         if (recommendations?.innerHTML.trim().length) {
-          this.innerHTML = recommendations.innerHTML;
+          this.innerHTML = DOMPurify.sanitize(recommendations.innerHTML);
         }
 
         if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {

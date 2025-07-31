@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('pickup-availability')) {
   customElements.define(
     'pickup-availability',
@@ -45,12 +48,12 @@ if (!customElements.get('pickup-availability')) {
           this.fetchAvailability(variant.id);
         } else {
           this.removeAttribute('available');
-          this.innerHTML = '';
+          this.innerHTML = DOMPurify.sanitize('');
         }
       }
 
       renderError() {
-        this.innerHTML = '';
+        this.innerHTML = DOMPurify.sanitize('');
         this.appendChild(this.errorHtml);
 
         this.querySelector('button').addEventListener('click', this.onClickRefreshList);
@@ -60,12 +63,12 @@ if (!customElements.get('pickup-availability')) {
         const drawer = document.querySelector('pickup-availability-drawer');
         if (drawer) drawer.remove();
         if (!sectionInnerHTML.querySelector('pickup-availability-preview')) {
-          this.innerHTML = '';
+          this.innerHTML = DOMPurify.sanitize('');
           this.removeAttribute('available');
           return;
         }
 
-        this.innerHTML = sectionInnerHTML.querySelector('pickup-availability-preview').outerHTML;
+        this.innerHTML = DOMPurify.sanitize(sectionInnerHTML.querySelector('pickup-availability-preview').outerHTML);
         this.setAttribute('available', '');
 
         document.body.appendChild(sectionInnerHTML.querySelector('pickup-availability-drawer'));

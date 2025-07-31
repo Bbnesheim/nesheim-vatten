@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('product-info')) {
   customElements.define(
     'product-info',
@@ -99,7 +102,7 @@ if (!customElements.get('product-info')) {
           this.updateURL(productUrl, variant?.id);
 
           if (updateFullPage) {
-            document.querySelector('head title').innerHTML = html.querySelector('head title').innerHTML;
+            document.querySelector('head title').innerHTML = DOMPurify.sanitize(html.querySelector('head title').innerHTML);
 
             HTMLUpdateUtility.viewTransition(
               document.querySelector('main'),
@@ -186,7 +189,7 @@ if (!customElements.get('product-info')) {
             const source = html.getElementById(`${id}-${this.sectionId}`);
             const destination = this.querySelector(`#${id}-${this.dataset.section}`);
             if (source && destination) {
-              destination.innerHTML = source.innerHTML;
+              destination.innerHTML = DOMPurify.sanitize(source.innerHTML);
               destination.classList.toggle('hidden', shouldHide(source));
             }
           };
@@ -312,7 +315,7 @@ if (!customElements.get('product-info')) {
         // update media modal
         const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
         const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
-        if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+        if (modalContent && newModalContent) modalContent.innerHTML = DOMPurify.sanitize(newModalContent.innerHTML);
       }
 
       setQuantityBoundries() {
@@ -376,7 +379,7 @@ if (!customElements.get('product-info')) {
               }
             }
           } else {
-            current.innerHTML = updated.innerHTML;
+            current.innerHTML = DOMPurify.sanitize(updated.innerHTML);
           }
         }
       }

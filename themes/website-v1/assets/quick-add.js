@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('quick-add-modal')) {
   customElements.define(
     'quick-add-modal',
@@ -14,7 +17,7 @@ if (!customElements.get('quick-add-modal')) {
       hide(preventFocus = false) {
         const cartNotification = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
         if (cartNotification) cartNotification.setActiveElement(this.openedBy);
-        this.modalContent.innerHTML = '';
+        this.modalContent.innerHTML = DOMPurify.sanitize('');
 
         if (preventFocus) this.openedBy = null;
         super.hide();
@@ -80,7 +83,7 @@ if (!customElements.get('quick-add-modal')) {
 
         const oldId = sectionId;
         const newId = `quickadd-${sectionId}`;
-        productElement.innerHTML = productElement.innerHTML.replaceAll(oldId, newId);
+        productElement.innerHTML = DOMPurify.sanitize(productElement.innerHTML.replaceAll(oldId, newId));
         Array.from(productElement.attributes).forEach((attribute) => {
           if (attribute.value.includes(oldId)) {
             productElement.setAttribute(attribute.name, attribute.value.replace(oldId, newId));

@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('price-per-item')) {
   customElements.define(
     'price-per-item',
@@ -86,7 +89,11 @@ if (!customElements.get('price-per-item')) {
         for (let pair of this.qtyPricePairs) {
           if (this.currentQtyForVolumePricing >= pair[0]) {
             const pricePerItemCurrent = document.querySelector(`price-per-item[id^="Price-Per-Item-${this.dataset.sectionId || this.dataset.variantId}"] .price-per-item span`);
-            this.classList.contains('variant-item__price-per-item') ? pricePerItemCurrent.innerHTML = window.quickOrderListStrings.each.replace('[money]', pair[1]) : pricePerItemCurrent.innerHTML = pair[1];
+            this.classList.contains('variant-item__price-per-item')
+              ? (pricePerItemCurrent.innerHTML = DOMPurify.sanitize(
+                  window.quickOrderListStrings.each.replace('[money]', pair[1])
+                ))
+              : (pricePerItemCurrent.innerHTML = DOMPurify.sanitize(pair[1]));
             break;
           }
         }

@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('recipient-form')) {
   customElements.define(
     'recipient-form',
@@ -156,7 +159,7 @@ if (!customElements.get('recipient-form')) {
       clearErrorMessage() {
         this.errorMessageWrapper.hidden = true;
 
-        if (this.errorMessageList) this.errorMessageList.innerHTML = '';
+        if (this.errorMessageList) this.errorMessageList.innerHTML = DOMPurify.sanitize('');
 
         this.querySelectorAll('.recipient-fields .form__message').forEach((field) => {
           field.classList.add('hidden');

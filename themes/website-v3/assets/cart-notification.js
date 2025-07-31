@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 class CartNotification extends HTMLElement {
   constructor() {
     super();
@@ -37,10 +40,10 @@ class CartNotification extends HTMLElement {
   renderContents(parsedState) {
     this.cartItemKey = parsedState.key;
     this.getSectionsToRender().forEach((section) => {
-      document.getElementById(section.id).innerHTML = this.getSectionInnerHTML(
+      document.getElementById(section.id).innerHTML = DOMPurify.sanitize(this.getSectionInnerHTML(
         parsedState.sections[section.id],
         section.selector
-      );
+      ));
     });
 
     if (this.header) this.header.reveal();

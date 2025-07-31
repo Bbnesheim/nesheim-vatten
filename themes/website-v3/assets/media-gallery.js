@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('media-gallery')) {
   customElements.define(
     'media-gallery',
@@ -87,7 +90,7 @@ if (!customElements.get('media-gallery')) {
         if (!image) return;
         image.onload = () => {
           this.elements.liveRegion.setAttribute('aria-hidden', false);
-          this.elements.liveRegion.innerHTML = window.accessibilityStrings.imageAvailable.replace('[index]', position);
+          this.elements.liveRegion.innerHTML = DOMPurify.sanitize(window.accessibilityStrings.imageAvailable.replace('[index]', position));
           setTimeout(() => {
             this.elements.liveRegion.setAttribute('aria-hidden', true);
           }, 2000);

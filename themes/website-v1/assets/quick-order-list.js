@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 globalThis.subscribe = globalThis.subscribe || undefined;
 
 if (!customElements.get('quick-order-list')) {
@@ -193,7 +196,7 @@ if (!customElements.get('quick-order-list')) {
               return;
             }
 
-            this.innerHTML = responseQuickOrderList.innerHTML;
+            this.innerHTML = DOMPurify.sanitize(responseQuickOrderList.innerHTML);
             this.initEventListeners();
           })
           .catch((e) => {
@@ -222,7 +225,7 @@ if (!customElements.get('quick-order-list')) {
 
             const total = this.getTotalBar();
             if (total) {
-              total.innerHTML = newSection.querySelector('.quick-order-list__total').innerHTML;
+              total.innerHTML = DOMPurify.sanitize(newSection.querySelector('.quick-order-list__total').innerHTML);
             }
 
             const table = this.quickOrderListTable;
@@ -232,7 +235,7 @@ if (!customElements.get('quick-order-list')) {
             const shouldUpdateVariants =
               this.currentPage === (newSection.querySelector('.pagination-wrapper')?.dataset.page ?? '1');
             if (newTable && shouldUpdateVariants) {
-              table.innerHTML = newTable.innerHTML;
+              table.innerHTML = DOMPurify.sanitize(newTable.innerHTML);
 
               const newFocusTarget = this.querySelector(`[data-target='${focusTarget}']`);
               if (newFocusTarget) {
@@ -243,9 +246,9 @@ if (!customElements.get('quick-order-list')) {
             }
           } else if (section === 'cart-drawer') {
             sectionElement.closest('cart-drawer')?.classList.toggle('is-empty', items.length === 0);
-            sectionElement.querySelector(selector).innerHTML = newSection.innerHTML;
+            sectionElement.querySelector(selector).innerHTML = DOMPurify.sanitize(newSection.innerHTML);
           } else {
-            sectionElement.innerHTML = newSection.innerHTML;
+            sectionElement.innerHTML = DOMPurify.sanitize(newSection.innerHTML);
           }
         });
       }
@@ -372,7 +375,7 @@ if (!customElements.get('quick-order-list')) {
         const errorElements = document.querySelectorAll('.quick-order-list-error');
 
         errorElements.forEach((errorElement) => {
-          errorElement.innerHTML = '';
+          errorElement.innerHTML = DOMPurify.sanitize('');
           if (!message) return;
           const updatedMessageElement = this.errorMessageTemplate.cloneNode(true);
           updatedMessageElement.content.querySelector('.quick-order-list-error-message').innerText = message;
@@ -385,7 +388,7 @@ if (!customElements.get('quick-order-list')) {
         const icons = this.querySelectorAll('.quick-order-list__message-icon');
 
         if (quantity === null || isNaN(quantity)) {
-          messages.forEach((message) => (message.innerHTML = ''));
+          messages.forEach((message) => (message.innerHTML = DOMPurify.sanitize('')));
           icons.forEach((icon) => icon.classList.add('hidden'));
           return;
         }
@@ -401,7 +404,7 @@ if (!customElements.get('quick-order-list')) {
           ? window.quickOrderListStrings.itemAdded
           : window.quickOrderListStrings.itemsAdded;
 
-        messages.forEach((msg) => (msg.innerHTML = textTemplate.replace('[quantity]', absQuantity)));
+        messages.forEach((msg) => (msg.innerHTML = DOMPurify.sanitize(textTemplate.replace('[quantity]', absQuantity))));
 
         if (!isQuantityNegative) {
           icons.forEach((i) => i.classList.remove('hidden'));
@@ -421,7 +424,7 @@ if (!customElements.get('quick-order-list')) {
       updateLiveRegions(id, message) {
         const variantItemErrorDesktop = document.getElementById(`Quick-order-list-item-error-desktop-${id}`);
         if (variantItemErrorDesktop) {
-          variantItemErrorDesktop.querySelector('.variant-item__error-text').innerHTML = message;
+          variantItemErrorDesktop.querySelector('.variant-item__error-text').innerHTML = DOMPurify.sanitize(message);
           variantItemErrorDesktop.closest('tr').classList.remove('hidden');
         }
 
@@ -429,7 +432,7 @@ if (!customElements.get('quick-order-list')) {
           `Quick-order-list-item-error-mobile-${id}`
         );
         if (variantItemErrorMobile) {
-          variantItemErrorMobile.querySelector('.variant-item__error-text').innerHTML = message;
+          variantItemErrorMobile.querySelector('.variant-item__error-text').innerHTML = DOMPurify.sanitize(message);
         }
 
         this.querySelector('#shopping-cart-variant-item-status').setAttribute('aria-hidden', true);
