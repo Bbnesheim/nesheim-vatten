@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('localization-form')) {
   customElements.define(
     'localization-form',
@@ -169,10 +172,10 @@ if (!customElements.get('localization-form')) {
         });
 
         if (this.elements.liveRegion) {
-          this.elements.liveRegion.innerHTML = window.accessibilityStrings.countrySelectorSearchCount.replace(
+          this.elements.liveRegion.innerHTML = DOMPurify.sanitize(window.accessibilityStrings.countrySelectorSearchCount.replace(
             '[count]',
             visibleCountries
-          );
+          ));
         }
 
         this.querySelector('.country-selector').scrollTop = 0;

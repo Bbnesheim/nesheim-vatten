@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 class PredictiveSearch extends SearchForm {
   constructor() {
     super();
@@ -226,7 +229,7 @@ class PredictiveSearch extends SearchForm {
   }
 
   renderSearchResults(resultsMarkup) {
-    this.predictiveSearchResults.innerHTML = resultsMarkup;
+    this.predictiveSearchResults.innerHTML = DOMPurify.sanitize(resultsMarkup);
     this.setAttribute('results', true);
 
     this.setLiveRegionResults();

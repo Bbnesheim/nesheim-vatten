@@ -1,6 +1,5 @@
-const createDOMPurify = require('dompurify');
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
 
-const DOMPurify = createDOMPurify(window);
 
 class QuickAddBulk extends BulkAdd {
   constructor() {
@@ -101,7 +100,7 @@ class QuickAddBulk extends BulkAdd {
           if (sourceQty) {
             const sanitized = DOMPurify.sanitize(sourceQty.innerHTML);
             if (this.innerHTML !== sanitized) {
-              this.innerHTML = sanitized;
+              this.innerHTML = DOMPurify.sanitize(sanitized);
             }
           }
           resolve();
@@ -194,7 +193,7 @@ class QuickAddBulk extends BulkAdd {
           )
         );
         if (elementToReplace.innerHTML !== newHtml) {
-          elementToReplace.innerHTML = newHtml;
+          elementToReplace.innerHTML = DOMPurify.sanitize(newHtml);
         }
       }
     });

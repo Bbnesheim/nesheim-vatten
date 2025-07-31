@@ -1,5 +1,5 @@
-const createDOMPurify = require('dompurify');
-const DOMPurify = createDOMPurify(window);
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
 
 class CartRemoveButton extends HTMLElement {
   constructor() {
@@ -121,7 +121,7 @@ class CartItems extends HTMLElement {
           if (sourceQty) {
             const sanitized = DOMPurify.sanitize(sourceQty.innerHTML);
             if (this.innerHTML !== sanitized) {
-              this.innerHTML = sanitized;
+              this.innerHTML = DOMPurify.sanitize(sanitized);
             }
           }
         })
@@ -203,7 +203,7 @@ class CartItems extends HTMLElement {
               )
             );
             if (elementToReplace.innerHTML !== newHtml) {
-              elementToReplace.innerHTML = newHtml;
+              elementToReplace.innerHTML = DOMPurify.sanitize(newHtml);
             }
           });
           const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;

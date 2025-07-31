@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 if (!customElements.get('quick-add-bulk')) {
   customElements.define(
     'quick-add-bulk',
@@ -102,7 +105,7 @@ if (!customElements.get('quick-add-bulk')) {
               const html = new DOMParser().parseFromString(responseText, 'text/html');
               const sourceQty = html.querySelector(`#quick-add-bulk-${this.dataset.index}-${this.sectionId}`);
               if (sourceQty) {
-                this.innerHTML = sourceQty.innerHTML;
+                this.innerHTML = DOMPurify.sanitize(sourceQty.innerHTML);
               }
               resolve();
             })
@@ -187,10 +190,10 @@ if (!customElements.get('quick-add-bulk')) {
               ? sectionElement.querySelector(section.selector)
               : sectionElement;
           if (elementToReplace) {
-            elementToReplace.innerHTML = this.getSectionInnerHTML(
+            elementToReplace.innerHTML = DOMPurify.sanitize(this.getSectionInnerHTML(
               parsedState.sections[section.section],
               section.selector
-            );
+            ));
           }
         });
 

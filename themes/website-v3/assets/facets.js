@@ -1,3 +1,6 @@
+const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+
+
 class FacetFiltersForm extends HTMLElement {
   constructor() {
     super();
@@ -80,9 +83,9 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static renderProductGridContainer(html) {
-    document.getElementById('ProductGridContainer').innerHTML = new DOMParser()
+    document.getElementById('ProductGridContainer').innerHTML = DOMPurify.sanitize(new DOMParser()
       .parseFromString(html, 'text/html')
-      .getElementById('ProductGridContainer').innerHTML;
+      .getElementById('ProductGridContainer').innerHTML);
 
     document
       .getElementById('ProductGridContainer')
@@ -96,10 +99,10 @@ class FacetFiltersForm extends HTMLElement {
     const count = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductCount').innerHTML;
     const container = document.getElementById('ProductCount');
     const containerDesktop = document.getElementById('ProductCountDesktop');
-    container.innerHTML = count;
+    container.innerHTML = DOMPurify.sanitize(count);
     container.classList.remove('loading');
     if (containerDesktop) {
-      containerDesktop.innerHTML = count;
+      containerDesktop.innerHTML = DOMPurify.sanitize(count);
       containerDesktop.classList.remove('loading');
     }
     const loadingSpinners = document.querySelectorAll(
@@ -136,7 +139,7 @@ class FacetFiltersForm extends HTMLElement {
       const currentElement = document.getElementById(elementToRender.id);
       // Element already rendered in the DOM so just update the innerHTML
       if (currentElement) {
-        document.getElementById(elementToRender.id).innerHTML = elementToRender.innerHTML;
+        document.getElementById(elementToRender.id).innerHTML = DOMPurify.sanitize(elementToRender.innerHTML);
       } else {
         if (index > 0) {
           const { className: previousElementClassName, id: previousElementId } = facetsToRender[index - 1];
@@ -182,7 +185,7 @@ class FacetFiltersForm extends HTMLElement {
     activeFacetElementSelectors.forEach((selector) => {
       const activeFacetsElement = html.querySelector(selector);
       if (!activeFacetsElement) return;
-      document.querySelector(selector).innerHTML = activeFacetsElement.innerHTML;
+      document.querySelector(selector).innerHTML = DOMPurify.sanitize(activeFacetsElement.innerHTML);
     });
 
     FacetFiltersForm.toggleActiveFacets(false);
@@ -193,7 +196,7 @@ class FacetFiltersForm extends HTMLElement {
 
     mobileElementSelectors.forEach((selector) => {
       if (!html.querySelector(selector)) return;
-      document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
+      document.querySelector(selector).innerHTML = DOMPurify.sanitize(html.querySelector(selector).innerHTML);
     });
 
     document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
