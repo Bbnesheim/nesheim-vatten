@@ -1,13 +1,10 @@
+# COMMA client folder
 clients/comma/
 ├── artists/                # Profiles and materials for COMMA. artists
 ├── brand-assets/           # Visual assets like logos, brand kits, style references
 ├── content/                # Blog posts, newsletters, and release copy
-├── contracts/ ⚠️          # Empty – remove or archive
-├── deliverables/ ⚠️        # Placeholder folder – delete when not needed
 ├── deployment/             # Notes on Shopify theme and infrastructure deployment
-├── design/ ⚠️             # Empty design source folder – to be populated or removed
 ├── marketing/              # Marketing strategy and promotional plans
-├── meetings/ ⚠️           # Empty folder for meeting notes – consider deletion
 ├── platforms/              # Integrations with Meta, TikTok, Shopify and more
 ├── releases/               # Catalog of music releases under COMMA.
 ├── sales-integrations/     # Channel-specific sales configurations
