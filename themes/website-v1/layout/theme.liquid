@@ -39,6 +39,7 @@
       <script src="/dist/assets/animations.min.js" defer="defer"></script>
     {%- endif -%}
 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
     {{ content_for_header }}
 
     {%- liquid
