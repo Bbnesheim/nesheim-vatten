@@ -1,4 +1,4 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import { DOMPurify, debounce, fetchConfig, routes } from './global.js';
 
 
 globalThis.subscribe = globalThis.subscribe || undefined;

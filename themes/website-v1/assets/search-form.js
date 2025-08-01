@@ -1,3 +1,5 @@
+import { debounce } from './global.js';
+
 class SearchForm extends HTMLElement {
   constructor() {
     super();
