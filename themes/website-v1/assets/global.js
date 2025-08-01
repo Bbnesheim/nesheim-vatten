@@ -1,4 +1,9 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import createDOMPurify from "dompurify";
+export const DOMPurify = createDOMPurify(window);
+export const routes = window.routes || {};
+export const cartStrings = window.cartStrings || {};
+export const variantStrings = window.variantStrings || {};
+export const quickOrderListStrings = window.quickOrderListStrings || {};
 
 
 function getFocusableElements(container) {
@@ -1338,3 +1343,22 @@ class CartPerformance {
     );
   }
 }
+
+export {
+  getFocusableElements,
+  trapFocus,
+  removeTrapFocus,
+  onKeyUpEscape,
+  debounce,
+  throttle,
+  pauseAllMedia,
+  fetchConfig,
+  SectionId,
+  HTMLUpdateUtility,
+  CartPerformance,
+  DOMPurify,
+  routes,
+  cartStrings,
+  variantStrings,
+  quickOrderListStrings,
+};

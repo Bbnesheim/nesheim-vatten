@@ -1,4 +1,4 @@
-const DOMPurify = window.DOMPurify;
+import { DOMPurify, trapFocus, removeTrapFocus } from './global.js';
 
 
 class CartNotification extends HTMLElement {

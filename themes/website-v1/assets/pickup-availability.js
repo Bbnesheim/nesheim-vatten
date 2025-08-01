@@ -1,4 +1,4 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import { DOMPurify, trapFocus, removeTrapFocus } from './global.js';
 
 
 if (!customElements.get('pickup-availability')) {

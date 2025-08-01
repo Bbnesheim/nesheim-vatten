@@ -1,3 +1,5 @@
+import { fetchConfig, routes } from './global.js';
+
 if (!customElements.get('product-form')) {
   customElements.define(
     'product-form',
@@ -62,7 +64,7 @@ if (!customElements.get('product-form')) {
               this.error = true;
               return;
             } else if (!this.cart) {
-              window.location = window.routes.cart_url;
+              window.location = routes.cart_url;
               return;
             }
 

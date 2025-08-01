@@ -1,4 +1,4 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import { DOMPurify, debounce } from './global.js';
 
 
 class FacetFiltersForm extends HTMLElement {

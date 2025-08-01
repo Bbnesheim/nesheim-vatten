@@ -1,4 +1,4 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import { DOMPurify, routes } from './global.js';
 
 
 class PredictiveSearch extends SearchForm {

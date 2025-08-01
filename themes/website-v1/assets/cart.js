@@ -1,4 +1,11 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import {
+  DOMPurify,
+  debounce,
+  fetchConfig,
+  routes,
+  cartStrings,
+  quickOrderListStrings,
+} from './global.js';
 
 
 class CartRemoveButton extends HTMLElement {
@@ -68,11 +75,11 @@ class CartItems extends HTMLElement {
     let message = '';
 
     if (inputValue < event.target.dataset.min) {
-      message = window.quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min);
+      message = quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min);
     } else if (inputValue > parseInt(event.target.max)) {
-      message = window.quickOrderListStrings.max_error.replace('[max]', event.target.max);
+      message = quickOrderListStrings.max_error.replace('[max]', event.target.max);
     } else if (inputValue % parseInt(event.target.step) !== 0) {
-      message = window.quickOrderListStrings.step_error.replace('[step]', event.target.step);
+      message = quickOrderListStrings.step_error.replace('[step]', event.target.step);
     }
 
     if (message) {
@@ -210,9 +217,9 @@ class CartItems extends HTMLElement {
           let message = '';
           if (items.length === parsedState.items.length && updatedValue !== parseInt(quantityElement.value)) {
             if (typeof updatedValue === 'undefined') {
-              message = window.cartStrings.error;
+              message = cartStrings.error;
             } else {
-              message = window.cartStrings.quantityError.replace('[quantity]', updatedValue);
+              message = cartStrings.quantityError.replace('[quantity]', updatedValue);
             }
           }
           this.updateLiveRegions(line, message);
@@ -237,7 +244,7 @@ class CartItems extends HTMLElement {
       .catch(() => {
         this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
         const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
-        errors.textContent = window.cartStrings.error;
+        errors.textContent = cartStrings.error;
       })
       .finally(() => {
         this.disableLoading(line);

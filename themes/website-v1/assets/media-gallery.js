@@ -1,4 +1,4 @@
-const DOMPurify = typeof require !== 'undefined' ? require('dompurify')(window) : window.DOMPurify;
+import { DOMPurify, debounce, pauseAllMedia } from './global.js';
 
 
 if (!customElements.get('media-gallery')) {
@@ -99,7 +99,7 @@ if (!customElements.get('media-gallery')) {
       }
 
       playActiveMedia(activeItem) {
-        window.pauseAllMedia();
+        pauseAllMedia();
         const deferredMedia = activeItem.querySelector('.deferred-media');
         if (deferredMedia) deferredMedia.loadContent(false);
       }

@@ -1,3 +1,5 @@
+import { trapFocus, removeTrapFocus } from './global.js';
+
 class DetailsModal extends HTMLElement {
   constructor() {
     super();
